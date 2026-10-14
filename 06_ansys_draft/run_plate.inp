@@ -1,0 +1,17 @@
+! =====================================================================
+! run_plate.inp  -  complete analysis: bonded steel plate
+! Run from the folder holding all .inp files:
+!   Mechanical APDL: File > Read Input From > run_plate.inp
+!   or batch:        MAPDL -b -i run_plate.inp -o run_plate.out -j plate
+! =====================================================================
+FINISH
+/CLEAR,NOSTART
+/FILNAME,plate,1
+/INPUT,01_params,inp
+REPAIR = 2
+TAG = 'plate'
+/INPUT,02_materials,inp
+/INPUT,03_mesh,inp
+/INPUT,04_bc_solve,inp
+/INPUT,06_post,inp
+/INPUT,05_modal,inp

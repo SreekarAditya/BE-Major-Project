@@ -1,0 +1,45 @@
+! =====================================================================
+! 05_modal.inp  -  natural frequencies of the beam in its current (damaged or repaired) state
+! A linear perturbation modal analysis is restarted from the end of each unloaded diagnostic
+! cycle listed in LS_MOD, so the frequencies use the beam's stiffness at that moment.
+! Writes frequencies.csv: load step, mode 1 to 4 (Hz).
+! NOTE: linear perturbation needs current-technology elements. If the run stops with SOLID65,
+!       set CONC = 2 in 01_params.inp (SOLID185 with Menetrey-Willam) and rerun. See README.
+! =====================================================================
+*DIM,FREQ,ARRAY,10,5
+*DO,MM,1,N_MOD
+  /SOLU
+  ANTYPE,STATIC,RESTART,LS_MOD(MM),LAST,PERTURB
+  PERTURB,MODAL,,CURRENT,DZEROKEEP
+  SOLVE,ELFORM
+  MODOPT,LANB,4
+  MXPAND,4
+  SOLVE
+  FINISH
+  /POST1
+  FILE,,RSTP
+  FREQ(MM,1) = LS_MOD(MM)
+  *DO,KK,1,4
+    *GET,FREQ(MM,KK+1),MODE,KK,FREQ
+  *ENDDO
+  ! mode shape images for the first and last states
+  *IF,MM,EQ,1,OR,MM,EQ,N_MOD,THEN
+    /SHOW,PNG
+    /VIEW,1,1,1,1
+    /PLOPTS,INFO,ON
+    SET,1,1
+    /TITLE,Mode 1 at load step %LS_MOD(MM)%
+    PLNSOL,U,SUM
+    SET,1,2
+    /TITLE,Mode 2 at load step %LS_MOD(MM)%
+    PLNSOL,U,SUM
+    /SHOW,CLOSE
+  *ENDIF
+  FINISH
+*ENDDO
+*CFOPEN,%TAG%_frequencies,csv
+*VWRITE
+('load_step,f1_Hz,f2_Hz,f3_Hz,f4_Hz')
+*VWRITE,FREQ(1,1),FREQ(1,2),FREQ(1,3),FREQ(1,4),FREQ(1,5)
+(F6.0,',',F10.3,',',F10.3,',',F10.3,',',F10.3)
+*CFCLOS

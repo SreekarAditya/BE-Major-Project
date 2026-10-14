@@ -1,0 +1,134 @@
+{
+  "status": "PASS_REPRODUCIBLE_WITH_SCIENTIFIC_LIMITATIONS",
+  "visual_status": "PASS",
+  "elapsed_seconds": 22.53937129100086,
+  "run_id": "20261013T080023Z",
+  "python": "/Users/sreekaraditya/Desktop/StrucIQ_Review2_230x300/00_SHOW_IN_REVIEW/08_benchmark_ozturkoglu2024/.venv/bin/python3",
+  "isolated_python": true,
+  "stages": [
+    {
+      "script": "extract.py",
+      "seconds": 17.652443040977232,
+      "returncode": 0
+    },
+    {
+      "script": "digitise.py",
+      "seconds": 2.2535619170521386,
+      "returncode": 0
+    },
+    {
+      "script": "frp_check.py",
+      "seconds": 0.9997962909983471,
+      "returncode": 0
+    },
+    {
+      "script": "h1_h2.py",
+      "seconds": 0.3048258749768138,
+      "returncode": 0
+    },
+    {
+      "script": "retrofit_signal.py",
+      "seconds": 0.021541249996516854,
+      "returncode": 0
+    },
+    {
+      "script": "figures.py",
+      "seconds": 0.8413934999844059,
+      "returncode": 0
+    },
+    {
+      "script": "report.py",
+      "seconds": 0.0249179580132477,
+      "returncode": 0
+    }
+  ],
+  "checks": {
+    "protected_before": {
+      "protected_files": 159,
+      "changed_or_missing": [],
+      "added_outside_working_folder": [],
+      "pass_check": true
+    },
+    "source_pdf_integrity": {
+      "frozen_hash_agrees": true,
+      "original_download_available": true
+    },
+    "reference_snapshot_integrity": {
+      "changed": [],
+      "pass_check": true
+    },
+    "section_force_equilibrium": {
+      "max_relative_residual": 0.0006527250543686543,
+      "acceptance_limit": 0.005,
+      "pass_check": true
+    },
+    "endpoint_digitisation": {
+      "accepted_endpoints": 11,
+      "excluded": [],
+      "expected_from_reported_states": 11,
+      "pass_check": true
+    },
+    "text_visual_agreement": {
+      "checked_values": 180,
+      "status": "AGREE"
+    },
+    "frozen_reference_replay": {
+      "max_capacity_difference_kN": 0.0,
+      "pass_check": true
+    },
+    "twin_intervention_boundary": {
+      "pass_check": true
+    },
+    "figure_format": [
+      {
+        "file": "01_capacity_predicted_vs_test.png",
+        "size": [
+          2640,
+          1496
+        ],
+        "dpi": [
+          219.9894,
+          219.9894
+        ],
+        "pass_check": true
+      },
+      {
+        "file": "02_static_vs_vibration.png",
+        "size": [
+          2596,
+          1760
+        ],
+        "dpi": [
+          219.9894,
+          219.9894
+        ],
+        "pass_check": true
+      },
+      {
+        "file": "03_retrofit_vertical_signal.png",
+        "size": [
+          1980,
+          1056
+        ],
+        "dpi": [
+          219.9894,
+          219.9894
+        ],
+        "pass_check": true
+      }
+    ],
+    "visual_review_current": {
+      "pass_check": true,
+      "review_note": "Source tables/geometry/materials checked in rendered page images. Final endpoint overlays checked for calibrated axes and correct branches. Final three figures checked for readable labels, unclipped annotations and legends clear of data. Unaccepted reloading paths excluded. This is agent visual inspection, not external engineering acceptance."
+    },
+    "protected_after": {
+      "protected_files": 159,
+      "changed_or_missing": [],
+      "added_outside_working_folder": [],
+      "pass_check": true
+    }
+  },
+  "scientific_status": "COMPLETED_WITH_SCIENTIFIC_LIMITATIONS",
+  "no_tuning": true,
+  "limits": "Successful QA means executable outputs and bookkeeping passed. It does not resolve the missing evidence or validate the service-deflection target."
+}

@@ -1,0 +1,26 @@
+Quantity,Formula,Value,Unit,IS 456 clause
+Effective depth d,h - cover - stirrup - bar/2,261.0,mm,26.4
+Steel area Ast,3 x pi x 12^2 / 4,339.292,mm2,-
+Neutral axis depth xu,0.87 fy Ast / (0.36 fck b),59.4171,mm,38.1
+"Limiting depth xu,max",0.46 d (Fe500),120.06,mm,38.1 note
+Moment of resistance Mu,0.87 fy Ast (d - 0.42 xu),34.8383,kN m,38.1
+"Limiting moment Mu,lim",0.133 fck b d^2,62.5146,kN m,G-1.1
+Jack load at Mu,2 Mu / a,69.6767,kN,four-point bending
+Flexural tensile strength,0.7 sqrt(fck),3.8341,MPa,6.2.2
+Gross second moment Ig,b h^3 / 12,517500000.0,mm4,-
+Cracking moment Mcr,fcr Ig / yt,13.2275,kN m,Annex C-2.1
+Cracking load,2 Mcr / a,26.455,kN,-
+Shear demand Vu,P / 2,34.8383,kN,-
+Nominal shear stress,Vu / (b d),0.5803,MPa,40.1
+Concrete shear strength,"Table 19, M30, pt %",0.5235,MPa,Table 19
+Concrete shear capacity,tau_c b d,31.4241,kN,40.2
+Stirrup shear capacity,0.87 fy Asv d / sv,63.1563,kN,40.4(a)
+Total shear capacity,Vc + Vus,94.5804,kN,-
+Max stirrup spacing,0.75 d,195.75,mm,26.5.1.5
+Min stirrup area,0.4 b sv / (0.87 fy),38.2219,mm2,26.5.1.6
+Span / effective depth,L / d  (limit 20),11.4943,-,23.2.1
+Elastic modulus Ec,5000 sqrt(fck),27386.1279,MPa,6.2.3.1
+Flexural stiffness EI,Ec Ig,14172.3212,kN m2,-
+Mass per metre,rho b h,172.5,kg/m,-
+First natural frequency,(pi / 2L^2) sqrt(EI / m),50.0269,Hz,beam theory
+Midspan deflection at 15 kN,23 P L^3 / (1296 EI),0.5072,mm,beam theory

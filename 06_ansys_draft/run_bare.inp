@@ -1,0 +1,17 @@
+! =====================================================================
+! run_bare.inp  -  complete analysis: unstrengthened
+! Run from the folder holding all .inp files:
+!   Mechanical APDL: File > Read Input From > run_bare.inp
+!   or batch:        MAPDL -b -i run_bare.inp -o run_bare.out -j bare
+! =====================================================================
+FINISH
+/CLEAR,NOSTART
+/FILNAME,bare,1
+/INPUT,01_params,inp
+REPAIR = 0
+TAG = 'bare'
+/INPUT,02_materials,inp
+/INPUT,03_mesh,inp
+/INPUT,04_bc_solve,inp
+/INPUT,06_post,inp
+/INPUT,05_modal,inp

@@ -1,0 +1,227 @@
+{
+  "calibration": {
+    "x_pixels": [
+      305,
+      1677
+    ],
+    "x_values_mm": [
+      0,
+      35
+    ],
+    "y_pixels": [
+      1088,
+      74
+    ],
+    "y_values_kN": [
+      0,
+      2.25
+    ],
+    "check_x_ticks_pixels": {
+      "5": 501,
+      "10": 697,
+      "15": 893,
+      "20": 1089,
+      "25": 1285,
+      "30": 1481
+    },
+    "check_y_ticks_pixels": {
+      "0.25": 975,
+      "0.5": 863,
+      "0.75": 750,
+      "1.0": 637,
+      "1.25": 525,
+      "1.5": 412,
+      "1.75": 299,
+      "2.0": 187
+    },
+    "source": "p. 23, Fig. 11, left-hand graph; axes at tick marks, image width 1728 pixels",
+    "pixel_resolution_mm": 0.025510204081632654,
+    "manual_method": "Inspect black open-circle experimental markers on the blue dashed curve; select envelope turning points. Early overlapping curves excluded. Assign selected peaks to chronological Table 3 steps; assignments are inferred and load discrepancies retained."
+  },
+  "rows": [
+    {
+      "beam": 3,
+      "step": 4,
+      "pixel": [
+        431,
+        786
+      ],
+      "peak_deflection_mm": 3.2142857142857144,
+      "deflection_reading_bound_mm": 0.7,
+      "plotted_peak_load_kN": 0.6701183431952663,
+      "table_load_kN": 0.67,
+      "plot_minus_table_load_kN": 0.00011834319526626835,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors."
+    },
+    {
+      "beam": 3,
+      "step": 5,
+      "pixel": [
+        635,
+        697
+      ],
+      "peak_deflection_mm": 8.418367346938776,
+      "deflection_reading_bound_mm": 0.5,
+      "plotted_peak_load_kN": 0.867603550295858,
+      "table_load_kN": 0.82,
+      "plot_minus_table_load_kN": 0.047603550295858055,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors."
+    },
+    {
+      "beam": 3,
+      "step": 6,
+      "pixel": [
+        696,
+        637
+      ],
+      "peak_deflection_mm": 9.974489795918368,
+      "deflection_reading_bound_mm": 0.5,
+      "plotted_peak_load_kN": 1.0007396449704142,
+      "table_load_kN": 0.95,
+      "plot_minus_table_load_kN": 0.05073964497041428,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors."
+    },
+    {
+      "beam": 3,
+      "step": 7,
+      "pixel": [
+        751,
+        589
+      ],
+      "peak_deflection_mm": 11.377551020408163,
+      "deflection_reading_bound_mm": 0.5,
+      "plotted_peak_load_kN": 1.107248520710059,
+      "table_load_kN": 1.09,
+      "plot_minus_table_load_kN": 0.017248520710059,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors."
+    },
+    {
+      "beam": 3,
+      "step": 8,
+      "pixel": [
+        854,
+        519
+      ],
+      "peak_deflection_mm": 14.005102040816327,
+      "deflection_reading_bound_mm": 0.4,
+      "plotted_peak_load_kN": 1.2625739644970415,
+      "table_load_kN": 1.26,
+      "plot_minus_table_load_kN": 0.002573964497041503,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors."
+    },
+    {
+      "beam": 3,
+      "step": 9,
+      "pixel": [
+        924,
+        453
+      ],
+      "peak_deflection_mm": 15.790816326530612,
+      "deflection_reading_bound_mm": 0.4,
+      "plotted_peak_load_kN": 1.4090236686390532,
+      "table_load_kN": 1.41,
+      "plot_minus_table_load_kN": -0.0009763313609467694,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors."
+    },
+    {
+      "beam": 3,
+      "step": 10,
+      "pixel": [
+        1082,
+        348
+      ],
+      "peak_deflection_mm": 19.821428571428573,
+      "deflection_reading_bound_mm": 0.4,
+      "plotted_peak_load_kN": 1.6420118343195267,
+      "table_load_kN": 1.64,
+      "plot_minus_table_load_kN": 0.002011834319526784,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors."
+    },
+    {
+      "beam": 3,
+      "step": 11,
+      "pixel": [
+        1532,
+        95
+      ],
+      "peak_deflection_mm": 31.301020408163264,
+      "deflection_reading_bound_mm": 0.4,
+      "plotted_peak_load_kN": 2.203402366863905,
+      "table_load_kN": 2.2,
+      "plot_minus_table_load_kN": 0.0034023668639049376,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors."
+    }
+  ],
+  "unloading_chords": [
+    {
+      "step": 9,
+      "residual_mm": 10.561224489795919,
+      "peak_mm": 15.790816326530612,
+      "load_kN": 1.41,
+      "unloading_chord_kN_per_mm": 0.269619512195122,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.4,
+      "pixel": [
+        719,
+        1088
+      ]
+    },
+    {
+      "step": 10,
+      "residual_mm": 13.112244897959183,
+      "peak_mm": 19.821428571428573,
+      "load_kN": 1.64,
+      "unloading_chord_kN_per_mm": 0.24444106463878318,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.4,
+      "pixel": [
+        819,
+        1088
+      ]
+    },
+    {
+      "step": 11,
+      "residual_mm": 19.336734693877553,
+      "peak_mm": 31.301020408163264,
+      "load_kN": 2.2,
+      "unloading_chord_kN_per_mm": 0.18388059701492543,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.4,
+      "pixel": [
+        1063,
+        1088
+      ]
+    }
+  ],
+  "excluded_steps": [
+    1,
+    2,
+    3
+  ],
+  "exclusion_reason": "Experimental peaks obscured by numerical curves; no defensible unique marker pick.",
+  "reading_distribution_for_propagation": "Uniform within stated bounds, shared baseline sampled once per replicate. This is reading sensitivity, not a confidence interval."
+}

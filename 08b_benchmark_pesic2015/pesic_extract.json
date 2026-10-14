@@ -1,0 +1,2141 @@
+{
+  "paper": {
+    "title": "Experimental and finite element dynamic analysis of incrementally loaded reinforced concrete structures",
+    "year": 2015,
+    "doi": "10.1016/j.engstruct.2015.07.037",
+    "version": "Published version of record, 13 pages; printed pages 15-27. User supplied; no accepted-manuscript licence claimed.",
+    "sha256": "ead89ba4ce08b107bd5c9547713a402ca477b89ea96be958d14b0e00361b4946"
+  },
+  "measurement": {
+    "source": "p. 17, sections 2.2-2.3",
+    "frequency": "Five hammer impacts at quarter-span points; averaged Fourier spectra of 8 second free-decay acceleration records; 1652 Hz sampling; measured unloaded after approximately 30 minute peak-load hold.",
+    "hammer_mass_kg": 5.5,
+    "accelerometer_sensitivity_mV_per_g": 500,
+    "vibration_amplitude": "Described as low amplitude; no numerical displacement amplitude provided.",
+    "static": "Micrometer at peak load and after unloading.",
+    "reported_deflection_limit": "span/250 target; Fig. 11 final Beam 3 peak exceeds this target."
+  },
+  "beams": [
+    {
+      "beam": 1,
+      "geometry": {
+        "length_m": {
+          "value": 4,
+          "source": "p. 17, Table 2"
+        },
+        "span_m": {
+          "value": 3.8,
+          "source": "p. 17, Table 2"
+        },
+        "span_depth_ratio": {
+          "value": 31.7,
+          "source": "p. 17, Table 2"
+        },
+        "width_mm": {
+          "value": 300,
+          "source": "p. 17, Table 2"
+        },
+        "height_mm": {
+          "value": 120,
+          "source": "p. 17, Table 2"
+        },
+        "supports": {
+          "value": "Simply supported, one fixed bearing and one low-friction bearing",
+          "source": "p. 17, section 2.2"
+        },
+        "load_arrangement": {
+          "value": "Symmetric three-point bending, point load at midspan",
+          "source": "p. 17, section 2.2"
+        },
+        "overhang_each_m": {
+          "value": 0.10000000000000009,
+          "source": "p. 17, Table 2",
+          "inferred": true,
+          "reason": "Symmetric supports assumed from stated symmetric test and Fig. 3; not independently dimensioned."
+        }
+      },
+      "reinforcement": {
+        "bottom_bars": {
+          "value": "3 bars, diameter 10 mm",
+          "source": "p. 17, Table 2"
+        },
+        "area_mm2": {
+          "value": 235.6,
+          "source": "p. 17, Table 2"
+        },
+        "cover_mm": {
+          "value": 25,
+          "source": "p. 17, Table 2"
+        },
+        "effective_depth_mm": {
+          "value": 90,
+          "source": "p. 17, Table 2",
+          "inferred": true,
+          "reason": "120 - 25 - 10/2; assumes cover denotes clear cover to main bars. Appendix B uses bar centre 20 mm above soffit, inconsistent with Table 2, so this is not adopted for blind modelling."
+        },
+        "top_bars": null,
+        "bar_depth_discrepancy": "Table 2 implies 30 mm bar centre above soffit; Appendix B node y=-40 in 120 mm deep section implies 20 mm."
+      },
+      "steel": {
+        "yield_strength_MPa": {
+          "value": 555,
+          "source": "p. 17, section 2.2"
+        },
+        "ultimate_strength_MPa": {
+          "value": 615,
+          "source": "p. 17, section 2.2"
+        },
+        "measured_elastic_modulus_MPa": null,
+        "measured_ultimate_strain": null
+      },
+      "concrete": {
+        "characteristic_cube_strength_32d_MPa": {
+          "value": 48,
+          "source": "p. 16, section 2.1",
+          "approximate": true
+        },
+        "characteristic_cylinder_strength_32d_MPa": {
+          "value": 43,
+          "source": "p. 16, section 2.1",
+          "approximate": true
+        },
+        "cylinder_32d_MPa": {
+          "value": 42.9,
+          "source": "p. 17, Fig. 1 printed label"
+        },
+        "cylinder_105d_MPa": {
+          "value": 51,
+          "source": "p. 17, Fig. 1 printed label"
+        },
+        "static_modulus_32d_GPa": {
+          "value": 30.5,
+          "source": "pp. 16-17, section 2.1; Fig. 2 printed label",
+          "approximate": true
+        },
+        "dynamic_modulus_after60d_GPa": {
+          "value": 40.1,
+          "source": "p. 17, section 2.1",
+          "approximate": true
+        },
+        "density_28d_kg_m3": {
+          "value": 2286,
+          "source": "p. 17, section 2.1",
+          "approximate": true
+        },
+        "density_range_kg_m3": {
+          "value": [
+            2250,
+            2300
+          ],
+          "source": "p. 16, section 2.1"
+        },
+        "ultrasonic_velocity_km_s": {
+          "value": 4.4,
+          "source": "p. 17, section 2.1",
+          "approximate": true
+        },
+        "poisson_ratio": {
+          "value": 0.2,
+          "source": "p. 16, section 2.1",
+          "adopted_by_authors": true
+        },
+        "independently_measured_tensile_strength_MPa": null,
+        "beam_specific_age_and_density": null,
+        "authors_model_inputs_not_measurements": {
+          "compressive_strength_MPa": {
+            "value": 53,
+            "source": "p. 19, section 3.1"
+          },
+          "tensile_strength_best_fit_MPa": {
+            "value": 2.5,
+            "source": "p. 21, Table 4",
+            "tuned_by_paper_authors": true
+          },
+          "modulus_best_fit_GPa": {
+            "value": 29,
+            "source": "p. 21, Table 4",
+            "tuned_by_paper_authors": true
+          }
+        }
+      },
+      "paper_predictions": {
+        "unloaded_FE_frequency_Hz": {
+          "value": 14,
+          "source": "p. 17, Table 2",
+          "model_output": true
+        },
+        "unloaded_segmental_frequency_Hz": {
+          "value": 13.7,
+          "source": "p. 17, Table 2",
+          "model_output": true
+        }
+      },
+      "yield_moment_kNm": {
+        "value": 3,
+        "source": "p. 17, section 2.2",
+        "approximate": true
+      },
+      "yield_load_kN": {
+        "value": 3.1578947368421053,
+        "source": "p. 17, section 2.2",
+        "inferred": true,
+        "reason": "Paper formula Py = 4 My / span with My approximately 3.00 kNm; used only for supplemental comparison."
+      },
+      "measured_cracking_load_kN": null,
+      "steps": [
+        {
+          "step": 0,
+          "load_kN": {
+            "value": 0,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 14,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 52.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 1,
+          "load_kN": {
+            "value": 1.25,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 13.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 52,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 2,
+          "load_kN": {
+            "value": 1.61,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 13.2,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 51.7,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 3,
+          "load_kN": {
+            "value": 1.85,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 12.9,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 51.4,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 4,
+          "load_kN": {
+            "value": 2.11,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 12.7,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 51.1,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 5,
+          "load_kN": {
+            "value": 2.4,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 12.4,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 50.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 6,
+          "load_kN": {
+            "value": 2.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 12.1,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 49.9,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 7,
+          "load_kN": {
+            "value": 2.87,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 11.9,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 49.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 8,
+          "load_kN": {
+            "value": 3.01,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 11.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 48.8,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 9,
+          "load_kN": {
+            "value": 3.26,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 11.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 48.4,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 10,
+          "load_kN": {
+            "value": 3.54,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 11.4,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 48,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 11,
+          "load_kN": {
+            "value": 3.72,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 11.2,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 47.4,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 12,
+          "load_kN": {
+            "value": 4.07,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 11.1,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 46.9,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 13,
+          "load_kN": {
+            "value": 4.96,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 10.3,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 45,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        }
+      ]
+    },
+    {
+      "beam": 2,
+      "geometry": {
+        "length_m": {
+          "value": 4.7,
+          "source": "p. 17, Table 2"
+        },
+        "span_m": {
+          "value": 4.5,
+          "source": "p. 17, Table 2"
+        },
+        "span_depth_ratio": {
+          "value": 37.5,
+          "source": "p. 17, Table 2"
+        },
+        "width_mm": {
+          "value": 300,
+          "source": "p. 17, Table 2"
+        },
+        "height_mm": {
+          "value": 120,
+          "source": "p. 17, Table 2"
+        },
+        "supports": {
+          "value": "Simply supported, one fixed bearing and one low-friction bearing",
+          "source": "p. 17, section 2.2"
+        },
+        "load_arrangement": {
+          "value": "Symmetric three-point bending, point load at midspan",
+          "source": "p. 17, section 2.2"
+        },
+        "overhang_each_m": {
+          "value": 0.10000000000000009,
+          "source": "p. 17, Table 2",
+          "inferred": true,
+          "reason": "Symmetric supports assumed from stated symmetric test and Fig. 3; not independently dimensioned."
+        }
+      },
+      "reinforcement": {
+        "bottom_bars": {
+          "value": "3 bars, diameter 10 mm",
+          "source": "p. 17, Table 2"
+        },
+        "area_mm2": {
+          "value": 235.6,
+          "source": "p. 17, Table 2"
+        },
+        "cover_mm": {
+          "value": 25,
+          "source": "p. 17, Table 2"
+        },
+        "effective_depth_mm": {
+          "value": 90,
+          "source": "p. 17, Table 2",
+          "inferred": true,
+          "reason": "120 - 25 - 10/2; assumes cover denotes clear cover to main bars. Appendix B uses bar centre 20 mm above soffit, inconsistent with Table 2, so this is not adopted for blind modelling."
+        },
+        "top_bars": null,
+        "bar_depth_discrepancy": "Table 2 implies 30 mm bar centre above soffit; Appendix B node y=-40 in 120 mm deep section implies 20 mm."
+      },
+      "steel": {
+        "yield_strength_MPa": {
+          "value": 555,
+          "source": "p. 17, section 2.2"
+        },
+        "ultimate_strength_MPa": {
+          "value": 615,
+          "source": "p. 17, section 2.2"
+        },
+        "measured_elastic_modulus_MPa": null,
+        "measured_ultimate_strain": null
+      },
+      "concrete": {
+        "characteristic_cube_strength_32d_MPa": {
+          "value": 48,
+          "source": "p. 16, section 2.1",
+          "approximate": true
+        },
+        "characteristic_cylinder_strength_32d_MPa": {
+          "value": 43,
+          "source": "p. 16, section 2.1",
+          "approximate": true
+        },
+        "cylinder_32d_MPa": {
+          "value": 42.9,
+          "source": "p. 17, Fig. 1 printed label"
+        },
+        "cylinder_105d_MPa": {
+          "value": 51,
+          "source": "p. 17, Fig. 1 printed label"
+        },
+        "static_modulus_32d_GPa": {
+          "value": 30.5,
+          "source": "pp. 16-17, section 2.1; Fig. 2 printed label",
+          "approximate": true
+        },
+        "dynamic_modulus_after60d_GPa": {
+          "value": 40.1,
+          "source": "p. 17, section 2.1",
+          "approximate": true
+        },
+        "density_28d_kg_m3": {
+          "value": 2286,
+          "source": "p. 17, section 2.1",
+          "approximate": true
+        },
+        "density_range_kg_m3": {
+          "value": [
+            2250,
+            2300
+          ],
+          "source": "p. 16, section 2.1"
+        },
+        "ultrasonic_velocity_km_s": {
+          "value": 4.4,
+          "source": "p. 17, section 2.1",
+          "approximate": true
+        },
+        "poisson_ratio": {
+          "value": 0.2,
+          "source": "p. 16, section 2.1",
+          "adopted_by_authors": true
+        },
+        "independently_measured_tensile_strength_MPa": null,
+        "beam_specific_age_and_density": null,
+        "authors_model_inputs_not_measurements": {
+          "compressive_strength_MPa": {
+            "value": 53,
+            "source": "p. 19, section 3.1"
+          },
+          "tensile_strength_best_fit_MPa": {
+            "value": 2.5,
+            "source": "p. 21, Table 4",
+            "tuned_by_paper_authors": true
+          },
+          "modulus_best_fit_GPa": {
+            "value": 29,
+            "source": "p. 21, Table 4",
+            "tuned_by_paper_authors": true
+          }
+        }
+      },
+      "paper_predictions": {
+        "unloaded_FE_frequency_Hz": {
+          "value": 10,
+          "source": "p. 17, Table 2",
+          "model_output": true
+        },
+        "unloaded_segmental_frequency_Hz": {
+          "value": 9.8,
+          "source": "p. 17, Table 2",
+          "model_output": true
+        }
+      },
+      "yield_moment_kNm": {
+        "value": 3,
+        "source": "p. 17, section 2.2",
+        "approximate": true
+      },
+      "yield_load_kN": {
+        "value": 2.6666666666666665,
+        "source": "p. 17, section 2.2",
+        "inferred": true,
+        "reason": "Paper formula Py = 4 My / span with My approximately 3.00 kNm; used only for supplemental comparison."
+      },
+      "measured_cracking_load_kN": null,
+      "steps": [
+        {
+          "step": 0,
+          "load_kN": {
+            "value": 0,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 10.1,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 40,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 1,
+          "load_kN": {
+            "value": 1.31,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 8.72,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 37.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 2,
+          "load_kN": {
+            "value": 1.43,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 8.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 37.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 3,
+          "load_kN": {
+            "value": 1.67,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 8.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 37.2,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 4,
+          "load_kN": {
+            "value": 1.98,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 8.43,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 36.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 5,
+          "load_kN": {
+            "value": 2.2,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 8.27,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 36.1,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 6,
+          "load_kN": {
+            "value": 2.46,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 8.06,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 35.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 7,
+          "load_kN": {
+            "value": 2.55,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 7.82,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 34.7,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 8,
+          "load_kN": {
+            "value": 3.3,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 7.73,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 34.2,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        }
+      ]
+    },
+    {
+      "beam": 3,
+      "geometry": {
+        "length_m": {
+          "value": 5.6,
+          "source": "p. 17, Table 2"
+        },
+        "span_m": {
+          "value": 5.4,
+          "source": "p. 17, Table 2"
+        },
+        "span_depth_ratio": {
+          "value": 45,
+          "source": "p. 17, Table 2"
+        },
+        "width_mm": {
+          "value": 300,
+          "source": "p. 17, Table 2"
+        },
+        "height_mm": {
+          "value": 120,
+          "source": "p. 17, Table 2"
+        },
+        "supports": {
+          "value": "Simply supported, one fixed bearing and one low-friction bearing",
+          "source": "p. 17, section 2.2"
+        },
+        "load_arrangement": {
+          "value": "Symmetric three-point bending, point load at midspan",
+          "source": "p. 17, section 2.2"
+        },
+        "overhang_each_m": {
+          "value": 0.09999999999999964,
+          "source": "p. 17, Table 2",
+          "inferred": true,
+          "reason": "Symmetric supports assumed from stated symmetric test and Fig. 3; not independently dimensioned."
+        }
+      },
+      "reinforcement": {
+        "bottom_bars": {
+          "value": "3 bars, diameter 10 mm",
+          "source": "p. 17, Table 2"
+        },
+        "area_mm2": {
+          "value": 235.6,
+          "source": "p. 17, Table 2"
+        },
+        "cover_mm": {
+          "value": 25,
+          "source": "p. 17, Table 2"
+        },
+        "effective_depth_mm": {
+          "value": 90,
+          "source": "p. 17, Table 2",
+          "inferred": true,
+          "reason": "120 - 25 - 10/2; assumes cover denotes clear cover to main bars. Appendix B uses bar centre 20 mm above soffit, inconsistent with Table 2, so this is not adopted for blind modelling."
+        },
+        "top_bars": null,
+        "bar_depth_discrepancy": "Table 2 implies 30 mm bar centre above soffit; Appendix B node y=-40 in 120 mm deep section implies 20 mm."
+      },
+      "steel": {
+        "yield_strength_MPa": {
+          "value": 555,
+          "source": "p. 17, section 2.2"
+        },
+        "ultimate_strength_MPa": {
+          "value": 615,
+          "source": "p. 17, section 2.2"
+        },
+        "measured_elastic_modulus_MPa": null,
+        "measured_ultimate_strain": null
+      },
+      "concrete": {
+        "characteristic_cube_strength_32d_MPa": {
+          "value": 48,
+          "source": "p. 16, section 2.1",
+          "approximate": true
+        },
+        "characteristic_cylinder_strength_32d_MPa": {
+          "value": 43,
+          "source": "p. 16, section 2.1",
+          "approximate": true
+        },
+        "cylinder_32d_MPa": {
+          "value": 42.9,
+          "source": "p. 17, Fig. 1 printed label"
+        },
+        "cylinder_105d_MPa": {
+          "value": 51,
+          "source": "p. 17, Fig. 1 printed label"
+        },
+        "static_modulus_32d_GPa": {
+          "value": 30.5,
+          "source": "pp. 16-17, section 2.1; Fig. 2 printed label",
+          "approximate": true
+        },
+        "dynamic_modulus_after60d_GPa": {
+          "value": 40.1,
+          "source": "p. 17, section 2.1",
+          "approximate": true
+        },
+        "density_28d_kg_m3": {
+          "value": 2286,
+          "source": "p. 17, section 2.1",
+          "approximate": true
+        },
+        "density_range_kg_m3": {
+          "value": [
+            2250,
+            2300
+          ],
+          "source": "p. 16, section 2.1"
+        },
+        "ultrasonic_velocity_km_s": {
+          "value": 4.4,
+          "source": "p. 17, section 2.1",
+          "approximate": true
+        },
+        "poisson_ratio": {
+          "value": 0.2,
+          "source": "p. 16, section 2.1",
+          "adopted_by_authors": true
+        },
+        "independently_measured_tensile_strength_MPa": null,
+        "beam_specific_age_and_density": null,
+        "authors_model_inputs_not_measurements": {
+          "compressive_strength_MPa": {
+            "value": 53,
+            "source": "p. 19, section 3.1"
+          },
+          "tensile_strength_best_fit_MPa": {
+            "value": 2.5,
+            "source": "p. 21, Table 4",
+            "tuned_by_paper_authors": true
+          },
+          "modulus_best_fit_GPa": {
+            "value": 29,
+            "source": "p. 21, Table 4",
+            "tuned_by_paper_authors": true
+          }
+        }
+      },
+      "paper_predictions": {
+        "unloaded_FE_frequency_Hz": {
+          "value": 6.6,
+          "source": "p. 17, Table 2",
+          "model_output": true
+        },
+        "unloaded_segmental_frequency_Hz": {
+          "value": 6.8,
+          "source": "p. 17, Table 2",
+          "model_output": true
+        }
+      },
+      "yield_moment_kNm": {
+        "value": 3,
+        "source": "p. 17, section 2.2",
+        "approximate": true
+      },
+      "yield_load_kN": {
+        "value": 2.222222222222222,
+        "source": "p. 17, section 2.2",
+        "inferred": true,
+        "reason": "Paper formula Py = 4 My / span with My approximately 3.00 kNm; used only for supplemental comparison."
+      },
+      "measured_cracking_load_kN": null,
+      "steps": [
+        {
+          "step": 0,
+          "load_kN": {
+            "value": 0,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 5.95,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 23.9,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 1,
+          "load_kN": {
+            "value": 0.34,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 5.82,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 23.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": {
+            "value": 0.4846938775510204,
+            "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+            "inferred": true,
+            "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+            "reading_bound_mm": 0.15
+          },
+          "residual_deflection_mm": {
+            "value": 0.22959183673469388,
+            "source": "p. 23, Fig. 11",
+            "inferred": true,
+            "reason": "Zero-load endpoint of corresponding original experimental vector branch, located on the calibrated image; chronological assignment.",
+            "reading_bound_mm": 0.15
+          },
+          "damping": null
+        },
+        {
+          "step": 2,
+          "load_kN": {
+            "value": 0.45,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 5.79,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 23.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": {
+            "value": 1.1479591836734695,
+            "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+            "inferred": true,
+            "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+            "reading_bound_mm": 0.15
+          },
+          "residual_deflection_mm": {
+            "value": 0.7653061224489796,
+            "source": "p. 23, Fig. 11",
+            "inferred": true,
+            "reason": "Zero-load endpoint of corresponding original experimental vector branch, located on the calibrated image; chronological assignment.",
+            "reading_bound_mm": 0.15
+          },
+          "damping": null
+        },
+        {
+          "step": 3,
+          "load_kN": {
+            "value": 0.55,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 5.74,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 23.4,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": {
+            "value": 1.760204081632653,
+            "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+            "inferred": true,
+            "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+            "reading_bound_mm": 0.15
+          },
+          "residual_deflection_mm": {
+            "value": 1.25,
+            "source": "p. 23, Fig. 11",
+            "inferred": true,
+            "reason": "Zero-load endpoint of corresponding original experimental vector branch, located on the calibrated image; chronological assignment.",
+            "reading_bound_mm": 0.15
+          },
+          "damping": null
+        },
+        {
+          "step": 4,
+          "load_kN": {
+            "value": 0.67,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 5.71,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 23.3,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": {
+            "value": 3.188775510204082,
+            "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+            "inferred": true,
+            "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+            "reading_bound_mm": 0.3
+          },
+          "residual_deflection_mm": {
+            "value": 2.0918367346938775,
+            "source": "p. 23, Fig. 11",
+            "inferred": true,
+            "reason": "Zero-load endpoint of corresponding original experimental vector branch, located on the calibrated image; chronological assignment.",
+            "reading_bound_mm": 0.4
+          },
+          "damping": null
+        },
+        {
+          "step": 5,
+          "load_kN": {
+            "value": 0.82,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 5.68,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 23.2,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": {
+            "value": 6.1479591836734695,
+            "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+            "inferred": true,
+            "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+            "reading_bound_mm": 0.3
+          },
+          "residual_deflection_mm": {
+            "value": 4.260204081632653,
+            "source": "p. 23, Fig. 11",
+            "inferred": true,
+            "reason": "Zero-load endpoint of corresponding original experimental vector branch, located on the calibrated image; chronological assignment.",
+            "reading_bound_mm": 0.4
+          },
+          "damping": null
+        },
+        {
+          "step": 6,
+          "load_kN": {
+            "value": 0.95,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 5.64,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 23.1,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": {
+            "value": 7.908163265306122,
+            "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+            "inferred": true,
+            "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+            "reading_bound_mm": 0.3
+          },
+          "residual_deflection_mm": {
+            "value": 5.714285714285714,
+            "source": "p. 23, Fig. 11",
+            "inferred": true,
+            "reason": "Zero-load endpoint of corresponding original experimental vector branch, located on the calibrated image; chronological assignment.",
+            "reading_bound_mm": 0.4
+          },
+          "damping": null
+        },
+        {
+          "step": 7,
+          "load_kN": {
+            "value": 1.09,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 5.54,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 22.9,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": {
+            "value": 11.275510204081632,
+            "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+            "inferred": true,
+            "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+            "reading_bound_mm": 0.4
+          },
+          "residual_deflection_mm": {
+            "value": 7.6020408163265305,
+            "source": "p. 23, Fig. 11",
+            "inferred": true,
+            "reason": "Zero-load endpoint of corresponding original experimental vector branch, located on the calibrated image; chronological assignment.",
+            "reading_bound_mm": 0.4
+          },
+          "damping": null
+        },
+        {
+          "step": 8,
+          "load_kN": {
+            "value": 1.26,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 5.46,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 22.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": {
+            "value": 13.903061224489797,
+            "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+            "inferred": true,
+            "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+            "reading_bound_mm": 0.4
+          },
+          "residual_deflection_mm": {
+            "value": 9.056122448979592,
+            "source": "p. 23, Fig. 11",
+            "inferred": true,
+            "reason": "Zero-load endpoint of corresponding original experimental vector branch, located on the calibrated image; chronological assignment.",
+            "reading_bound_mm": 0.4
+          },
+          "damping": null
+        },
+        {
+          "step": 9,
+          "load_kN": {
+            "value": 1.41,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 5.4,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 22.4,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": {
+            "value": 15.790816326530612,
+            "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+            "inferred": true,
+            "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+            "reading_bound_mm": 0.4
+          },
+          "residual_deflection_mm": {
+            "value": 10.459183673469388,
+            "source": "p. 23, Fig. 11",
+            "inferred": true,
+            "reason": "Zero-load endpoint of corresponding original experimental vector branch, located on the calibrated image; chronological assignment.",
+            "reading_bound_mm": 0.4
+          },
+          "damping": null
+        },
+        {
+          "step": 10,
+          "load_kN": {
+            "value": 1.64,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 5.3,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 22.2,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": {
+            "value": 19.821428571428573,
+            "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+            "inferred": true,
+            "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+            "reading_bound_mm": 0.4
+          },
+          "residual_deflection_mm": {
+            "value": 12.908163265306122,
+            "source": "p. 23, Fig. 11",
+            "inferred": true,
+            "reason": "Zero-load endpoint of corresponding original experimental vector branch, located on the calibrated image; chronological assignment.",
+            "reading_bound_mm": 0.4
+          },
+          "damping": null
+        },
+        {
+          "step": 11,
+          "load_kN": {
+            "value": 2.2,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 5.05,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 20.9,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.005,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": {
+            "value": 31.301020408163264,
+            "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+            "inferred": true,
+            "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+            "reading_bound_mm": 0.4
+          },
+          "residual_deflection_mm": {
+            "value": 19.336734693877553,
+            "source": "p. 23, Fig. 11",
+            "inferred": true,
+            "reason": "Zero-load endpoint of corresponding original experimental vector branch, located on the calibrated image; chronological assignment.",
+            "reading_bound_mm": 0.4
+          },
+          "damping": null
+        }
+      ]
+    },
+    {
+      "beam": 4,
+      "geometry": {
+        "length_m": {
+          "value": 4.7,
+          "source": "p. 17, Table 2"
+        },
+        "span_m": {
+          "value": 3.3,
+          "source": "p. 17, Table 2"
+        },
+        "span_depth_ratio": {
+          "value": 27.5,
+          "source": "p. 17, Table 2"
+        },
+        "width_mm": {
+          "value": 300,
+          "source": "p. 17, Table 2"
+        },
+        "height_mm": {
+          "value": 120,
+          "source": "p. 17, Table 2"
+        },
+        "supports": {
+          "value": "Simply supported, one fixed bearing and one low-friction bearing",
+          "source": "p. 17, section 2.2"
+        },
+        "load_arrangement": {
+          "value": "Symmetric three-point bending, point load at midspan",
+          "source": "p. 17, section 2.2"
+        },
+        "overhang_each_m": {
+          "value": 0.7000000000000002,
+          "source": "p. 17, Table 2",
+          "inferred": true,
+          "reason": "Symmetric supports assumed from stated symmetric test and Fig. 3; not independently dimensioned."
+        }
+      },
+      "reinforcement": {
+        "bottom_bars": {
+          "value": "3 bars, diameter 10 mm",
+          "source": "p. 17, Table 2"
+        },
+        "area_mm2": {
+          "value": 235.6,
+          "source": "p. 17, Table 2"
+        },
+        "cover_mm": {
+          "value": 25,
+          "source": "p. 17, Table 2"
+        },
+        "effective_depth_mm": {
+          "value": 90,
+          "source": "p. 17, Table 2",
+          "inferred": true,
+          "reason": "120 - 25 - 10/2; assumes cover denotes clear cover to main bars. Appendix B uses bar centre 20 mm above soffit, inconsistent with Table 2, so this is not adopted for blind modelling."
+        },
+        "top_bars": null,
+        "bar_depth_discrepancy": "Table 2 implies 30 mm bar centre above soffit; Appendix B node y=-40 in 120 mm deep section implies 20 mm."
+      },
+      "steel": {
+        "yield_strength_MPa": {
+          "value": 555,
+          "source": "p. 17, section 2.2"
+        },
+        "ultimate_strength_MPa": {
+          "value": 615,
+          "source": "p. 17, section 2.2"
+        },
+        "measured_elastic_modulus_MPa": null,
+        "measured_ultimate_strain": null
+      },
+      "concrete": {
+        "characteristic_cube_strength_32d_MPa": {
+          "value": 48,
+          "source": "p. 16, section 2.1",
+          "approximate": true
+        },
+        "characteristic_cylinder_strength_32d_MPa": {
+          "value": 43,
+          "source": "p. 16, section 2.1",
+          "approximate": true
+        },
+        "cylinder_32d_MPa": {
+          "value": 42.9,
+          "source": "p. 17, Fig. 1 printed label"
+        },
+        "cylinder_105d_MPa": {
+          "value": 51,
+          "source": "p. 17, Fig. 1 printed label"
+        },
+        "static_modulus_32d_GPa": {
+          "value": 30.5,
+          "source": "pp. 16-17, section 2.1; Fig. 2 printed label",
+          "approximate": true
+        },
+        "dynamic_modulus_after60d_GPa": {
+          "value": 40.1,
+          "source": "p. 17, section 2.1",
+          "approximate": true
+        },
+        "density_28d_kg_m3": {
+          "value": 2286,
+          "source": "p. 17, section 2.1",
+          "approximate": true
+        },
+        "density_range_kg_m3": {
+          "value": [
+            2250,
+            2300
+          ],
+          "source": "p. 16, section 2.1"
+        },
+        "ultrasonic_velocity_km_s": {
+          "value": 4.4,
+          "source": "p. 17, section 2.1",
+          "approximate": true
+        },
+        "poisson_ratio": {
+          "value": 0.2,
+          "source": "p. 16, section 2.1",
+          "adopted_by_authors": true
+        },
+        "independently_measured_tensile_strength_MPa": null,
+        "beam_specific_age_and_density": null,
+        "authors_model_inputs_not_measurements": {
+          "compressive_strength_MPa": {
+            "value": 53,
+            "source": "p. 19, section 3.1"
+          },
+          "tensile_strength_best_fit_MPa": {
+            "value": 2.5,
+            "source": "p. 21, Table 4",
+            "tuned_by_paper_authors": true
+          },
+          "modulus_best_fit_GPa": {
+            "value": 29,
+            "source": "p. 21, Table 4",
+            "tuned_by_paper_authors": true
+          }
+        }
+      },
+      "paper_predictions": {
+        "unloaded_FE_frequency_Hz": {
+          "value": 18,
+          "source": "p. 17, Table 2",
+          "model_output": true
+        },
+        "unloaded_segmental_frequency_Hz": {
+          "value": 17.1,
+          "source": "p. 17, Table 2",
+          "model_output": true
+        }
+      },
+      "yield_moment_kNm": {
+        "value": 3,
+        "source": "p. 17, section 2.2",
+        "approximate": true
+      },
+      "yield_load_kN": {
+        "value": 3.6363636363636367,
+        "source": "p. 17, section 2.2",
+        "inferred": true,
+        "reason": "Paper formula Py = 4 My / span with My approximately 3.00 kNm; used only for supplemental comparison."
+      },
+      "measured_cracking_load_kN": null,
+      "steps": [
+        {
+          "step": 0,
+          "load_kN": {
+            "value": 0,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 16.9,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 56.8,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 1,
+          "load_kN": {
+            "value": 0.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 16.8,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 56.7,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 2,
+          "load_kN": {
+            "value": 1.2,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 16.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 56.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 3,
+          "load_kN": {
+            "value": 1.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 16.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 56.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 4,
+          "load_kN": {
+            "value": 1.95,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 16.1,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 56.3,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 5,
+          "load_kN": {
+            "value": 2.45,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 15.9,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 56.3,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 6,
+          "load_kN": {
+            "value": 3,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 15.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 56.2,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 7,
+          "load_kN": {
+            "value": 3.45,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 15.1,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 55.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 8,
+          "load_kN": {
+            "value": 4,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 14.2,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 55.4,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 9,
+          "load_kN": {
+            "value": 4.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 13.8,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 53.9,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 10,
+          "load_kN": {
+            "value": 4.9,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 13.3,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 53.1,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 11,
+          "load_kN": {
+            "value": 5.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 13.3,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 53.1,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 12,
+          "load_kN": {
+            "value": 6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 13.2,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 52.8,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 13,
+          "load_kN": {
+            "value": 7,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 13.2,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 52.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        }
+      ]
+    },
+    {
+      "beam": 5,
+      "geometry": {
+        "length_m": {
+          "value": 5.6,
+          "source": "p. 17, Table 2"
+        },
+        "span_m": {
+          "value": 3.8,
+          "source": "p. 17, Table 2"
+        },
+        "span_depth_ratio": {
+          "value": 31.7,
+          "source": "p. 17, Table 2"
+        },
+        "width_mm": {
+          "value": 300,
+          "source": "p. 17, Table 2"
+        },
+        "height_mm": {
+          "value": 120,
+          "source": "p. 17, Table 2"
+        },
+        "supports": {
+          "value": "Simply supported, one fixed bearing and one low-friction bearing",
+          "source": "p. 17, section 2.2"
+        },
+        "load_arrangement": {
+          "value": "Symmetric three-point bending, point load at midspan",
+          "source": "p. 17, section 2.2"
+        },
+        "overhang_each_m": {
+          "value": 0.8999999999999999,
+          "source": "p. 17, Table 2",
+          "inferred": true,
+          "reason": "Symmetric supports assumed from stated symmetric test and Fig. 3; not independently dimensioned."
+        }
+      },
+      "reinforcement": {
+        "bottom_bars": {
+          "value": "3 bars, diameter 10 mm",
+          "source": "p. 17, Table 2"
+        },
+        "area_mm2": {
+          "value": 235.6,
+          "source": "p. 17, Table 2"
+        },
+        "cover_mm": {
+          "value": 25,
+          "source": "p. 17, Table 2"
+        },
+        "effective_depth_mm": {
+          "value": 90,
+          "source": "p. 17, Table 2",
+          "inferred": true,
+          "reason": "120 - 25 - 10/2; assumes cover denotes clear cover to main bars. Appendix B uses bar centre 20 mm above soffit, inconsistent with Table 2, so this is not adopted for blind modelling."
+        },
+        "top_bars": null,
+        "bar_depth_discrepancy": "Table 2 implies 30 mm bar centre above soffit; Appendix B node y=-40 in 120 mm deep section implies 20 mm."
+      },
+      "steel": {
+        "yield_strength_MPa": {
+          "value": 555,
+          "source": "p. 17, section 2.2"
+        },
+        "ultimate_strength_MPa": {
+          "value": 615,
+          "source": "p. 17, section 2.2"
+        },
+        "measured_elastic_modulus_MPa": null,
+        "measured_ultimate_strain": null
+      },
+      "concrete": {
+        "characteristic_cube_strength_32d_MPa": {
+          "value": 48,
+          "source": "p. 16, section 2.1",
+          "approximate": true
+        },
+        "characteristic_cylinder_strength_32d_MPa": {
+          "value": 43,
+          "source": "p. 16, section 2.1",
+          "approximate": true
+        },
+        "cylinder_32d_MPa": {
+          "value": 42.9,
+          "source": "p. 17, Fig. 1 printed label"
+        },
+        "cylinder_105d_MPa": {
+          "value": 51,
+          "source": "p. 17, Fig. 1 printed label"
+        },
+        "static_modulus_32d_GPa": {
+          "value": 30.5,
+          "source": "pp. 16-17, section 2.1; Fig. 2 printed label",
+          "approximate": true
+        },
+        "dynamic_modulus_after60d_GPa": {
+          "value": 40.1,
+          "source": "p. 17, section 2.1",
+          "approximate": true
+        },
+        "density_28d_kg_m3": {
+          "value": 2286,
+          "source": "p. 17, section 2.1",
+          "approximate": true
+        },
+        "density_range_kg_m3": {
+          "value": [
+            2250,
+            2300
+          ],
+          "source": "p. 16, section 2.1"
+        },
+        "ultrasonic_velocity_km_s": {
+          "value": 4.4,
+          "source": "p. 17, section 2.1",
+          "approximate": true
+        },
+        "poisson_ratio": {
+          "value": 0.2,
+          "source": "p. 16, section 2.1",
+          "adopted_by_authors": true
+        },
+        "independently_measured_tensile_strength_MPa": null,
+        "beam_specific_age_and_density": null,
+        "authors_model_inputs_not_measurements": {
+          "compressive_strength_MPa": {
+            "value": 53,
+            "source": "p. 19, section 3.1"
+          },
+          "tensile_strength_best_fit_MPa": {
+            "value": 2.5,
+            "source": "p. 21, Table 4",
+            "tuned_by_paper_authors": true
+          },
+          "modulus_best_fit_GPa": {
+            "value": 29,
+            "source": "p. 21, Table 4",
+            "tuned_by_paper_authors": true
+          }
+        }
+      },
+      "paper_predictions": {
+        "unloaded_FE_frequency_Hz": {
+          "value": 12.5,
+          "source": "p. 17, Table 2",
+          "model_output": true
+        },
+        "unloaded_segmental_frequency_Hz": {
+          "value": 13.1,
+          "source": "p. 17, Table 2",
+          "model_output": true
+        }
+      },
+      "yield_moment_kNm": {
+        "value": 3,
+        "source": "p. 17, section 2.2",
+        "approximate": true
+      },
+      "yield_load_kN": {
+        "value": 3.1578947368421053,
+        "source": "p. 17, section 2.2",
+        "inferred": true,
+        "reason": "Paper formula Py = 4 My / span with My approximately 3.00 kNm; used only for supplemental comparison."
+      },
+      "measured_cracking_load_kN": null,
+      "steps": [
+        {
+          "step": 0,
+          "load_kN": {
+            "value": 0,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 12.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 36.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 1,
+          "load_kN": {
+            "value": 1.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 12.3,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 36,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 2,
+          "load_kN": {
+            "value": 1.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 12.2,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 35.9,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 3,
+          "load_kN": {
+            "value": 1.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 12.1,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 35.9,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": {
+            "value": 10,
+            "source": "p. 19, Table 3 footnotes"
+          },
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 4,
+          "load_kN": {
+            "value": 1.6,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 11.9,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 35.8,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": {
+            "value": 100,
+            "source": "p. 19, Table 3 footnotes"
+          },
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 5,
+          "load_kN": {
+            "value": 3,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 11.3,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 34.9,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        },
+        {
+          "step": 6,
+          "load_kN": {
+            "value": 4.5,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode1_Hz": {
+            "value": 10.4,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_mode2_Hz": {
+            "value": 34.1,
+            "source": "p. 19, Table 3"
+          },
+          "frequency_rounding_half_unit_Hz": 0.05,
+          "repeated_cycle_count": null,
+          "peak_deflection_mm": null,
+          "residual_deflection_mm": null,
+          "damping": null
+        }
+      ]
+    }
+  ],
+  "missing": [
+    "Static peak and residual deflections for Beams 1, 2, 4 and 5 are not published in this PDF.",
+    "Raw Beam 3 load-deflection records are needed to check vector-assisted graph readings and quantify measurement uncertainty.",
+    "Measured cracking loads and pre-test static baseline stiffness are absent for all five beams.",
+    "Beam-specific test ages, density, damping and quantitative vibration amplitude are absent.",
+    "Independent concrete tensile tests, measured steel elastic modulus and ultimate strain are absent; Table 2 and Appendix B disagree on bar depth.",
+    "Beam 3 may have pre-existing damage (p. 21); its undamaged static reference cannot be reconstructed from the published measurements."
+  ],
+  "table_visual_checks": {
+    "Table 2": "Every used value checked on pages/page-03.png",
+    "Table 3": "Every used cell and both footnotes checked on pages/page-05.png",
+    "Table 4": "Best-fit values are model parameters, excluded from blind predictions"
+  },
+  "counts": {
+    "beams": 5,
+    "loaded_frequency_steps": 51,
+    "frequency_states_including_initial": 56
+  }
+}

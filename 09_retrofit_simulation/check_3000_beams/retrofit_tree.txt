@@ -1,0 +1,22 @@
+|--- Moment demand / capacity <= 1.00
+|   |--- Crack width / code limit <= 1.00
+|   |   |--- Deflection / span/250 limit <= 0.96
+|   |   |   |--- class: Monitor
+|   |   |--- Deflection / span/250 limit >  0.96
+|   |   |   |--- class: Polymer laminate
+|   |--- Crack width / code limit >  1.00
+|   |   |--- Deflection / span/250 limit <= 0.99
+|   |   |   |--- class: Seal cracks
+|   |   |--- Deflection / span/250 limit >  0.99
+|   |   |   |--- class: Polymer laminate
+|--- Moment demand / capacity >  1.00
+|   |--- Moment demand / capacity <= 1.29
+|   |   |--- Stiffness left (twin, lower bound) <= 0.30
+|   |   |   |--- class: Steel plate or jacket
+|   |   |--- Stiffness left (twin, lower bound) >  0.30
+|   |   |   |--- class: Polymer laminate
+|   |--- Moment demand / capacity >  1.29
+|   |   |--- Span / effective depth <= 13.01
+|   |   |   |--- class: Steel plate or jacket
+|   |   |--- Span / effective depth >  13.01
+|   |   |   |--- class: Polymer laminate

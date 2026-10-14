@@ -1,0 +1,132 @@
+{
+  "job": "B1",
+  "paper_year": 2024,
+  "doi": "10.3390/app14219920",
+  "status": "COMPLETED_WITH_SCIENTIFIC_LIMITATIONS",
+  "number_of_beams": 4,
+  "matched_beam_steps": 11,
+  "capacity_status": "CONDITIONAL_FIBER_EQUIVALENT_INPUTS_NO_COUPONS",
+  "prestrengthened_ultimate": [
+    {
+      "beam": "GFRP_PreStr",
+      "predicted_kN": 50.567777619628295,
+      "test_kN": 51.94,
+      "predicted_to_test": 0.9735806241745918
+    },
+    {
+      "beam": "CFRP_PreStr",
+      "predicted_kN": 64.04885016683507,
+      "test_kN": 66.24,
+      "predicted_to_test": 0.9669210472046358
+    }
+  ],
+  "prestrengthened_yield": [
+    {
+      "beam": "GFRP_PreStr",
+      "predicted_kN": 40.126261436268145,
+      "test_kN": 49.18,
+      "predicted_to_test": 0.8159060885780428
+    },
+    {
+      "beam": "CFRP_PreStr",
+      "predicted_kN": 48.75554995058725,
+      "test_kN": 58.12,
+      "predicted_to_test": 0.8388773219302693
+    }
+  ],
+  "poststrengthened_initial_strain_cases": [
+    {
+      "beam": "GFRP_PostStr",
+      "case": "ignore_initial_strain",
+      "predicted_kN": 50.60093010011903,
+      "predicted_to_test": 1.0102002415675588
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "case": "residual_global_curvature_proxy",
+      "predicted_kN": 48.48930231524177,
+      "predicted_to_test": 0.9680435678826467
+    },
+    {
+      "beam": "CFRP_PostStr",
+      "case": "ignore_initial_strain",
+      "predicted_kN": 64.04471015553636,
+      "predicted_to_test": 1.0130450831309137
+    },
+    {
+      "beam": "CFRP_PostStr",
+      "case": "residual_global_curvature_proxy",
+      "predicted_kN": 64.19200005842205,
+      "predicted_to_test": 1.0153748822907633
+    }
+  ],
+  "kappa": 0.34777180668487423,
+  "kappa_95_interval": [
+    0.30629169318828975,
+    0.48367712956037406
+  ],
+  "kappa_mode2": 0.18996633084419542,
+  "kappa_definition": "Frequency-squared loss versus large-displacement envelope secant loss; baseline is first-crack secant.",
+  "kappa_bootstrap_unit": "beam",
+  "kappa_directly_poolable_with_service_stiffness": false,
+  "H1_status": "PARTIAL_SAME_DISPLACEMENT_ONLY",
+  "H1_dynamic_spread_percentage_points": 9.81749999999999,
+  "H2_vibration_larger": 10,
+  "H2_counterexamples": [
+    {
+      "beam": "CFRP_PreStr",
+      "stage": "D1",
+      "static_left": 0.6277417566301532,
+      "vibration_left": 0.6146560000000001
+    }
+  ],
+  "twin_predictions": 5,
+  "twin_median_error_bias_pct": 24.364949971427308,
+  "twin_median_error_hold_pct": 26.49041873669269,
+  "twin_median_error_vibration_pct": 66.93336253680206,
+  "twin_scope": "Consecutive envelope-secant proxy, not service-deflection validation.",
+  "retrofit_vertical_mode1_change_pct": {
+    "GFRP_PostStr": -9.008097165991902,
+    "CFRP_PostStr": 1.1739594450373314
+  },
+  "retrofit_static_check_required": true,
+  "source_discrepancies": [
+    {
+      "beam": "GFRP_PreStr",
+      "figure_endpoint_load_kN": 52.69464105156724,
+      "table_ultimate_load_kN": 51.94,
+      "difference_kN": 0.7546410515672406,
+      "status": "SOURCE_DISCREPANCY_RETAINED",
+      "reason": "Later figure plateau exceeds tabulated ultimate. No rescaling applied."
+    },
+    {
+      "beam": "CFRP_PreStr",
+      "figure_endpoint_load_kN": 64.01921132457028,
+      "table_ultimate_load_kN": 66.24,
+      "difference_kN": 2.2207886754297164,
+      "status": "SOURCE_DISCREPANCY_RETAINED",
+      "reason": "Figure 4 near D1 reads below Table 4 peak; capacity comparison uses table, secant analysis uses figure. This discrepancy is larger than the pure pixel reading bound."
+    }
+  ],
+  "human_needed_items": [
+    "Concrete elastic modulus and density not printed",
+    "Mean cube strength not printed",
+    "Cured composite axial coupon properties and longitudinal fiber alignment not printed",
+    "Top bar depth and top clear cover not explicitly dimensioned",
+    "Post-strengthening yield not separately reported",
+    "No static measurement immediately after strengthening at D1 without further loading",
+    "Residual strain field and plastic-hinge length not reported"
+  ],
+  "report_numeric_sources": [
+    "ozturkoglu_extract.json",
+    "frp_results.json",
+    "h1_h2_results.json",
+    "retrofit_signal_results.json",
+    "digitised_static.json"
+  ],
+  "figures": [
+    "01_capacity_predicted_vs_test.png",
+    "02_static_vs_vibration.png",
+    "03_retrofit_vertical_signal.png"
+  ]
+}

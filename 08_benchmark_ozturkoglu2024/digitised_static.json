@@ -1,0 +1,715 @@
+{
+  "method": "Pixel line-center readings; axes calibrated from outer axes and checked against gridlines; no smoothing or fitting to table loads.",
+  "reading_uncertainty": {
+    "load_kN": 1.0,
+    "displacement_mm": 0.5,
+    "residual_displacement_mm": 1.0,
+    "interpretation": "Conservative reading bounds, not statistical confidence intervals. Raster line resolution is finer; figure/table differences are retained."
+  },
+  "rows": [
+    {
+      "beam": "GFRP_PreStr",
+      "stage": "D1",
+      "condition": "strengthened",
+      "displacement_mm": 30,
+      "pixel_read_displacement_mm": 29.62572482867686,
+      "load_kN": 51.98685540950455,
+      "pixel_x": 2116,
+      "pixel_y": 1011.5,
+      "source": "p. 9, Figure 4",
+      "reading_uncertainty_load_kN": 1.0,
+      "reading_uncertainty_displacement_mm": 0.5,
+      "candidate_loads_kN": [
+        51.98685540950455,
+        46.32457027300303
+      ],
+      "branch_rule": "Bare plateau isolated in an explicit load band near D1 for post beams; upper loading envelope otherwise. Read slightly left of target within stated displacement bound; carbon bare D1 is extrapolated over a nearly flat 1 mm segment."
+    },
+    {
+      "beam": "GFRP_PreStr",
+      "stage": "D2",
+      "condition": "strengthened",
+      "displacement_mm": 45,
+      "pixel_read_displacement_mm": 44.596731681602535,
+      "load_kN": 52.69464105156724,
+      "pixel_x": 2400,
+      "pixel_y": 1001.5,
+      "source": "p. 9, Figure 4",
+      "reading_uncertainty_load_kN": 1.0,
+      "reading_uncertainty_displacement_mm": 0.5,
+      "candidate_loads_kN": [
+        52.69464105156724
+      ],
+      "branch_rule": "Bare plateau isolated in an explicit load band near D1 for post beams; upper loading envelope otherwise. Read slightly left of target within stated displacement bound; carbon bare D1 is extrapolated over a nearly flat 1 mm segment."
+    },
+    {
+      "beam": "GFRP_PreStr",
+      "stage": "D3",
+      "condition": "strengthened",
+      "displacement_mm": 60,
+      "pixel_read_displacement_mm": 59.62045334739062,
+      "load_kN": 48.80182002022245,
+      "pixel_x": 2685,
+      "pixel_y": 1056.5,
+      "source": "p. 9, Figure 4",
+      "reading_uncertainty_load_kN": 1.0,
+      "reading_uncertainty_displacement_mm": 0.5,
+      "candidate_loads_kN": [
+        48.80182002022245,
+        46.46612740141557,
+        44.02426693629929
+      ],
+      "branch_rule": "Bare plateau isolated in an explicit load band near D1 for post beams; upper loading envelope otherwise. Read slightly left of target within stated displacement bound; carbon bare D1 is extrapolated over a nearly flat 1 mm segment."
+    },
+    {
+      "beam": "GFRP_PreStr",
+      "stage": "D4",
+      "condition": "strengthened",
+      "displacement_mm": 75,
+      "pixel_read_displacement_mm": 74.59146020031629,
+      "load_kN": 45.51061678463094,
+      "pixel_x": 2969,
+      "pixel_y": 1103.0,
+      "source": "p. 9, Figure 4",
+      "reading_uncertainty_load_kN": 1.0,
+      "reading_uncertainty_displacement_mm": 0.5,
+      "candidate_loads_kN": [
+        45.51061678463094,
+        44.30738119312437
+      ],
+      "branch_rule": "Bare plateau isolated in an explicit load band near D1 for post beams; upper loading envelope otherwise. Read slightly left of target within stated displacement bound; carbon bare D1 is extrapolated over a nearly flat 1 mm segment."
+    },
+    {
+      "beam": "CFRP_PreStr",
+      "stage": "D1",
+      "condition": "strengthened",
+      "displacement_mm": 30,
+      "pixel_read_displacement_mm": 29.62572482867686,
+      "load_kN": 64.01921132457028,
+      "pixel_x": 2116,
+      "pixel_y": 841.5,
+      "source": "p. 9, Figure 4",
+      "reading_uncertainty_load_kN": 1.0,
+      "reading_uncertainty_displacement_mm": 0.5,
+      "candidate_loads_kN": [
+        64.01921132457028
+      ],
+      "branch_rule": "Bare plateau isolated in an explicit load band near D1 for post beams; upper loading envelope otherwise. Read slightly left of target within stated displacement bound; carbon bare D1 is extrapolated over a nearly flat 1 mm segment."
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "stage": "D1",
+      "condition": "bare",
+      "displacement_mm": 30,
+      "pixel_read_displacement_mm": 29.615991583377166,
+      "load_kN": 42.56565656565657,
+      "pixel_x": 2135,
+      "pixel_y": 2198.0,
+      "source": "p. 10, Figure 7",
+      "reading_uncertainty_load_kN": 1.0,
+      "reading_uncertainty_displacement_mm": 0.5,
+      "candidate_loads_kN": [
+        42.56565656565657
+      ],
+      "branch_rule": "Bare plateau isolated in an explicit load band near D1 for post beams; upper loading envelope otherwise. Read slightly left of target within stated displacement bound; carbon bare D1 is extrapolated over a nearly flat 1 mm segment."
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "stage": "D2",
+      "condition": "strengthened",
+      "displacement_mm": 45,
+      "pixel_read_displacement_mm": 44.608100999473955,
+      "load_kN": 49.813131313131315,
+      "pixel_x": 2420,
+      "pixel_y": 2095.5,
+      "source": "p. 10, Figure 7",
+      "reading_uncertainty_load_kN": 1.0,
+      "reading_uncertainty_displacement_mm": 0.5,
+      "candidate_loads_kN": [
+        49.813131313131315
+      ],
+      "branch_rule": "Bare plateau isolated in an explicit load band near D1 for post beams; upper loading envelope otherwise. Read slightly left of target within stated displacement bound; carbon bare D1 is extrapolated over a nearly flat 1 mm segment."
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "stage": "D3",
+      "condition": "strengthened",
+      "displacement_mm": 60,
+      "pixel_read_displacement_mm": 59.60021041557075,
+      "load_kN": 48.823232323232325,
+      "pixel_x": 2705,
+      "pixel_y": 2109.5,
+      "source": "p. 10, Figure 7",
+      "reading_uncertainty_load_kN": 1.0,
+      "reading_uncertainty_displacement_mm": 0.5,
+      "candidate_loads_kN": [
+        48.823232323232325,
+        47.23232323232323,
+        45.25252525252525
+      ],
+      "branch_rule": "Bare plateau isolated in an explicit load band near D1 for post beams; upper loading envelope otherwise. Read slightly left of target within stated displacement bound; carbon bare D1 is extrapolated over a nearly flat 1 mm segment."
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "stage": "D4",
+      "condition": "strengthened",
+      "displacement_mm": 75,
+      "pixel_read_displacement_mm": 74.59231983166754,
+      "load_kN": 47.7979797979798,
+      "pixel_x": 2990,
+      "pixel_y": 2124.0,
+      "source": "p. 10, Figure 7",
+      "reading_uncertainty_load_kN": 1.0,
+      "reading_uncertainty_displacement_mm": 0.5,
+      "candidate_loads_kN": [
+        47.7979797979798,
+        44.792929292929294
+      ],
+      "branch_rule": "Bare plateau isolated in an explicit load band near D1 for post beams; upper loading envelope otherwise. Read slightly left of target within stated displacement bound; carbon bare D1 is extrapolated over a nearly flat 1 mm segment."
+    },
+    {
+      "beam": "CFRP_PostStr",
+      "stage": "D1",
+      "condition": "bare",
+      "displacement_mm": 30,
+      "pixel_read_displacement_mm": 28.984744871120462,
+      "load_kN": 44.40404040404041,
+      "pixel_x": 2123,
+      "pixel_y": 2172.0,
+      "source": "p. 10, Figure 7",
+      "reading_uncertainty_load_kN": 1.0,
+      "reading_uncertainty_displacement_mm": 1.0,
+      "candidate_loads_kN": [
+        44.40404040404041
+      ],
+      "branch_rule": "Bare plateau isolated in an explicit load band near D1 for post beams; upper loading envelope otherwise. Read slightly left of target within stated displacement bound; carbon bare D1 is extrapolated over a nearly flat 1 mm segment."
+    },
+    {
+      "beam": "CFRP_PostStr",
+      "stage": "D2",
+      "condition": "strengthened",
+      "displacement_mm": 45,
+      "pixel_read_displacement_mm": 44.608100999473955,
+      "load_kN": 63.21212121212121,
+      "pixel_x": 2420,
+      "pixel_y": 1906.0,
+      "source": "p. 10, Figure 7",
+      "reading_uncertainty_load_kN": 1.0,
+      "reading_uncertainty_displacement_mm": 0.5,
+      "candidate_loads_kN": [
+        63.21212121212121
+      ],
+      "branch_rule": "Bare plateau isolated in an explicit load band near D1 for post beams; upper loading envelope otherwise. Read slightly left of target within stated displacement bound; carbon bare D1 is extrapolated over a nearly flat 1 mm segment."
+    }
+  ],
+  "reload_rows": [
+    {
+      "beam": "GFRP_PreStr",
+      "stage": "D1",
+      "source": "p. 9, Figure 4",
+      "readings": [
+        {
+          "load_kN": 10,
+          "reload_mm": 18.79283078545071,
+          "unload_mm": 29.362150764364788,
+          "pixel_x_reload": 1910.5,
+          "pixel_x_unload": 2111.0,
+          "pixel_y": 1605,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 20,
+          "reload_mm": 21.191354770690566,
+          "unload_mm": 22.272008434370058,
+          "pixel_x_reload": 1956.0,
+          "pixel_x_unload": 1976.5,
+          "pixel_y": 1463,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 30,
+          "reload_mm": 24.538745387453876,
+          "unload_mm": 25.171323141802848,
+          "pixel_x_reload": 2019.5,
+          "pixel_x_unload": 2031.5,
+          "pixel_y": 1322,
+          "number_of_branches": 2
+        }
+      ],
+      "status": "not_used_branch_association_ambiguous",
+      "reason": "Overlapping cyclic branches and repaired paths are not time labelled; envelope secants only used for H2."
+    },
+    {
+      "beam": "GFRP_PreStr",
+      "stage": "D2",
+      "source": "p. 9, Figure 4",
+      "readings": [
+        {
+          "load_kN": 10,
+          "reload_mm": 31.813389562467055,
+          "unload_mm": 44.069583552978386,
+          "pixel_x_reload": 2157.5,
+          "pixel_x_unload": 2390.0,
+          "pixel_y": 1605,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 20,
+          "reload_mm": 33.34211913547707,
+          "unload_mm": 35.84607274644175,
+          "pixel_x_reload": 2186.5,
+          "pixel_x_unload": 2234.0,
+          "pixel_y": 1463,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 30,
+          "reload_mm": 37.190300474433315,
+          "unload_mm": 38.98260411175541,
+          "pixel_x_reload": 2259.5,
+          "pixel_x_unload": 2293.5,
+          "pixel_y": 1322,
+          "number_of_branches": 2
+        }
+      ],
+      "status": "not_used_branch_association_ambiguous",
+      "reason": "Overlapping cyclic branches and repaired paths are not time labelled; envelope secants only used for H2."
+    },
+    {
+      "beam": "GFRP_PreStr",
+      "stage": "D3",
+      "source": "p. 9, Figure 4",
+      "readings": [
+        {
+          "load_kN": 10,
+          "reload_mm": 56.74749604638904,
+          "unload_mm": 60.701107011070114,
+          "pixel_x_reload": 2630.5,
+          "pixel_x_unload": 2705.5,
+          "pixel_y": 1605,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 20,
+          "reload_mm": 48.39219820769637,
+          "unload_mm": 51.05429625724829,
+          "pixel_x_reload": 2472.0,
+          "pixel_x_unload": 2522.5,
+          "pixel_y": 1463,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 30,
+          "reload_mm": 52.293094359515024,
+          "unload_mm": 54.69161834475488,
+          "pixel_x_reload": 2546.0,
+          "pixel_x_unload": 2591.5,
+          "pixel_y": 1322,
+          "number_of_branches": 2
+        }
+      ],
+      "status": "not_used_branch_association_ambiguous",
+      "reason": "Overlapping cyclic branches and repaired paths are not time labelled; envelope secants only used for H2."
+    },
+    {
+      "beam": "GFRP_PreStr",
+      "stage": "D4",
+      "source": "p. 9, Figure 4",
+      "readings": [
+        {
+          "load_kN": 10,
+          "reload_mm": 60.701107011070114,
+          "unload_mm": 65.49815498154982,
+          "pixel_x_reload": 2705.5,
+          "pixel_x_unload": 2796.5,
+          "pixel_y": 1605,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 20,
+          "reload_mm": 61.43911439114392,
+          "unload_mm": 65.7880864522931,
+          "pixel_x_reload": 2719.5,
+          "pixel_x_unload": 2802.0,
+          "pixel_y": 1463,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 30,
+          "reload_mm": 66.15709014233,
+          "unload_mm": 69.8207696362678,
+          "pixel_x_reload": 2809.0,
+          "pixel_x_unload": 2878.5,
+          "pixel_y": 1322,
+          "number_of_branches": 2
+        }
+      ],
+      "status": "not_used_branch_association_ambiguous",
+      "reason": "Overlapping cyclic branches and repaired paths are not time labelled; envelope secants only used for H2."
+    },
+    {
+      "beam": "CFRP_PreStr",
+      "stage": "D1",
+      "source": "p. 9, Figure 4",
+      "readings": [
+        {
+          "load_kN": 10,
+          "reload_mm": 12.38798102266737,
+          "unload_mm": 15.076436478650502,
+          "pixel_x_reload": 1789.0,
+          "pixel_x_unload": 1840.0,
+          "pixel_y": 1605,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 20,
+          "reload_mm": 15.840801265155509,
+          "unload_mm": 18.608328940432262,
+          "pixel_x_reload": 1854.5,
+          "pixel_x_unload": 1907.0,
+          "pixel_y": 1463,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 30,
+          "reload_mm": 19.504480759093305,
+          "unload_mm": 21.665788086452295,
+          "pixel_x_reload": 1924.0,
+          "pixel_x_unload": 1965.0,
+          "pixel_y": 1322,
+          "number_of_branches": 2
+        }
+      ],
+      "status": "not_used_branch_association_ambiguous",
+      "reason": "Overlapping cyclic branches and repaired paths are not time labelled; envelope secants only used for H2."
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "stage": "D1",
+      "source": "p. 10, Figure 7",
+      "readings": [
+        {
+          "load_kN": 10,
+          "reload_mm": 20.725933719095213,
+          "unload_mm": 30.668069437138346,
+          "pixel_x_reload": 1966.0,
+          "pixel_x_unload": 2155.0,
+          "pixel_y": 2659,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 20,
+          "reload_mm": 20.83114150447133,
+          "unload_mm": 24.329300368227248,
+          "pixel_x_reload": 1968.0,
+          "pixel_x_unload": 2034.5,
+          "pixel_y": 2517,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 30,
+          "reload_mm": 24.17148869016307,
+          "unload_mm": 27.43293003682272,
+          "pixel_x_reload": 2031.5,
+          "pixel_x_unload": 2093.5,
+          "pixel_y": 2376,
+          "number_of_branches": 2
+        }
+      ],
+      "status": "not_used_branch_association_ambiguous",
+      "reason": "Overlapping cyclic branches and repaired paths are not time labelled; envelope secants only used for H2."
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "stage": "D2",
+      "source": "p. 10, Figure 7",
+      "readings": [
+        {
+          "load_kN": 10,
+          "reload_mm": 32.71962125197264,
+          "unload_mm": 42.97738032614413,
+          "pixel_x_reload": 2194.0,
+          "pixel_x_unload": 2389.0,
+          "pixel_y": 2659,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 20,
+          "reload_mm": 34.71856917411888,
+          "unload_mm": 36.79642293529721,
+          "pixel_x_reload": 2232.0,
+          "pixel_x_unload": 2271.5,
+          "pixel_y": 2517,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 30,
+          "reload_mm": 38.479747501315096,
+          "unload_mm": 40.13677012098895,
+          "pixel_x_reload": 2303.5,
+          "pixel_x_unload": 2335.0,
+          "pixel_y": 2376,
+          "number_of_branches": 2
+        }
+      ],
+      "status": "not_used_branch_association_ambiguous",
+      "reason": "Overlapping cyclic branches and repaired paths are not time labelled; envelope secants only used for H2."
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "stage": "D3",
+      "source": "p. 10, Figure 7",
+      "readings": [
+        {
+          "load_kN": 10,
+          "reload_mm": 46.29142556549184,
+          "unload_mm": 59.23198316675433,
+          "pixel_x_reload": 2452.0,
+          "pixel_x_unload": 2698.0,
+          "pixel_y": 2659,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 20,
+          "reload_mm": 47.31720147290899,
+          "unload_mm": 50.894266175697,
+          "pixel_x_reload": 2471.5,
+          "pixel_x_unload": 2539.5,
+          "pixel_y": 2517,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 30,
+          "reload_mm": 51.55181483429774,
+          "unload_mm": 54.60284061020515,
+          "pixel_x_reload": 2552.0,
+          "pixel_x_unload": 2610.0,
+          "pixel_y": 2376,
+          "number_of_branches": 2
+        }
+      ],
+      "status": "not_used_branch_association_ambiguous",
+      "reason": "Overlapping cyclic branches and repaired paths are not time labelled; envelope secants only used for H2."
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "stage": "D4",
+      "source": "p. 10, Figure 7",
+      "readings": [
+        {
+          "load_kN": 10,
+          "reload_mm": 59.23198316675433,
+          "unload_mm": 61.41504471330878,
+          "pixel_x_reload": 2698.0,
+          "pixel_x_unload": 2739.5,
+          "pixel_y": 2659,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 20,
+          "reload_mm": 63.54550236717517,
+          "unload_mm": 65.86007364544976,
+          "pixel_x_reload": 2780.0,
+          "pixel_x_unload": 2824.0,
+          "pixel_y": 2517,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 30,
+          "reload_mm": 67.64860599684376,
+          "unload_mm": 69.51604418726986,
+          "pixel_x_reload": 2858.0,
+          "pixel_x_unload": 2893.5,
+          "pixel_y": 2376,
+          "number_of_branches": 2
+        }
+      ],
+      "status": "not_used_branch_association_ambiguous",
+      "reason": "Overlapping cyclic branches and repaired paths are not time labelled; envelope secants only used for H2."
+    },
+    {
+      "beam": "CFRP_PostStr",
+      "stage": "D1",
+      "source": "p. 10, Figure 7",
+      "readings": [
+        {
+          "load_kN": 10,
+          "reload_mm": 21.041557075223565,
+          "unload_mm": 30.273540241977905,
+          "pixel_x_reload": 1972.0,
+          "pixel_x_unload": 2147.5,
+          "pixel_y": 2659,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 20,
+          "reload_mm": 19.647553918990003,
+          "unload_mm": 23.934771173066807,
+          "pixel_x_reload": 1945.5,
+          "pixel_x_unload": 2027.0,
+          "pixel_y": 2517,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 30,
+          "reload_mm": 21.962125197264594,
+          "unload_mm": 26.827985270910045,
+          "pixel_x_reload": 1989.5,
+          "pixel_x_unload": 2082.0,
+          "pixel_y": 2376,
+          "number_of_branches": 2
+        }
+      ],
+      "status": "not_used_branch_association_ambiguous",
+      "reason": "Overlapping cyclic branches and repaired paths are not time labelled; envelope secants only used for H2."
+    },
+    {
+      "beam": "CFRP_PostStr",
+      "stage": "D2",
+      "source": "p. 10, Figure 7",
+      "readings": [
+        {
+          "load_kN": 20,
+          "reload_mm": 23.934771173066807,
+          "unload_mm": 33.2193582325092,
+          "pixel_x_reload": 2027.0,
+          "pixel_x_unload": 2203.5,
+          "pixel_y": 2517,
+          "number_of_branches": 2
+        },
+        {
+          "load_kN": 30,
+          "reload_mm": 26.827985270910045,
+          "unload_mm": 36.086270384008415,
+          "pixel_x_reload": 2082.0,
+          "pixel_x_unload": 2258.0,
+          "pixel_y": 2376,
+          "number_of_branches": 2
+        }
+      ],
+      "status": "not_used_branch_association_ambiguous",
+      "reason": "Overlapping cyclic branches and repaired paths are not time labelled; envelope secants only used for H2."
+    }
+  ],
+  "residual_D1": {
+    "GFRP_PostStr": {
+      "value_mm": 13.408327600857845,
+      "reading_uncertainty_mm": 1.0,
+      "source": "p. 10, Figure 7, first bare unloading branch",
+      "inferred": true,
+      "reasoning": "Extrapolated low-force colored branch to zero force; shape is not a residual strain field.",
+      "read_points": [
+        {
+          "load_kN": 0.5,
+          "displacement_mm": 13.624408206207258,
+          "pixel_x": 1831.0,
+          "pixel_y": 2793
+        },
+        {
+          "load_kN": 1,
+          "displacement_mm": 13.808521830615465,
+          "pixel_x": 1834.5,
+          "pixel_y": 2786
+        },
+        {
+          "load_kN": 2,
+          "displacement_mm": 14.229352972119935,
+          "pixel_x": 1842.5,
+          "pixel_y": 2772
+        },
+        {
+          "load_kN": 5,
+          "displacement_mm": 15.46554445028932,
+          "pixel_x": 1866.0,
+          "pixel_y": 2729
+        }
+      ]
+    },
+    "CFRP_PostStr": {
+      "value_mm": 14.748917573746612,
+      "reading_uncertainty_mm": 1.0,
+      "source": "p. 10, Figure 7, first bare unloading branch",
+      "inferred": true,
+      "reasoning": "Extrapolated low-force colored branch to zero force; shape is not a residual strain field.",
+      "read_points": [
+        {
+          "load_kN": 0.5,
+          "displacement_mm": 14.886901630720672,
+          "pixel_x": 1855.0,
+          "pixel_y": 2793
+        },
+        {
+          "load_kN": 1,
+          "displacement_mm": 15.044713308784848,
+          "pixel_x": 1858.0,
+          "pixel_y": 2786
+        },
+        {
+          "load_kN": 2,
+          "displacement_mm": 15.360336664913202,
+          "pixel_x": 1864.0,
+          "pixel_y": 2772
+        },
+        {
+          "load_kN": 5,
+          "displacement_mm": 16.228300894266173,
+          "pixel_x": 1880.5,
+          "pixel_y": 2729
+        }
+      ]
+    }
+  },
+  "axes": {
+    "4": {
+      "source": "p. 9, Figure 4",
+      "x0": 1554,
+      "x100": 3451,
+      "y0": 1746,
+      "y70": 757,
+      "pixels_per_mm": 18.97,
+      "pixels_per_kN": 14.128571428571428,
+      "gridline_check": "Outer frame represents 0 to 100 mm and 0 to 70 kN; ticks visually inspected on overlay."
+    },
+    "7": {
+      "source": "p. 10, Figure 7",
+      "x0": 1572,
+      "x100": 3473,
+      "y0": 2800,
+      "y70": 1810,
+      "pixels_per_mm": 19.01,
+      "pixels_per_kN": 14.142857142857142,
+      "gridline_check": "Outer frame represents 0 to 100 mm and 0 to 70 kN; ticks visually inspected on overlay."
+    }
+  },
+  "exclusions": [],
+  "initial_static_stiffness": {
+    "GFRP_PreStr": {
+      "K0_kN_mm": 3.198125836680054,
+      "source": "p. 11, Table 4, first-crack load / displacement",
+      "definition": "Secant up to first crack, used as baseline proxy; no undamaged static tangent reported.",
+      "P_kN": 23.89,
+      "delta_mm": 7.47
+    },
+    "CFRP_PreStr": {
+      "K0_kN_mm": 3.399445214979196,
+      "source": "p. 11, Table 4, first-crack load / displacement",
+      "definition": "Secant up to first crack, used as baseline proxy; no undamaged static tangent reported.",
+      "P_kN": 24.51,
+      "delta_mm": 7.21
+    },
+    "GFRP_PostStr": {
+      "K0_kN_mm": 3.1488294314381267,
+      "source": "p. 11, Table 4, first-crack load / displacement",
+      "definition": "Secant up to first crack, used as baseline proxy; no undamaged static tangent reported.",
+      "P_kN": 18.83,
+      "delta_mm": 5.98
+    },
+    "CFRP_PostStr": {
+      "K0_kN_mm": 3.1116504854368934,
+      "source": "p. 11, Table 4, first-crack load / displacement",
+      "definition": "Secant up to first crack, used as baseline proxy; no undamaged static tangent reported.",
+      "P_kN": 19.23,
+      "delta_mm": 6.18
+    }
+  }
+}

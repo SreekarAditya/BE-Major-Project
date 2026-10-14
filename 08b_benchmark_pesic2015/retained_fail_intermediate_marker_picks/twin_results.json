@@ -1,0 +1,309 @@
+{
+  "status": "PARTIAL_CONDITIONAL_SEVEN_TRANSITIONS",
+  "n": 7,
+  "rows": [
+    {
+      "beam": 3,
+      "previous_step": 4,
+      "step": 5,
+      "load_kN": 0.82,
+      "bias_log_ratio_previous": -0.08234439177923925,
+      "predicted_static_left": {
+        "bias": 0.9895197229796253,
+        "hold": 1.0,
+        "vibration": 0.9113028740908127
+      },
+      "signed_deflection_error_pct": {
+        "bias": -52.77508335986836,
+        "hold": -53.27001356852104,
+        "vibration": -48.721783108496766
+      },
+      "reading_interval_95_signed_error_pct": {
+        "bias": [
+          -65.34698546378331,
+          -37.448825891007736
+        ],
+        "hold": [
+          -65.7203703637223,
+          -38.08305286380761
+        ],
+        "vibration": [
+          -62.379638458030975,
+          -32.06963577257713
+        ]
+      }
+    },
+    {
+      "beam": 3,
+      "previous_step": 5,
+      "step": 6,
+      "load_kN": 0.95,
+      "bias_log_ratio_previous": 0.6679041459868041,
+      "predicted_static_left": {
+        "bias": 0.46074135104355946,
+        "hold": 0.4672998643147896,
+        "vibration": 0.8985128168914625
+      },
+      "signed_deflection_error_pct": {
+        "bias": -0.8288387077711623,
+        "hold": -2.2206973987898393,
+        "vibration": -49.14679681874839
+      },
+      "reading_interval_95_signed_error_pct": {
+        "bias": [
+          -15.587765772748837,
+          16.552437069627764
+        ],
+        "hold": [
+          -16.78162367896761,
+          14.91990688203905
+        ],
+        "vibration": [
+          -62.354756970614275,
+          -33.135251458361964
+        ]
+      }
+    },
+    {
+      "beam": 3,
+      "previous_step": 6,
+      "step": 7,
+      "load_kN": 1.09,
+      "bias_log_ratio_previous": 0.6762270727291714,
+      "predicted_static_left": {
+        "bias": 0.4408632641078178,
+        "hold": 0.4569225483834026,
+        "vibration": 0.8669331261916532
+      },
+      "signed_deflection_error_pct": {
+        "bias": 4.2517778325922295,
+        "hold": 0.5876799622374529,
+        "vibration": -46.984631598724846
+      },
+      "reading_interval_95_signed_error_pct": {
+        "bias": [
+          -9.243457436971578,
+          19.9275560226358
+        ],
+        "hold": [
+          -12.425971030129666,
+          15.757261524185306
+        ],
+        "vibration": [
+          -60.49689874994166,
+          -30.81130011603226
+        ]
+      }
+    },
+    {
+      "beam": 3,
+      "previous_step": 7,
+      "step": 8,
+      "load_kN": 1.26,
+      "bias_log_ratio_previous": 0.6345883446337166,
+      "predicted_static_left": {
+        "bias": 0.44642975965862697,
+        "hold": 0.45960779064319657,
+        "vibration": 0.8420761245674739
+      },
+      "signed_deflection_error_pct": {
+        "bias": -3.31907308664946,
+        "hold": -6.091141525041365,
+        "vibration": -48.74425042311963
+      },
+      "reading_interval_95_signed_error_pct": {
+        "bias": [
+          -14.079864381359465,
+          8.565521274116527
+        ],
+        "hold": [
+          -16.5453114108495,
+          5.420732305488785
+        ],
+        "vibration": [
+          -61.573844823672225,
+          -33.345023803497995
+        ]
+      }
+    },
+    {
+      "beam": 3,
+      "previous_step": 8,
+      "step": 9,
+      "load_kN": 1.41,
+      "bias_log_ratio_previous": 0.6683423873960912,
+      "predicted_static_left": {
+        "bias": 0.42217856300030554,
+        "hold": 0.4316124296550036,
+        "vibration": 0.8236706447284796
+      },
+      "signed_deflection_error_pct": {
+        "bias": 1.4677496559564185,
+        "hold": -0.7500576967459094,
+        "vibration": -47.99194433504709
+      },
+      "reading_interval_95_signed_error_pct": {
+        "bias": [
+          -7.952527976582227,
+          12.07092623376055
+        ],
+        "hold": [
+          -9.904946418909546,
+          9.613931505467804
+        ],
+        "vibration": [
+          -60.93089152635913,
+          -32.48445011933982
+        ]
+      }
+    },
+    {
+      "beam": 3,
+      "previous_step": 9,
+      "step": 10,
+      "load_kN": 1.64,
+      "bias_log_ratio_previous": 0.6537715627712968,
+      "predicted_static_left": {
+        "bias": 0.4126562484650878,
+        "hold": 0.42837508740626423,
+        "vibration": 0.7934467904808982
+      },
+      "signed_deflection_error_pct": {
+        "bias": -3.8099509805197274,
+        "hold": -7.339558403388191,
+        "vibration": -49.97342576180321
+      },
+      "reading_interval_95_signed_error_pct": {
+        "bias": [
+          -11.665478608490341,
+          4.7629081787269945
+        ],
+        "hold": [
+          -14.860122582004132,
+          0.9242340067634479
+        ],
+        "vibration": [
+          -62.299603108416775,
+          -35.40908329321239
+        ]
+      }
+    },
+    {
+      "beam": 3,
+      "previous_step": 10,
+      "step": 11,
+      "load_kN": 2.2,
+      "bias_log_ratio_previous": 0.6926158369840126,
+      "predicted_static_left": {
+        "bias": 0.36037079570923347,
+        "hold": 0.3969342476805163,
+        "vibration": 0.7203587317279853
+      },
+      "signed_deflection_error_pct": {
+        "bias": -6.432662456536087,
+        "hold": -15.051583278668957,
+        "vibration": -53.19146642111483
+      },
+      "reading_interval_95_signed_error_pct": {
+        "bias": [
+          -12.61528683507703,
+          0.18884319935026886
+        ],
+        "hold": [
+          -20.658822043026117,
+          -9.050114468253403
+        ],
+        "vibration": [
+          -64.6559689165733,
+          -39.609702176746
+        ]
+      }
+    }
+  ],
+  "pooled": {
+    "bias": {
+      "median_abs_pct": 3.8099509805197274,
+      "max_abs_pct": 52.77508335986836,
+      "median_abs_reading_interval_95": [
+        2.268090672979374,
+        11.239841964240771
+      ],
+      "max_abs_reading_interval_95": [
+        37.4488258910077,
+        65.34698546378331
+      ]
+    },
+    "hold": {
+      "median_abs_pct": 6.091141525041365,
+      "max_abs_pct": 53.27001356852104,
+      "median_abs_reading_interval_95": [
+        3.316332760962784,
+        13.805149756787173
+      ],
+      "max_abs_reading_interval_95": [
+        38.08305286380758,
+        65.7203703637223
+      ]
+    },
+    "vibration": {
+      "median_abs_pct": 48.74425042311963,
+      "max_abs_pct": 53.19146642111483,
+      "median_abs_reading_interval_95": [
+        34.40353107677557,
+        61.71048605220555
+      ],
+      "max_abs_reading_interval_95": [
+        39.99272385060315,
+        64.79423472746555
+      ]
+    }
+  },
+  "per_beam": {
+    "3": {
+      "bias": {
+        "median_abs_pct": 3.8099509805197274,
+        "max_abs_pct": 52.77508335986836,
+        "median_abs_reading_interval_95": [
+          2.268090672979374,
+          11.239841964240771
+        ],
+        "max_abs_reading_interval_95": [
+          37.4488258910077,
+          65.34698546378331
+        ]
+      },
+      "hold": {
+        "median_abs_pct": 6.091141525041365,
+        "max_abs_pct": 53.27001356852104,
+        "median_abs_reading_interval_95": [
+          3.316332760962784,
+          13.805149756787173
+        ],
+        "max_abs_reading_interval_95": [
+          38.08305286380758,
+          65.7203703637223
+        ]
+      },
+      "vibration": {
+        "median_abs_pct": 48.74425042311963,
+        "max_abs_pct": 53.19146642111483,
+        "median_abs_reading_interval_95": [
+          34.40353107677557,
+          61.71048605220555
+        ],
+        "max_abs_reading_interval_95": [
+          39.99272385060315,
+          64.79423472746555
+        ]
+      }
+    }
+  },
+  "formula": "b_previous = ln(dynamic_previous/static_previous); static_predicted = dynamic_current exp(-b_previous); deflection error = 100(static_true/static_predicted - 1)",
+  "baselines": {
+    "hold": "Previous measured static secant",
+    "vibration": "Dynamic ratio referenced to initial f0, taken as static ratio; conditional because initial static baseline is missing."
+  },
+  "scope": "Seven consecutive published load-step transitions in one beam, no predictions through unreadable early cycles. Predicts peak total-deflection secant, not elastic reloading stiffness or prospective independent validation.",
+  "uncertainty": "20,000 uniform bounded reading samples, retaining shared baseline and previous/current reuse; intervals are sensitivity intervals, not statistical confidence.",
+  "load_gap": "Variable consecutive load steps. Musial reference uses 5 kN gaps, so errors are not a common-horizon pooled accuracy estimate."
+}

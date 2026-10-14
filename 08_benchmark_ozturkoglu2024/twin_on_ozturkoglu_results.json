@@ -1,0 +1,338 @@
+{
+  "twin": {
+    "gap_1_damage_levels": {
+      "rows": [
+        {
+          "beam": "GFRP_PreStr",
+          "current_stage": "D2",
+          "previous_stage": "D1",
+          "learned_log_bias": 0.5080784770701503,
+          "static_true": 0.3661494522628782,
+          "predicted_static_bias": 0.5026164663235326,
+          "predicted_static_hold": 0.5418470907060122,
+          "predicted_static_vibration": 0.835396,
+          "error_deflection_pct": {
+            "bias_learning": -27.151321774008697,
+            "hold_last_check": -32.4256864079873,
+            "vibration_no_bias": -56.17055237721055
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -45.27439132359985,
+              -3.0405762002793657
+            ],
+            "hold_last_check": [
+              -49.12746844843397,
+              -10.253568083315978
+            ],
+            "vibration_no_bias": [
+              -61.957014713546684,
+              -49.65383928510371
+            ]
+          }
+        },
+        {
+          "beam": "GFRP_PreStr",
+          "current_stage": "D3",
+          "previous_stage": "D2",
+          "learned_log_bias": 0.8248642743566275,
+          "static_true": 0.2543250980543196,
+          "predicted_static_bias": 0.33710499220668433,
+          "predicted_static_hold": 0.3661494522628782,
+          "predicted_static_vibration": 0.769129,
+          "error_deflection_pct": {
+            "bias_learning": -24.556116363180735,
+            "hold_last_check": -30.540631296171917,
+            "vibration_no_bias": -66.93336253680206
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -42.92626017975029,
+              -0.2845743863034378
+            ],
+            "hold_last_check": [
+              -47.336044148972455,
+              -8.399305057626606
+            ],
+            "vibration_no_bias": [
+              -71.26556322409532,
+              -62.06527530545712
+            ]
+          }
+        },
+        {
+          "beam": "GFRP_PreStr",
+          "current_stage": "D4",
+          "previous_stage": "D3",
+          "learned_log_bias": 1.1066453435351815,
+          "static_true": 0.1897386953432081,
+          "predicted_static_bias": 0.2445608506778118,
+          "predicted_static_hold": 0.2543250980543196,
+          "predicted_static_vibration": 0.7395999999999999,
+          "error_deflection_pct": {
+            "bias_learning": -22.41657042926598,
+            "hold_last_check": -25.395213923132697,
+            "vibration_no_bias": -74.34576861232989
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -41.22591776292054,
+              2.403288576098217
+            ],
+            "hold_last_check": [
+              -43.35210651607151,
+              -1.754783154644568
+            ],
+            "vibration_no_bias": [
+              -77.70421371161969,
+              -70.57499178765383
+            ]
+          }
+        },
+        {
+          "beam": "GFRP_PostStr",
+          "current_stage": "D3",
+          "previous_stage": "D2",
+          "learned_log_bias": 0.7156653478369139,
+          "static_true": 0.2584200117657367,
+          "predicted_static_bias": 0.34166700711920367,
+          "predicted_static_hold": 0.35154602614330005,
+          "predicted_static_vibration": 0.698896,
+          "error_deflection_pct": {
+            "bias_learning": -24.364949971427308,
+            "hold_last_check": -26.49041873669269,
+            "vibration_no_bias": -63.024539879218544
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -45.96821581600607,
+              5.868379480532382
+            ],
+            "hold_last_check": [
+              -47.361708417322546,
+              2.649179091079068
+            ],
+            "vibration_no_bias": [
+              -68.78168162963362,
+              -56.404095974128325
+            ]
+          }
+        },
+        {
+          "beam": "GFRP_PostStr",
+          "current_stage": "D4",
+          "previous_stage": "D3",
+          "learned_log_bias": 0.9949157333636801,
+          "static_true": 0.20239470291514905,
+          "predicted_static_bias": 0.2541105218886596,
+          "predicted_static_hold": 0.2584200117657367,
+          "predicted_static_vibration": 0.6872409999999999,
+          "error_deflection_pct": {
+            "bias_learning": -20.351703105064743,
+            "hold_last_check": -21.679942070963065,
+            "vibration_no_bias": -70.54967574473162
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -42.89692052015274,
+              11.089932274894299
+            ],
+            "hold_last_check": [
+              -43.714127579290796,
+              8.97524069407667
+            ],
+            "vibration_no_bias": [
+              -75.10539627414856,
+              -65.3195912649991
+            ]
+          }
+        }
+      ],
+      "pooled": {
+        "n_predictions": 5,
+        "median_abs_error_pct": {
+          "bias_learning": 24.364949971427308,
+          "hold_last_check": 26.49041873669269,
+          "vibration_no_bias": 66.93336253680206
+        },
+        "max_abs_error_pct": {
+          "bias_learning": 27.151321774008697,
+          "hold_last_check": 32.4256864079873,
+          "vibration_no_bias": 74.34576861232989
+        }
+      },
+      "per_beam": {
+        "GFRP_PreStr": {
+          "n_predictions": 3,
+          "median_abs_error_pct": {
+            "bias_learning": 24.556116363180735,
+            "hold_last_check": 30.540631296171917,
+            "vibration_no_bias": 66.93336253680206
+          },
+          "max_abs_error_pct": {
+            "bias_learning": 27.151321774008697,
+            "hold_last_check": 32.4256864079873,
+            "vibration_no_bias": 74.34576861232989
+          }
+        },
+        "GFRP_PostStr": {
+          "n_predictions": 2,
+          "median_abs_error_pct": {
+            "bias_learning": 22.358326538246025,
+            "hold_last_check": 24.085180403827877,
+            "vibration_no_bias": 66.78710781197508
+          },
+          "max_abs_error_pct": {
+            "bias_learning": 24.364949971427308,
+            "hold_last_check": 26.49041873669269,
+            "vibration_no_bias": 70.54967574473162
+          }
+        }
+      },
+      "scope": "Predict next envelope secant, not independently measured service deflection.",
+      "procedure": "Same algebra and error formula as twin_on_test.py. Damage-level intervals replace that test series load gaps because these tests are displacement controlled. No predictions across the retrofit intervention. First-crack secant is the baseline for the vibration-without-bias comparison."
+    },
+    "gap_2_damage_levels": {
+      "rows": [
+        {
+          "beam": "GFRP_PreStr",
+          "current_stage": "D3",
+          "previous_stage": "D1",
+          "learned_log_bias": 0.5080784770701503,
+          "static_true": 0.2543250980543196,
+          "predicted_static_bias": 0.4627468890525599,
+          "predicted_static_hold": 0.5418470907060122,
+          "predicted_static_vibration": 0.769129,
+          "error_deflection_pct": {
+            "bias_learning": -45.04012796822223,
+            "hold_last_check": -53.06330837304289,
+            "vibration_no_bias": -66.93336253680206
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -58.664927825869796,
+              -26.943206867100113
+            ],
+            "hold_last_check": [
+              -64.62159248945207,
+              -37.74496130178555
+            ],
+            "vibration_no_bias": [
+              -71.26556322409532,
+              -62.06527530545712
+            ]
+          }
+        },
+        {
+          "beam": "GFRP_PreStr",
+          "current_stage": "D4",
+          "previous_stage": "D2",
+          "learned_log_bias": 0.8248642743566275,
+          "static_true": 0.1897386953432081,
+          "predicted_static_bias": 0.3241625946181508,
+          "predicted_static_hold": 0.3661494522628782,
+          "predicted_static_vibration": 0.7395999999999999,
+          "error_deflection_pct": {
+            "bias_learning": -41.4680476732018,
+            "hold_last_check": -48.17998656816654,
+            "vibration_no_bias": -74.34576861232989
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -55.715021817376645,
+              -22.6532618542318
+            ],
+            "hold_last_check": [
+              -60.70465726940289,
+              -31.677091516588064
+            ],
+            "vibration_no_bias": [
+              -77.70421371161969,
+              -70.57499178765383
+            ]
+          }
+        },
+        {
+          "beam": "GFRP_PostStr",
+          "current_stage": "D4",
+          "previous_stage": "D2",
+          "learned_log_bias": 0.7156653478369139,
+          "static_true": 0.20239470291514905,
+          "predicted_static_bias": 0.33596926529785354,
+          "predicted_static_hold": 0.35154602614330005,
+          "predicted_static_vibration": 0.6872409999999999,
+          "error_deflection_pct": {
+            "bias_learning": -39.75797079660961,
+            "hold_last_check": -42.42725337118524,
+            "vibration_no_bias": -70.54967574473162
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -56.913122612713295,
+              -15.782026900550472
+            ],
+            "hold_last_check": [
+              -58.723925485382544,
+              -19.705441012744053
+            ],
+            "vibration_no_bias": [
+              -75.10539627414856,
+              -65.3195912649991
+            ]
+          }
+        }
+      ],
+      "pooled": {
+        "n_predictions": 3,
+        "median_abs_error_pct": {
+          "bias_learning": 41.4680476732018,
+          "hold_last_check": 48.17998656816654,
+          "vibration_no_bias": 70.54967574473162
+        },
+        "max_abs_error_pct": {
+          "bias_learning": 45.04012796822223,
+          "hold_last_check": 53.06330837304289,
+          "vibration_no_bias": 74.34576861232989
+        }
+      },
+      "per_beam": {
+        "GFRP_PreStr": {
+          "n_predictions": 2,
+          "median_abs_error_pct": {
+            "bias_learning": 43.254087820712016,
+            "hold_last_check": 50.621647470604714,
+            "vibration_no_bias": 70.63956557456598
+          },
+          "max_abs_error_pct": {
+            "bias_learning": 45.04012796822223,
+            "hold_last_check": 53.06330837304289,
+            "vibration_no_bias": 74.34576861232989
+          }
+        },
+        "GFRP_PostStr": {
+          "n_predictions": 1,
+          "median_abs_error_pct": {
+            "bias_learning": 39.75797079660961,
+            "hold_last_check": 42.42725337118524,
+            "vibration_no_bias": 70.54967574473162
+          },
+          "max_abs_error_pct": {
+            "bias_learning": 39.75797079660961,
+            "hold_last_check": 42.42725337118524,
+            "vibration_no_bias": 70.54967574473162
+          }
+        }
+      },
+      "scope": "Predict next envelope secant, not independently measured service deflection.",
+      "procedure": "Same algebra and error formula as twin_on_test.py. Damage-level intervals replace that test series load gaps because these tests are displacement controlled. No predictions across the retrofit intervention. First-crack secant is the baseline for the vibration-without-bias comparison."
+    }
+  },
+  "status": "COMPLETED_SECANT_PROXY_ONLY",
+  "limitations": [
+    "Secant to plastic displacement compared with unloaded vibration at residual deformation; not the same physical stiffness measure.",
+    "First-crack secant baseline is a proxy; support/jack compliance not independently resolved.",
+    "Bootstrap has only four beam clusters, with unequal counts and different strengthening histories; interval does not cover missing coupon data or stiffness-definition bias.",
+    "Frequency-squared is an apparent stiffness index; mass, boundary conditions and mode shape changes are not independently corrected.",
+    "Twin calculations use consecutive peak secants and do not validate service-deflection accuracy or an absolute frequency-to-modulus conversion."
+  ]
+}

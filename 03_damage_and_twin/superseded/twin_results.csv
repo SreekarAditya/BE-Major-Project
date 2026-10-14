@@ -1,0 +1,5 @@
+damage_kN,frequency_Hz,delta_15kN_mm,EI_combined_kNm2,EI_left_percent,EI_uncertainty_percent,predicted_30kN_mm,measured_30kN_mm,error_percent
+35.0,50.92,0.483,14841.0,97.1,3.8,0.969,0.964,0.44
+50.0,44.65,0.628,11418.0,74.7,3.7,1.259,1.257,0.13
+65.0,32.01,1.429,5110.0,33.4,3.5,2.813,2.862,-1.73
+72.0,29.7,1.686,4339.0,28.4,3.4,3.313,3.383,-2.07

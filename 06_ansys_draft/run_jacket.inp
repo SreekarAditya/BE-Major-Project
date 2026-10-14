@@ -1,0 +1,17 @@
+! =====================================================================
+! run_jacket.inp  -  complete analysis: concrete jacket
+! Run from the folder holding all .inp files:
+!   Mechanical APDL: File > Read Input From > run_jacket.inp
+!   or batch:        MAPDL -b -i run_jacket.inp -o run_jacket.out -j jacket
+! =====================================================================
+FINISH
+/CLEAR,NOSTART
+/FILNAME,jacket,1
+/INPUT,01_params,inp
+REPAIR = 1
+TAG = 'jacket'
+/INPUT,02_materials,inp
+/INPUT,03_mesh,inp
+/INPUT,04_bc_solve,inp
+/INPUT,06_post,inp
+/INPUT,05_modal,inp

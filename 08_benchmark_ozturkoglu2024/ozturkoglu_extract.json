@@ -1,0 +1,1352 @@
+{
+  "paper": {
+    "title": "An Experimental Study on the Effect of GFRP and CFRP Strengthening on the Static and Dynamic Behavior of R/C Beams Under Progressive Damage",
+    "doi": "10.3390/app14219920",
+    "year": 2024,
+    "pages": 22,
+    "sha256": "fafce008a156ef295b2da8611b8b10ab2e6a6542b1e5e989b23e511bfe4ca272"
+  },
+  "geometry": {
+    "width_mm": {
+      "value": 150,
+      "unit": "mm",
+      "source": "p. 4, Section 2.1; p. 5, Figure 1"
+    },
+    "height_mm": {
+      "value": 250,
+      "unit": "mm",
+      "source": "p. 4, Section 2.1; p. 5, Figure 1"
+    },
+    "length_mm": {
+      "value": 3200,
+      "unit": "mm",
+      "source": "p. 4, Section 2.1; p. 5, Figure 1"
+    },
+    "span_mm": {
+      "value": 3000,
+      "unit": "mm",
+      "source": "p. 7, Section 2.4; Figure 3"
+    },
+    "shear_span_mm": {
+      "value": 1350,
+      "unit": "mm",
+      "source": "p. 6, Section 2.3; p. 7, Figure 3"
+    },
+    "load_separation_mm": {
+      "value": 300,
+      "unit": "mm",
+      "source": "p. 7, Figure 3b"
+    },
+    "load_positions_from_left_support_mm": {
+      "value": [
+        1350,
+        1650
+      ],
+      "unit": "mm",
+      "source": "p. 7, Figure 3b",
+      "inferred": true,
+      "reasoning": "Second position = shear span plus 300 mm load spacing."
+    },
+    "effective_depth_mm": {
+      "value": 215,
+      "unit": "mm",
+      "source": "p. 6, Section 2.3"
+    },
+    "bottom_bar_centroid_from_soffit_mm": {
+      "value": 35,
+      "unit": "mm",
+      "source": "p. 5, Figure 1; p. 6, Section 2.3",
+      "note": "35 is bar centroid offset, not a stated clear cover."
+    },
+    "top_bar_centroid_depth_mm": {
+      "value": 35,
+      "unit": "mm",
+      "source": "p. 5, Figure 1",
+      "inferred": true,
+      "reasoning": "Assumed symmetric centroid offset; no explicit top-depth dimension. Drawing shows top bars and stirrups."
+    },
+    "bottom_clear_cover_mm": {
+      "value": 21,
+      "unit": "mm",
+      "source": "p. 5, Figure 1",
+      "inferred": true,
+      "reasoning": "35 mm centroid offset minus 8 mm stirrup minus 6 mm bar radius."
+    },
+    "top_clear_cover_mm": {
+      "value": null,
+      "unit": "mm",
+      "source": "p. 5, Figure 1",
+      "status": "not_reported"
+    },
+    "tension_bar_count": {
+      "value": 3,
+      "unit": "count",
+      "source": "p. 5, Figure 1"
+    },
+    "tension_bar_diameter_mm": {
+      "value": 12,
+      "unit": "mm",
+      "source": "p. 5, Figure 1"
+    },
+    "compression_bar_count": {
+      "value": 2,
+      "unit": "count",
+      "source": "p. 5, Figure 1"
+    },
+    "compression_bar_diameter_mm": {
+      "value": 10,
+      "unit": "mm",
+      "source": "p. 5, Figure 1"
+    },
+    "stirrup_diameter_mm": {
+      "value": 8,
+      "unit": "mm",
+      "source": "p. 5, Figure 1"
+    },
+    "stirrup_spacing_mm": {
+      "value": 125,
+      "unit": "mm",
+      "source": "p. 5, Figure 1"
+    },
+    "end_stirrup_offset_mm": {
+      "value": 50,
+      "unit": "mm",
+      "source": "p. 5, Figure 1"
+    },
+    "support_type": {
+      "value": "Simply supported, pin and roller",
+      "unit": "text",
+      "source": "p. 7, Figure 3"
+    },
+    "load_definition": {
+      "value": "Total hydraulic jack load split equally into two loads",
+      "unit": "text",
+      "source": "p. 7, Figure 3b",
+      "inferred": true,
+      "reasoning": "One jack and symmetric loading spreader; M = P_total*a/2."
+    }
+  },
+  "concrete": {
+    "cylinder_strength_MPa": {
+      "value": 20,
+      "unit": "MPa",
+      "source": "p. 6, Section 2.2",
+      "approximate": true,
+      "basis": "Average 28-day cylinder strength printed as approximately 20 MPa"
+    },
+    "elastic_modulus_MPa": {
+      "value": null,
+      "unit": "MPa",
+      "source": "p. 6, Section 2.2",
+      "status": "not_reported"
+    },
+    "density_kg_m3": {
+      "value": null,
+      "unit": "kg/m3",
+      "source": "p. 6, Section 2.2",
+      "status": "not_reported"
+    },
+    "cube_strength_MPa": {
+      "value": null,
+      "unit": "MPa",
+      "source": "p. 6, Section 2.2",
+      "status": "not_reported"
+    }
+  },
+  "steel": {
+    "yield_MPa": {
+      "value": 420,
+      "unit": "MPa",
+      "source": "p. 6, Section 2.2",
+      "note": "The paper states these properties without individual tensile-test results."
+    },
+    "tensile_MPa": {
+      "value": 500,
+      "unit": "MPa",
+      "source": "p. 6, Section 2.2",
+      "note": "The paper states these properties without individual tensile-test results."
+    },
+    "modulus_MPa": {
+      "value": 200000,
+      "unit": "MPa",
+      "source": "p. 6, Section 2.2",
+      "note": "The paper states these properties without individual tensile-test results."
+    },
+    "poisson_ratio": {
+      "value": 0.3,
+      "unit": "ratio",
+      "source": "p. 6, Section 2.2",
+      "note": "The paper states these properties without individual tensile-test results."
+    }
+  },
+  "strengthening": {
+    "GFRP": {
+      "fiber_modulus_MPa": {
+        "value": 72000,
+        "unit": "MPa",
+        "source": "p. 6, Table 2",
+        "basis": "fiber, not cured composite coupon"
+      },
+      "fiber_strength_MPa": {
+        "value": 1950,
+        "unit": "MPa",
+        "source": "p. 6, Table 2",
+        "basis": "fiber supplier/reference property"
+      },
+      "fiber_rupture_strain": {
+        "value": 0.027083333333333334,
+        "unit": "mm/mm",
+        "source": "p. 6, Table 2",
+        "inferred": true,
+        "reasoning": "Linear-elastic fiber strength divided by modulus; rupture strain not separately printed."
+      },
+      "wet_laminate_total_thickness_mm": {
+        "value": 2.6,
+        "unit": "mm",
+        "source": "p. 4, Section 2.1"
+      },
+      "fiber_volume_fraction": {
+        "value": 0.11,
+        "unit": "ratio",
+        "source": "p. 4, Section 2.1"
+      },
+      "layers": {
+        "value": 2,
+        "unit": "count",
+        "source": "p. 4, Section 2.1"
+      },
+      "width_mm": {
+        "value": 150,
+        "unit": "mm",
+        "source": "p. 4, Section 2.1"
+      },
+      "bonded_length_mm": {
+        "value": 2800,
+        "unit": "mm",
+        "source": "p. 4, Section 2.1"
+      },
+      "fiber_equivalent_total_thickness_mm": {
+        "value": 0.28600000000000003,
+        "unit": "mm",
+        "source": "p. 4, Section 2.1",
+        "inferred": true,
+        "reasoning": "Total wet thickness times total fiber volume fraction. All fiber treated as longitudinal in the primary conditional calculation; no coupon modulus provided."
+      },
+      "nominal_fiber_equivalent_ply_thickness_mm": {
+        "value": 0.14300000000000002,
+        "unit": "mm",
+        "source": "p. 4, Section 2.1",
+        "inferred": true,
+        "reasoning": "Fiber-equivalent total divided by two plies, so n*t is not counted twice."
+      },
+      "dry_mass_g_m2": {
+        "value": 330,
+        "unit": "g/m2",
+        "source": "p. 6, Table 2"
+      },
+      "weft_mass_g_m2": {
+        "value": 283,
+        "unit": "g/m2",
+        "source": "p. 6, Table 2"
+      },
+      "warp_mass_g_m2": {
+        "value": 37,
+        "unit": "g/m2",
+        "source": "p. 6, Table 2"
+      },
+      "sewing_mass_g_m2": {
+        "value": 10,
+        "unit": "g/m2",
+        "source": "p. 6, Table 2"
+      },
+      "poisson_ratio": {
+        "value": 0.21,
+        "unit": "ratio",
+        "source": "p. 6, Table 2"
+      },
+      "shear_modulus_MPa": {
+        "value": 30000,
+        "unit": "MPa",
+        "source": "p. 6, Table 2"
+      },
+      "weave": {
+        "value": "Uni-directional",
+        "unit": "text",
+        "source": "p. 6, Table 2"
+      },
+      "anchorage": {
+        "value": "Soffit bonded sheet; no U-wrap or separate anchor reported",
+        "unit": "text",
+        "source": "pp. 4-5, Section 2.1 and Figure 2",
+        "status": "no_anchor_reported"
+      },
+      "cured_laminate_modulus_MPa": {
+        "value": null,
+        "unit": "MPa",
+        "source": "p. 6, Table 2",
+        "status": "not_reported"
+      },
+      "cured_laminate_rupture_strain": {
+        "value": null,
+        "unit": "mm/mm",
+        "source": "p. 6, Table 2",
+        "status": "not_reported"
+      }
+    },
+    "CFRP": {
+      "fiber_modulus_MPa": {
+        "value": 230000,
+        "unit": "MPa",
+        "source": "p. 6, Table 2",
+        "basis": "fiber, not cured composite coupon"
+      },
+      "fiber_strength_MPa": {
+        "value": 4000,
+        "unit": "MPa",
+        "source": "p. 6, Table 2",
+        "basis": "fiber supplier/reference property"
+      },
+      "fiber_rupture_strain": {
+        "value": 0.017391304347826087,
+        "unit": "mm/mm",
+        "source": "p. 6, Table 2",
+        "inferred": true,
+        "reasoning": "Linear-elastic fiber strength divided by modulus; rupture strain not separately printed."
+      },
+      "wet_laminate_total_thickness_mm": {
+        "value": 2.1,
+        "unit": "mm",
+        "source": "p. 4, Section 2.1"
+      },
+      "fiber_volume_fraction": {
+        "value": 0.19,
+        "unit": "ratio",
+        "source": "p. 4, Section 2.1"
+      },
+      "layers": {
+        "value": 2,
+        "unit": "count",
+        "source": "p. 4, Section 2.1"
+      },
+      "width_mm": {
+        "value": 150,
+        "unit": "mm",
+        "source": "p. 4, Section 2.1"
+      },
+      "bonded_length_mm": {
+        "value": 2800,
+        "unit": "mm",
+        "source": "p. 4, Section 2.1"
+      },
+      "fiber_equivalent_total_thickness_mm": {
+        "value": 0.399,
+        "unit": "mm",
+        "source": "p. 4, Section 2.1",
+        "inferred": true,
+        "reasoning": "Total wet thickness times total fiber volume fraction. All fiber treated as longitudinal in the primary conditional calculation; no coupon modulus provided."
+      },
+      "nominal_fiber_equivalent_ply_thickness_mm": {
+        "value": 0.1995,
+        "unit": "mm",
+        "source": "p. 4, Section 2.1",
+        "inferred": true,
+        "reasoning": "Fiber-equivalent total divided by two plies, so n*t is not counted twice."
+      },
+      "dry_mass_g_m2": {
+        "value": 330,
+        "unit": "g/m2",
+        "source": "p. 6, Table 2"
+      },
+      "weft_mass_g_m2": {
+        "value": 290,
+        "unit": "g/m2",
+        "source": "p. 6, Table 2"
+      },
+      "warp_mass_g_m2": {
+        "value": 35,
+        "unit": "g/m2",
+        "source": "p. 6, Table 2"
+      },
+      "sewing_mass_g_m2": {
+        "value": 5,
+        "unit": "g/m2",
+        "source": "p. 6, Table 2"
+      },
+      "poisson_ratio": {
+        "value": 0.3,
+        "unit": "ratio",
+        "source": "p. 6, Table 2"
+      },
+      "shear_modulus_MPa": {
+        "value": 45000,
+        "unit": "MPa",
+        "source": "p. 6, Table 2"
+      },
+      "weave": {
+        "value": "Uni-directional",
+        "unit": "text",
+        "source": "p. 6, Table 2"
+      },
+      "anchorage": {
+        "value": "Soffit bonded sheet; no U-wrap or separate anchor reported",
+        "unit": "text",
+        "source": "pp. 4-5, Section 2.1 and Figure 2",
+        "status": "no_anchor_reported"
+      },
+      "cured_laminate_modulus_MPa": {
+        "value": null,
+        "unit": "MPa",
+        "source": "p. 6, Table 2",
+        "status": "not_reported"
+      },
+      "cured_laminate_rupture_strain": {
+        "value": null,
+        "unit": "mm/mm",
+        "source": "p. 6, Table 2",
+        "status": "not_reported"
+      }
+    }
+  },
+  "static": {
+    "GFRP_PreStr": {
+      "crack_load_kN": {
+        "value": 23.89,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "crack_displacement_mm": {
+        "value": 7.47,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "yield_load_kN": {
+        "value": 49.18,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "yield_displacement_mm": {
+        "value": 18.44,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "ultimate_load_kN": {
+        "value": 51.94,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "ultimate_displacement_mm": {
+        "value": 29.92,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "failure_load_kN": {
+        "value": 44.45,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "failure_displacement_mm": {
+        "value": 78.89,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "ductility": {
+        "value": 4.28,
+        "unit": "ratio",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      }
+    },
+    "CFRP_PreStr": {
+      "crack_load_kN": {
+        "value": 24.51,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "crack_displacement_mm": {
+        "value": 7.21,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "yield_load_kN": {
+        "value": 58.12,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "yield_displacement_mm": {
+        "value": 21.34,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "ultimate_load_kN": {
+        "value": 66.24,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "ultimate_displacement_mm": {
+        "value": 29.65,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "failure_load_kN": {
+        "value": 60.56,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "failure_displacement_mm": {
+        "value": 37.65,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "ductility": {
+        "value": 1.76,
+        "unit": "ratio",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      }
+    },
+    "GFRP_PostStr_bare": {
+      "crack_load_kN": {
+        "value": 18.83,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "crack_displacement_mm": {
+        "value": 5.98,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "yield_load_kN": {
+        "value": 42.61,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "yield_displacement_mm": {
+        "value": 15.11,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "ultimate_load_kN": {
+        "value": 43.88,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "ultimate_displacement_mm": {
+        "value": 22.38,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "failure_load_kN": {
+        "value": null,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "not_reported",
+        "note": "Bare loading stopped at D1 for strengthening; no bare failure test."
+      },
+      "failure_displacement_mm": {
+        "value": null,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "not_reported",
+        "note": "Bare loading stopped at D1 for strengthening; no bare failure test."
+      },
+      "ductility": {
+        "value": null,
+        "unit": "ratio",
+        "source": "p. 11, Table 4",
+        "status": "not_reported",
+        "note": "Bare loading stopped at D1 for strengthening; no bare failure test."
+      }
+    },
+    "GFRP_PostStr_after": {
+      "crack_load_kN": {
+        "value": 43.05,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "crack_displacement_mm": {
+        "value": 28.71,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "yield_load_kN": {
+        "value": null,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "not_reported",
+        "note": "Post-strengthening yield is not separately reported; yield columns belong to the bare history."
+      },
+      "yield_displacement_mm": {
+        "value": null,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "not_reported",
+        "note": "Post-strengthening yield is not separately reported; yield columns belong to the bare history."
+      },
+      "ultimate_load_kN": {
+        "value": 50.09,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "ultimate_displacement_mm": {
+        "value": 44.97,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "failure_load_kN": {
+        "value": 44.13,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "failure_displacement_mm": {
+        "value": 84.32,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "ductility": {
+        "value": 5.58,
+        "unit": "ratio",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      }
+    },
+    "CFRP_PostStr_bare": {
+      "crack_load_kN": {
+        "value": 19.23,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "crack_displacement_mm": {
+        "value": 6.18,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "yield_load_kN": {
+        "value": 41.86,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "yield_displacement_mm": {
+        "value": 15.23,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "ultimate_load_kN": {
+        "value": 44.63,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "ultimate_displacement_mm": {
+        "value": 29.96,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "failure_load_kN": {
+        "value": null,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "not_reported",
+        "note": "Bare loading stopped at D1 for strengthening; no bare failure test."
+      },
+      "failure_displacement_mm": {
+        "value": null,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "not_reported",
+        "note": "Bare loading stopped at D1 for strengthening; no bare failure test."
+      },
+      "ductility": {
+        "value": null,
+        "unit": "ratio",
+        "source": "p. 11, Table 4",
+        "status": "not_reported",
+        "note": "Bare loading stopped at D1 for strengthening; no bare failure test."
+      }
+    },
+    "CFRP_PostStr_after": {
+      "crack_load_kN": {
+        "value": 47.74,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "crack_displacement_mm": {
+        "value": 26.12,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "yield_load_kN": {
+        "value": null,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "not_reported",
+        "note": "Post-strengthening yield is not separately reported; yield columns belong to the bare history."
+      },
+      "yield_displacement_mm": {
+        "value": null,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "not_reported",
+        "note": "Post-strengthening yield is not separately reported; yield columns belong to the bare history."
+      },
+      "ultimate_load_kN": {
+        "value": 63.22,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "ultimate_displacement_mm": {
+        "value": 44.74,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "failure_load_kN": {
+        "value": 55.94,
+        "unit": "kN",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "failure_displacement_mm": {
+        "value": 54.32,
+        "unit": "mm",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      },
+      "ductility": {
+        "value": 3.57,
+        "unit": "ratio",
+        "source": "p. 11, Table 4",
+        "status": "reported",
+        "note": ""
+      }
+    }
+  },
+  "failure_modes": {
+    "GFRP_PreStr": {
+      "value": "Soffit debonding with compression-zone crushing; ductile flexural failure",
+      "unit": "text",
+      "source": "pp. 8-9, Section 3.1, Figure 5"
+    },
+    "CFRP_PreStr": {
+      "value": "Debonding with concrete cover; slight compression crushing; sudden failure",
+      "unit": "text",
+      "source": "p. 9, Section 3.1, Figure 6"
+    },
+    "GFRP_PostStr": {
+      "value": "Soffit debonding with complete compression-zone crushing; ductile flexural failure",
+      "unit": "text",
+      "source": "pp. 10-11, Section 3.1, Figure 9"
+    },
+    "CFRP_PostStr": {
+      "value": "Debonding with concrete cover; sudden load drop",
+      "unit": "text",
+      "source": "p. 11, Section 3.1, Figure 10"
+    }
+  },
+  "modal": {
+    "GFRP_PreStr": {
+      "f0_Hz": {
+        "vertical": {
+          "value": [
+            26.73,
+            93.95,
+            325.15
+          ],
+          "unit": "Hz",
+          "source": "p. 12, Table 5",
+          "shared_baseline": false
+        },
+        "horizontal": {
+          "value": [
+            11.68,
+            27.93,
+            175.11
+          ],
+          "unit": "Hz",
+          "source": "p. 12, Table 5",
+          "shared_baseline": false
+        }
+      },
+      "frequency_ratios": {
+        "undamaged": {
+          "vertical": {
+            "value": [
+              1,
+              1,
+              1
+            ],
+            "unit": "ratio",
+            "source": "p. 14, Table 7"
+          },
+          "horizontal": {
+            "value": [
+              1,
+              1,
+              1
+            ],
+            "unit": "ratio",
+            "source": "p. 14, Table 7"
+          }
+        },
+        "D1": {
+          "vertical": {
+            "value": [
+              0.949,
+              0.965,
+              0.993
+            ],
+            "unit": "ratio",
+            "source": "p. 14, Table 7"
+          },
+          "horizontal": {
+            "value": [
+              0.987,
+              0.994,
+              0.9
+            ],
+            "unit": "ratio",
+            "source": "p. 14, Table 7"
+          }
+        },
+        "D2": {
+          "vertical": {
+            "value": [
+              0.914,
+              0.959,
+              0.941
+            ],
+            "unit": "ratio",
+            "source": "p. 14, Table 7"
+          },
+          "horizontal": {
+            "value": [
+              0.92,
+              0.988,
+              0.866
+            ],
+            "unit": "ratio",
+            "source": "p. 14, Table 7"
+          }
+        },
+        "D3": {
+          "vertical": {
+            "value": [
+              0.877,
+              0.954,
+              0.923
+            ],
+            "unit": "ratio",
+            "source": "p. 14, Table 7"
+          },
+          "horizontal": {
+            "value": [
+              0.884,
+              0.987,
+              0.86
+            ],
+            "unit": "ratio",
+            "source": "p. 14, Table 7"
+          }
+        },
+        "D4": {
+          "vertical": {
+            "value": [
+              0.86,
+              0.953,
+              0.905
+            ],
+            "unit": "ratio",
+            "source": "p. 14, Table 7"
+          },
+          "horizontal": {
+            "value": [
+              0.884,
+              0.986,
+              0.855
+            ],
+            "unit": "ratio",
+            "source": "p. 14, Table 7"
+          }
+        }
+      },
+      "unreported_damage_states": []
+    },
+    "CFRP_PreStr": {
+      "f0_Hz": {
+        "vertical": {
+          "value": [
+            33.52,
+            99.56,
+            432.84
+          ],
+          "unit": "Hz",
+          "source": "p. 12, Table 5",
+          "shared_baseline": false
+        },
+        "horizontal": {
+          "value": [
+            13.34,
+            28.42,
+            229.75
+          ],
+          "unit": "Hz",
+          "source": "p. 12, Table 5",
+          "shared_baseline": false
+        }
+      },
+      "frequency_ratios": {
+        "undamaged": {
+          "vertical": {
+            "value": [
+              1,
+              1,
+              1
+            ],
+            "unit": "ratio",
+            "source": "p. 15, Table 8"
+          },
+          "horizontal": {
+            "value": [
+              1,
+              1,
+              1
+            ],
+            "unit": "ratio",
+            "source": "p. 15, Table 8"
+          }
+        },
+        "D1": {
+          "vertical": {
+            "value": [
+              0.784,
+              0.881,
+              0.795
+            ],
+            "unit": "ratio",
+            "source": "p. 15, Table 8"
+          },
+          "horizontal": {
+            "value": [
+              0.921,
+              0.96,
+              0.797
+            ],
+            "unit": "ratio",
+            "source": "p. 15, Table 8"
+          }
+        }
+      },
+      "unreported_damage_states": [
+        "D2",
+        "D3",
+        "D4"
+      ]
+    },
+    "GFRP_PostStr": {
+      "f0_Hz": {
+        "vertical": {
+          "value": [
+            25.19,
+            89.59,
+            316.48
+          ],
+          "unit": "Hz",
+          "source": "p. 12, Table 5",
+          "shared_baseline": true
+        },
+        "horizontal": {
+          "value": [
+            9.5,
+            27.63,
+            149.33
+          ],
+          "unit": "Hz",
+          "source": "p. 12, Table 5",
+          "shared_baseline": true
+        }
+      },
+      "frequency_ratios": {
+        "undamaged_bare": {
+          "vertical": {
+            "value": [
+              1,
+              1,
+              1
+            ],
+            "unit": "ratio",
+            "source": "p. 16, Table 9"
+          },
+          "horizontal": {
+            "value": [
+              1,
+              1,
+              1
+            ],
+            "unit": "ratio",
+            "source": "p. 16, Table 9"
+          }
+        },
+        "D1_bare": {
+          "vertical": {
+            "value": [
+              0.988,
+              0.991,
+              0.955
+            ],
+            "unit": "ratio",
+            "source": "p. 16, Table 9"
+          },
+          "horizontal": {
+            "value": [
+              0.872,
+              0.993,
+              0.917
+            ],
+            "unit": "ratio",
+            "source": "p. 16, Table 9"
+          }
+        },
+        "D1_strengthened": {
+          "vertical": {
+            "value": [
+              0.899,
+              0.959,
+              0.921
+            ],
+            "unit": "ratio",
+            "source": "p. 16, Table 9"
+          },
+          "horizontal": {
+            "value": [
+              1.196,
+              1.035,
+              1.033
+            ],
+            "unit": "ratio",
+            "source": "p. 16, Table 9"
+          }
+        },
+        "D2": {
+          "vertical": {
+            "value": [
+              0.848,
+              0.925,
+              0.861
+            ],
+            "unit": "ratio",
+            "source": "p. 16, Table 9"
+          },
+          "horizontal": {
+            "value": [
+              1.097,
+              0.947,
+              0.924
+            ],
+            "unit": "ratio",
+            "source": "p. 16, Table 9"
+          }
+        },
+        "D3": {
+          "vertical": {
+            "value": [
+              0.836,
+              0.916,
+              0.781
+            ],
+            "unit": "ratio",
+            "source": "p. 16, Table 9"
+          },
+          "horizontal": {
+            "value": [
+              1.093,
+              0.947,
+              0.919
+            ],
+            "unit": "ratio",
+            "source": "p. 16, Table 9"
+          }
+        },
+        "D4": {
+          "vertical": {
+            "value": [
+              0.829,
+              0.916,
+              0.775
+            ],
+            "unit": "ratio",
+            "source": "p. 16, Table 9"
+          },
+          "horizontal": {
+            "value": [
+              1.092,
+              0.947,
+              0.916
+            ],
+            "unit": "ratio",
+            "source": "p. 16, Table 9"
+          }
+        }
+      },
+      "unreported_damage_states": []
+    },
+    "CFRP_PostStr": {
+      "f0_Hz": {
+        "vertical": {
+          "value": [
+            25.19,
+            89.59,
+            316.48
+          ],
+          "unit": "Hz",
+          "source": "p. 12, Table 5",
+          "shared_baseline": true
+        },
+        "horizontal": {
+          "value": [
+            9.5,
+            27.63,
+            149.33
+          ],
+          "unit": "Hz",
+          "source": "p. 12, Table 5",
+          "shared_baseline": true
+        }
+      },
+      "frequency_ratios": {
+        "undamaged_bare": {
+          "vertical": {
+            "value": [
+              1,
+              1,
+              1
+            ],
+            "unit": "ratio",
+            "source": "p. 17, Table 10"
+          },
+          "horizontal": {
+            "value": [
+              1,
+              1,
+              1
+            ],
+            "unit": "ratio",
+            "source": "p. 17, Table 10"
+          }
+        },
+        "D1_bare": {
+          "vertical": {
+            "value": [
+              0.937,
+              0.911,
+              0.738
+            ],
+            "unit": "ratio",
+            "source": "p. 17, Table 10"
+          },
+          "horizontal": {
+            "value": [
+              0.628,
+              0.952,
+              0.83
+            ],
+            "unit": "ratio",
+            "source": "p. 17, Table 10"
+          }
+        },
+        "D1_strengthened": {
+          "vertical": {
+            "value": [
+              0.948,
+              0.934,
+              0.831
+            ],
+            "unit": "ratio",
+            "source": "p. 17, Table 10"
+          },
+          "horizontal": {
+            "value": [
+              1.047,
+              1.105,
+              0.732
+            ],
+            "unit": "ratio",
+            "source": "p. 17, Table 10"
+          }
+        },
+        "D2": {
+          "vertical": {
+            "value": [
+              0.865,
+              0.907,
+              0.785
+            ],
+            "unit": "ratio",
+            "source": "p. 17, Table 10"
+          },
+          "horizontal": {
+            "value": [
+              0.795,
+              0.9,
+              0.728
+            ],
+            "unit": "ratio",
+            "source": "p. 17, Table 10"
+          }
+        }
+      },
+      "unreported_damage_states": [
+        "D3",
+        "D4"
+      ]
+    }
+  },
+  "damage_levels": {
+    "undamaged": {
+      "value": 0,
+      "unit": "mm",
+      "source": "p. 8, Table 3"
+    },
+    "D1": {
+      "value": 30,
+      "unit": "mm",
+      "source": "p. 8, Table 3"
+    },
+    "D2": {
+      "value": 45,
+      "unit": "mm",
+      "source": "p. 8, Table 3"
+    },
+    "D3": {
+      "value": 60,
+      "unit": "mm",
+      "source": "p. 8, Table 3"
+    },
+    "D4": {
+      "value": 75,
+      "unit": "mm",
+      "source": "p. 8, Table 3"
+    }
+  },
+  "protocol": {
+    "damage_control": {
+      "value": "Imposed midspan displacement, not equal load",
+      "unit": "text",
+      "source": "pp. 7-8, Section 2.4"
+    },
+    "modal_state": {
+      "value": "Jack detached; zero applied force, nonzero residual displacement",
+      "unit": "text",
+      "source": "p. 8, Section 2.4"
+    },
+    "strengthening_timing": {
+      "value": "Post beams removed at D1, strengthened, cured one week and retested before further loading",
+      "unit": "text",
+      "source": "p. 8, Section 2.4"
+    },
+    "yield_definition": {
+      "value": "Reduced stiffness equivalent elasto-plastic yield, not a measured steel strain crossing",
+      "unit": "text",
+      "source": "p. 8, Section 3.1"
+    },
+    "sampling_rate_Hz": {
+      "value": 1000,
+      "unit": "Hz",
+      "source": "p. 8, Section 2.4"
+    }
+  },
+  "read_audit": {
+    "table_numeric_values_checked": 180,
+    "methods": [
+      "pdftotext -layout manual transcription",
+      "independent visual transcription from 160 dpi rendered pages"
+    ],
+    "note": "Lexical token checks do not independently prove cell associations. Associations were inspected visually; missing entries and shared baselines retained."
+  },
+  "missing": [
+    "Concrete elastic modulus and density not printed",
+    "Mean cube strength not printed",
+    "Cured composite axial coupon properties and longitudinal fiber alignment not printed",
+    "Top bar depth and top clear cover not explicitly dimensioned",
+    "Post-strengthening yield not separately reported",
+    "No static measurement immediately after strengthening at D1 without further loading",
+    "Residual strain field and plastic-hinge length not reported"
+  ]
+}

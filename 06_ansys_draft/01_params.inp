@@ -1,0 +1,87 @@
+! =====================================================================
+! 01_params.inp  -  every number used by the model, in one place
+! Units: N, mm, MPa, tonne, s
+! Edit this file only. Replace nominal values with measured ones after casting.
+! =====================================================================
+
+! ---------- geometry
+B      = 230          ! beam width
+H      = 300          ! beam overall depth
+SPAN   = 3000         ! support to support
+OVH    = 100          ! overhang beyond each support
+LTOT   = SPAN+2*OVH   ! 3200 total length
+AL     = SPAN/3       ! shear span (load points at third points)
+X_S1   = OVH          ! support 1 (pin)    x = 100
+X_S2   = OVH+SPAN     ! support 2 (roller) x = 3100
+X_P1   = OVH+AL       ! load point 1       x = 1100
+X_P2   = OVH+2*AL     ! load point 2       x = 2100
+X_MID  = OVH+SPAN/2   ! midspan            x = 1600
+
+! ---------- reinforcement (detailing)
+COVER  = 25
+D_ST   = 8            ! stirrup bar diameter
+S_ST   = 150          ! stirrup spacing
+D_BOT  = 12           ! bottom bars: 3 bars of 12 mm
+N_BOT  = 3
+D_TOP  = 10           ! top bars: 2 bars of 10 mm
+N_TOP  = 2
+Y_BOT  = COVER+D_ST+D_BOT/2      ! 39 mm above soffit
+Y_TOP  = H-COVER-D_ST-D_TOP/2    ! 262 mm above soffit
+A_12   = 3.14159265*12**2/4
+A_10   = 3.14159265*10**2/4
+A_8    = 3.14159265*8**2/4
+
+! ---------- materials (nominal; replace with measured)
+FCK    = 30                      ! characteristic cube strength
+FCM    = 0.8*FCK                 ! cylinder strength used for the compression curve
+EC     = 5000*SQRT(FCK)          ! IS 456 modulus
+FT     = 0.7*SQRT(FCK)           ! IS 456 flexural tensile strength
+NUC    = 0.2
+RHOC   = 2.5E-9                  ! 2500 kg/m3 in tonne/mm3
+FY     = 500                     ! main bars Fe500
+FY_ST  = 415                     ! stirrups Fe415
+ES     = 2.0E5
+RHOS   = 7.85E-9
+
+! ---------- bearing plates (confirm sizes with the laboratory)
+PL_T   = 20                      ! plate thickness
+PL_L   = 100                     ! plate length along the beam
+
+! ---------- mesh
+DX     = 50                      ! element length along the beam
+
+! ---------- load protocol (total jack load, kN)
+P_DIAG = 15                      ! diagnostic cycle, below the 26.5 kN cracking load
+P_SERV = 30                      ! service cycle, always below the highest load already applied
+*DIM,P_DMG,ARRAY,4
+P_DMG(1) = 35,50,65,72           ! damage stages, all below yield (about 81 kN)
+N_DMG  = 4
+D_FAIL = 40                      ! final displacement push to failure, mm
+
+! ---------- repair selector
+REPAIR = 0       ! 0 none, 1 concrete jacket, 2 bonded steel plate, 3 fibre-reinforced polymer strips
+I_REP  = 3       ! repair is applied after this damage stage (3 = after 65 kN)
+
+! jacket: 75 mm on both sides and the soffit, 2 bars of 12 mm, between the supports
+JT     = 75
+! steel plate: standard flat 100 x 5 mm (half model uses an equivalent width, see 03_mesh.inp)
+PLATE_W = 100
+PLATE_T = 5
+FY_PL   = 250
+! polymer strips: 2 laminates 50 x 1.2 mm, E = 165 GPa
+FRP_N   = 2
+FRP_W   = 50
+FRP_T   = 1.2
+E_FRP   = 165000
+! bond-slip interface for plate and strips (Lu et al. 2005 bond-slip model, to be calibrated)
+BW_R    = (FRP_N*FRP_W)/B
+BETA_W  = SQRT((2.25-BW_R)/(1.25+BW_R))
+TAU_MAX = 1.5*BETA_W*FT          ! peak bond shear stress
+G_F     = 0.308*BETA_W**2*SQRT(FT)   ! interfacial fracture energy, N/mm
+DT_C    = 2*G_F/TAU_MAX          ! complete tangential debonding slip
+SIG_MAX = FT                     ! peak normal (peeling) stress
+DN_C    = 2*G_F/SIG_MAX          ! complete normal separation
+
+! ---------- concrete model choice
+CONC   = 1     ! 1 = SOLID65 smeared cracking (classic)
+               ! 2 = SOLID185 + Menetrey-Willam (needed for damaged-state modal; see README)

@@ -1,0 +1,13 @@
+{
+  "files": [
+    "01_static_vs_vibration.png",
+    "02_kappa_by_series.png"
+  ],
+  "dpi": 650,
+  "font": "Carlito",
+  "colours": {
+    "static": "#8E1B2E",
+    "vibration": "#4A6C8C"
+  },
+  "background": "white"
+}

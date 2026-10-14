@@ -1,0 +1,16 @@
+{
+  "job": "B2",
+  "status": "RESUMED_WITH_USER_PROVIDED_PUBLISHED_PDF",
+  "checked_at_utc": "2026-10-13T08:05:34.103719+00:00",
+  "requested_url": "https://ore.exeter.ac.uk/repository/handle/10871/35554",
+  "http_status": 202,
+  "response_bytes": 0,
+  "access_control_response": "x-amzn-waf-action: challenge",
+  "pdf_downloaded": false,
+  "analysis_started": true,
+  "stop_instruction_source": "JOB_SPEC.md, Step 0: get the paper",
+  "human_needed": "Download the accepted manuscript from https://ore.exeter.ac.uk/repository/handle/10871/35554 and save it as 08b_benchmark_pesic2015/pesic2015_aam.pdf",
+  "alternative_repository_found_but_not_downloaded": "https://wrap.warwick.ac.uk/id/eprint/72405/",
+  "reason_alternative_not_used": "The job explicitly requires stopping if the Exeter download fails.",
+  "pdf_available": true
+}

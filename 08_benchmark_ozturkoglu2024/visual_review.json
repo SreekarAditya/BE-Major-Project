@@ -1,0 +1,78 @@
+{
+  "status": "PASS_VISUAL_INSPECTION",
+  "reviewed_files": [
+    {
+      "file": "01_capacity_predicted_vs_test.png",
+      "sha256": "bc593e5bf0b2c4f158cac590b5b7f462241801220656be737457f9250e747b00"
+    },
+    {
+      "file": "02_static_vs_vibration.png",
+      "sha256": "ffa968b061c2cddd7b5565589b362cc343ab05e8d6a642f6a3f9741e777599f3"
+    },
+    {
+      "file": "03_retrofit_vertical_signal.png",
+      "sha256": "1045319d0f0ca0ae484d720e3a2dd29938e1cb48ca41890f486e408e7c1a0e1b"
+    },
+    {
+      "file": "figure4_overlay.png",
+      "sha256": "8ab1887396f59eda9e4200d66dbacdae177b7fa607b00c252c38665bcfc59073"
+    },
+    {
+      "file": "figure7_overlay.png",
+      "sha256": "633fc5a2e08b87addbecfdd8a65b33abe67c6f462227d7b2f9c3cb823af9d141"
+    },
+    {
+      "file": "source_pages/page-04.png",
+      "sha256": "084d7b2c662fe1d2a3f452769920e8e641060970e872f650dfbd0f197ae910f2"
+    },
+    {
+      "file": "source_pages/page-05.png",
+      "sha256": "823ac1edf3f62194f5cd7c121140e49809f0ade57e76bec57f9029ec53847be9"
+    },
+    {
+      "file": "source_pages/page-06.png",
+      "sha256": "27c62f6428f9e91bda29938c09b6f8f235f4603fb8ba0da1c3c8f45574c69044"
+    },
+    {
+      "file": "source_pages/page-07.png",
+      "sha256": "ced9ce4639dc948f8a75f08a454bd071d9e02d6e9d6572eeb0afbb8c333b23a2"
+    },
+    {
+      "file": "source_pages/page-08.png",
+      "sha256": "0d9db008ba52634abd5ac30733a06186acfc7bc5704f54c5862a1660e428e08b"
+    },
+    {
+      "file": "source_pages/page-09.png",
+      "sha256": "7fcc27e0308cc2c894868b4a82467d59f46817984fef8ae1dbbf50a0d5754f31"
+    },
+    {
+      "file": "source_pages/page-10.png",
+      "sha256": "e0a8205962f399f1286c47488392845b91e91658fe02a9b3ee19e327c062cb57"
+    },
+    {
+      "file": "source_pages/page-11.png",
+      "sha256": "93de7489bfb554dff9cf621de3277453f16201be5244da61b7e0f23d6fe104c0"
+    },
+    {
+      "file": "source_pages/page-12.png",
+      "sha256": "9951e28132facc416e960d7d8a63ed9de727008fd70637ddac382b3d3fdefd84"
+    },
+    {
+      "file": "source_pages/page-14.png",
+      "sha256": "a7eae6ec6139b1d513378a66b49c02eded657390f8de663623643122399a85dd"
+    },
+    {
+      "file": "source_pages/page-15.png",
+      "sha256": "3a4a40bafe9900484731bd2732de4518bd55a9308fd9c1acc41eec62e09de199"
+    },
+    {
+      "file": "source_pages/page-16.png",
+      "sha256": "4925af6ccb94d4eb7017f0c96009360335b41afdf48b49a7492ebc4efcd6ca30"
+    },
+    {
+      "file": "source_pages/page-17.png",
+      "sha256": "7b040436f203b5d00e2d485b71a86f35d8e0e8e75a08d847e3f9558d77604600"
+    }
+  ],
+  "note": "Source tables/geometry/materials checked in rendered page images. Final endpoint overlays checked for calibrated axes and correct branches. Final three figures checked for readable labels, unclipped annotations and legends clear of data. Unaccepted reloading paths excluded. This is agent visual inspection, not external engineering acceptance."
+}

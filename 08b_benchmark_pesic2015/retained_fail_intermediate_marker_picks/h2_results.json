@@ -1,0 +1,342 @@
+{
+  "status": "PARTIAL_CONDITIONAL_BASELINE",
+  "available_static_beams": 1,
+  "paper_beams": 5,
+  "paired_steps": 8,
+  "rows": [
+    {
+      "beam": 3,
+      "step": 4,
+      "pixel": [
+        431,
+        786
+      ],
+      "peak_deflection_mm": 3.2142857142857144,
+      "deflection_reading_bound_mm": 0.7,
+      "plotted_peak_load_kN": 0.6701183431952663,
+      "table_load_kN": 0.67,
+      "plot_minus_table_load_kN": 0.00011834319526626835,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.20844444444444446,
+      "static_EI_MNm2": 0.0006838020000000002,
+      "static_left": 1.0,
+      "dynamic_left": 0.9209547348351104,
+      "dynamic_matched_reference_left": 1.0,
+      "static_reading_interval_95": [
+        1.0,
+        1.0
+      ],
+      "dynamic_reading_interval_95": [
+        0.9184991751737023,
+        0.9234350495827505
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 5,
+      "pixel": [
+        635,
+        697
+      ],
+      "peak_deflection_mm": 8.418367346938776,
+      "deflection_reading_bound_mm": 0.5,
+      "plotted_peak_load_kN": 0.867603550295858,
+      "table_load_kN": 0.82,
+      "plot_minus_table_load_kN": 0.047603550295858055,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.0974060606060606,
+      "static_EI_MNm2": 0.0003195405818181818,
+      "static_left": 0.4672998643147896,
+      "dynamic_left": 0.9113028740908127,
+      "dynamic_matched_reference_left": 0.9895197229796252,
+      "static_reading_interval_95": [
+        0.34279629636277703,
+        0.6191694713619239
+      ],
+      "dynamic_reading_interval_95": [
+        0.9088668250969676,
+        0.9137393323027515
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 6,
+      "pixel": [
+        696,
+        637
+      ],
+      "peak_deflection_mm": 9.974489795918368,
+      "deflection_reading_bound_mm": 0.5,
+      "plotted_peak_load_kN": 1.0007396449704142,
+      "table_load_kN": 0.95,
+      "plot_minus_table_load_kN": 0.05073964497041428,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.09524296675191815,
+      "static_EI_MNm2": 0.00031244455242966754,
+      "static_left": 0.4569225483834026,
+      "dynamic_left": 0.8985128168914625,
+      "dynamic_matched_reference_left": 0.9756318990556401,
+      "static_reading_interval_95": [
+        0.3380877626725189,
+        0.6009507947197426
+      ],
+      "dynamic_reading_interval_95": [
+        0.8961305722130611,
+        0.900936580576478
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 7,
+      "pixel": [
+        751,
+        589
+      ],
+      "peak_deflection_mm": 11.377551020408163,
+      "deflection_reading_bound_mm": 0.5,
+      "plotted_peak_load_kN": 1.107248520710059,
+      "table_load_kN": 1.09,
+      "plot_minus_table_load_kN": 0.017248520710059,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.09580269058295965,
+      "static_EI_MNm2": 0.00031428072645739923,
+      "static_left": 0.45960779064319657,
+      "dynamic_left": 0.8669331261916532,
+      "dynamic_matched_reference_left": 0.9413417330949175,
+      "static_reading_interval_95": [
+        0.34237956383346907,
+        0.5996438636378806
+      ],
+      "dynamic_reading_interval_95": [
+        0.8646216086366938,
+        0.8692864814811159
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 8,
+      "pixel": [
+        854,
+        519
+      ],
+      "peak_deflection_mm": 14.005102040816327,
+      "deflection_reading_bound_mm": 0.4,
+      "plotted_peak_load_kN": 1.2625739644970415,
+      "table_load_kN": 1.26,
+      "plot_minus_table_load_kN": 0.002573964497041503,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.0899672131147541,
+      "static_EI_MNm2": 0.00029513744262295094,
+      "static_left": 0.4316124296550036,
+      "dynamic_left": 0.8420761245674739,
+      "dynamic_matched_reference_left": 0.9143512625712716,
+      "static_reading_interval_95": [
+        0.32359507346238237,
+        0.5614614273742348
+      ],
+      "dynamic_reading_interval_95": [
+        0.8397616801120444,
+        0.8443768129452498
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 9,
+      "pixel": [
+        924,
+        453
+      ],
+      "peak_deflection_mm": 15.790816326530612,
+      "deflection_reading_bound_mm": 0.4,
+      "plotted_peak_load_kN": 1.4090236686390532,
+      "table_load_kN": 1.41,
+      "plot_minus_table_load_kN": -0.0009763313609467694,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.08929240710823909,
+      "static_EI_MNm2": 0.00029292374151857837,
+      "static_left": 0.42837508740626423,
+      "dynamic_left": 0.8236706447284796,
+      "dynamic_matched_reference_left": 0.8943660459880814,
+      "static_reading_interval_95": [
+        0.32180114076524224,
+        0.5560380571928577
+      ],
+      "dynamic_reading_interval_95": [
+        0.8214223582340935,
+        0.8259414851281397
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 10,
+      "pixel": [
+        1082,
+        348
+      ],
+      "peak_deflection_mm": 19.821428571428573,
+      "deflection_reading_bound_mm": 0.4,
+      "plotted_peak_load_kN": 1.6420118343195267,
+      "table_load_kN": 1.64,
+      "plot_minus_table_load_kN": 0.002011834319526784,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.08273873873873873,
+      "static_EI_MNm2": 0.00027142443243243245,
+      "static_left": 0.3969342476805163,
+      "dynamic_left": 0.7934467904808982,
+      "dynamic_matched_reference_left": 0.8615480875104664,
+      "static_reading_interval_95": [
+        0.29923149320507525,
+        0.5126478729985502
+      ],
+      "dynamic_reading_interval_95": [
+        0.7912390528446194,
+        0.7956347255899937
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 11,
+      "pixel": [
+        1532,
+        95
+      ],
+      "peak_deflection_mm": 31.301020408163264,
+      "deflection_reading_bound_mm": 0.4,
+      "plotted_peak_load_kN": 2.203402366863905,
+      "table_load_kN": 2.2,
+      "plot_minus_table_load_kN": 0.0034023668639049376,
+      "load_alignment_bound_kN": 0.075,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.07028524857375713,
+      "static_EI_MNm2": 0.0002305707579462103,
+      "static_left": 0.33718935882932527,
+      "dynamic_left": 0.7203587317279853,
+      "dynamic_matched_reference_left": 0.7821869028741782,
+      "static_reading_interval_95": [
+        0.2545868029345178,
+        0.4347307393787872
+      ],
+      "dynamic_reading_interval_95": [
+        0.718309998021974,
+        0.7223720351282451
+      ]
+    }
+  ],
+  "static_definition": "Peak applied load / peak total deflection, normalised by earliest readable Beam 3 peak at step 4. This reference is already damaged and is not an uncracked stiffness.",
+  "dynamic_definition": "(mode 1 frequency / measured initial mode 1 frequency)^2; mode 2 states are retained in extraction.",
+  "kappa": 0.2903930127470403,
+  "kappa_95_interval": null,
+  "beam_bootstrap_raw_interval_95": [
+    0.2903930127470403,
+    0.2903930127470403
+  ],
+  "bootstrap": {
+    "replicates": 20000,
+    "unit": "beam",
+    "clusters": 1,
+    "status": "DEGENERATE_ONE_CLUSTER_NOT_A_VALID_POPULATION_CONFIDENCE_INTERVAL",
+    "explanation": "Resampling a single available beam repeats identical data. No cross-beam interval can be estimated."
+  },
+  "kappa_reading_interval_95": [
+    0.24435042209622332,
+    0.3717074368568008
+  ],
+  "matched_reference_sensitivity_kappa": 0.1667465167645372,
+  "matched_reference_reading_interval_95": [
+    0.13878012287615976,
+    0.21706563729885608
+  ],
+  "per_beam": {
+    "3": {
+      "kappa": 0.2903930127470403,
+      "kappa_95_interval": null
+    }
+  },
+  "unloading_chords": [
+    {
+      "step": 9,
+      "residual_mm": 10.561224489795919,
+      "peak_mm": 15.790816326530612,
+      "load_kN": 1.41,
+      "unloading_chord_kN_per_mm": 0.269619512195122,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.4,
+      "pixel": [
+        719,
+        1088
+      ]
+    },
+    {
+      "step": 10,
+      "residual_mm": 13.112244897959183,
+      "peak_mm": 19.821428571428573,
+      "load_kN": 1.64,
+      "unloading_chord_kN_per_mm": 0.24444106463878318,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.4,
+      "pixel": [
+        819,
+        1088
+      ]
+    },
+    {
+      "step": 11,
+      "residual_mm": 19.336734693877553,
+      "peak_mm": 31.301020408163264,
+      "load_kN": 2.2,
+      "unloading_chord_kN_per_mm": 0.18388059701492543,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.4,
+      "pixel": [
+        1063,
+        1088
+      ]
+    }
+  ],
+  "sign_test_naive": {
+    "positive": 7,
+    "negative": 1,
+    "n": 8,
+    "one_sided_p": 0.03515625,
+    "alternative": "dynamic_left > static_left",
+    "limitation": "Repeated steps share one beam and a shared baseline; the binomial independence assumption fails."
+  },
+  "sign_test_beam_level": {
+    "positive": 1,
+    "n": 1,
+    "one_sided_p": 0.5
+  },
+  "musial_comparison_range": [
+    0.31,
+    0.39
+  ],
+  "comparability": "Conditional baseline mismatch, pre-existing damage and one available beam prevent a defensible direct calibration comparison.",
+  "reading_propagation": {
+    "draws": 20000,
+    "seed": 201507037,
+    "distribution": "Uniform bounded reading sensitivity; include plot/table load alignment ±0.075 kN and shared baseline; not a measurement-error model or confidence interval."
+  }
+}

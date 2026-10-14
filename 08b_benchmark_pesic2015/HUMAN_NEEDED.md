@@ -1,0 +1,6 @@
+- Static peak and residual deflections for Beams 1, 2, 4 and 5 are not published in this PDF.
+- Raw Beam 3 load-deflection records are needed to check vector-assisted graph readings and quantify measurement uncertainty.
+- Measured cracking loads and pre-test static baseline stiffness are absent for all five beams.
+- Beam-specific test ages, density, damping and quantitative vibration amplitude are absent.
+- Independent concrete tensile tests, measured steel elastic modulus and ultimate strain are absent; Table 2 and Appendix B disagree on bar depth.
+- Beam 3 may have pre-existing damage (p. 21); its undamaged static reference cannot be reconstructed from the published measurements.

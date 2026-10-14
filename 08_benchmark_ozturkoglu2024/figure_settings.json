@@ -1,0 +1,12 @@
+{
+  "font": "Carlito",
+  "dpi": 650,
+  "background": "white",
+  "maroon": "#8E1B2E",
+  "blue": "#4A6C8C",
+  "files": [
+    "01_capacity_predicted_vs_test.png",
+    "02_static_vs_vibration.png",
+    "03_retrofit_vertical_signal.png"
+  ]
+}

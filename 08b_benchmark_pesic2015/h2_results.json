@@ -1,0 +1,978 @@
+{
+  "status": "PARTIAL_CONDITIONAL_BASELINE",
+  "available_static_beams": 1,
+  "paper_beams": 5,
+  "paired_steps": 11,
+  "rows": [
+    {
+      "beam": 3,
+      "step": 1,
+      "pixel": [
+        324,
+        936
+      ],
+      "peak_deflection_mm": 0.4846938775510204,
+      "deflection_reading_bound_mm": 0.15,
+      "plotted_peak_load_kN": 0.33727810650887574,
+      "table_load_kN": 0.34,
+      "plot_minus_table_load_kN": -0.002721893491124283,
+      "load_alignment_bound_kN": 0.03,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.7014736842105264,
+      "static_EI_MNm2": 2.3011844210526324,
+      "static_left": 1.0,
+      "dynamic_left": 0.9567798884259585,
+      "dynamic_matched_reference_left": 1.0,
+      "static_reading_interval_95": [
+        1.0,
+        1.0
+      ],
+      "dynamic_reading_interval_95": [
+        0.9542630296258807,
+        0.9593350276066762
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 2,
+      "pixel": [
+        350,
+        886
+      ],
+      "peak_deflection_mm": 1.1479591836734695,
+      "deflection_reading_bound_mm": 0.15,
+      "plotted_peak_load_kN": 0.44822485207100593,
+      "table_load_kN": 0.45,
+      "plot_minus_table_load_kN": -0.0017751479289940808,
+      "load_alignment_bound_kN": 0.03,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.39199999999999996,
+      "static_EI_MNm2": 1.285956,
+      "static_left": 0.5588235294117646,
+      "dynamic_left": 0.9469416001694795,
+      "dynamic_matched_reference_left": 0.9897172919545114,
+      "static_reading_interval_95": [
+        0.36979994538816285,
+        0.7940873840148635
+      ],
+      "dynamic_reading_interval_95": [
+        0.9444471717272828,
+        0.9494686481185688
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 3,
+      "pixel": [
+        374,
+        841
+      ],
+      "peak_deflection_mm": 1.760204081632653,
+      "deflection_reading_bound_mm": 0.15,
+      "plotted_peak_load_kN": 0.5480769230769231,
+      "table_load_kN": 0.55,
+      "plot_minus_table_load_kN": -0.0019230769230769162,
+      "load_alignment_bound_kN": 0.03,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.31246376811594206,
+      "static_EI_MNm2": 1.0250373913043482,
+      "static_left": 0.44543904518329075,
+      "dynamic_left": 0.9306574394463668,
+      "dynamic_matched_reference_left": 0.9726975354565958,
+      "static_reading_interval_95": [
+        0.30130886503434556,
+        0.6161103618044641
+      ],
+      "dynamic_reading_interval_95": [
+        0.9282213569209244,
+        0.9331306283405043
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 4,
+      "pixel": [
+        430,
+        787
+      ],
+      "peak_deflection_mm": 3.188775510204082,
+      "deflection_reading_bound_mm": 0.3,
+      "plotted_peak_load_kN": 0.6678994082840237,
+      "table_load_kN": 0.67,
+      "plot_minus_table_load_kN": -0.0021005917159763188,
+      "load_alignment_bound_kN": 0.03,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.210112,
+      "static_EI_MNm2": 0.6892724160000001,
+      "static_left": 0.2995294117647059,
+      "dynamic_left": 0.9209547348351104,
+      "dynamic_matched_reference_left": 0.9625565357045853,
+      "static_reading_interval_95": [
+        0.20208422783351596,
+        0.414652385590874
+      ],
+      "dynamic_reading_interval_95": [
+        0.9185382135335818,
+        0.9234037754569535
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 5,
+      "pixel": [
+        546,
+        719
+      ],
+      "peak_deflection_mm": 6.1479591836734695,
+      "deflection_reading_bound_mm": 0.3,
+      "plotted_peak_load_kN": 0.8187869822485208,
+      "table_load_kN": 0.82,
+      "plot_minus_table_load_kN": -0.001213017751479195,
+      "load_alignment_bound_kN": 0.03,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.13337759336099583,
+      "static_EI_MNm2": 0.4375451950207469,
+      "static_left": 0.190139126189895,
+      "dynamic_left": 0.9113028740908127,
+      "dynamic_matched_reference_left": 0.9524686765626289,
+      "static_reading_interval_95": [
+        0.13052849535636166,
+        0.25795444657768946
+      ],
+      "dynamic_reading_interval_95": [
+        0.9088930413209266,
+        0.9137422605727984
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 6,
+      "pixel": [
+        615,
+        661
+      ],
+      "peak_deflection_mm": 7.908163265306122,
+      "deflection_reading_bound_mm": 0.3,
+      "plotted_peak_load_kN": 0.9474852071005917,
+      "table_load_kN": 0.95,
+      "plot_minus_table_load_kN": -0.002514792899408258,
+      "load_alignment_bound_kN": 0.03,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.12012903225806451,
+      "static_EI_MNm2": 0.39408329032258066,
+      "static_left": 0.17125237191650852,
+      "dynamic_left": 0.8985128168914625,
+      "dynamic_matched_reference_left": 0.9391008608778827,
+      "static_reading_interval_95": [
+        0.11774429847474138,
+        0.23191314996166248
+      ],
+      "dynamic_reading_interval_95": [
+        0.8961204868608301,
+        0.9009374535214922
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 7,
+      "pixel": [
+        747,
+        597
+      ],
+      "peak_deflection_mm": 11.275510204081632,
+      "deflection_reading_bound_mm": 0.4,
+      "plotted_peak_load_kN": 1.0894970414201184,
+      "table_load_kN": 1.09,
+      "plot_minus_table_load_kN": -0.000502958579881696,
+      "load_alignment_bound_kN": 0.03,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.09666968325791857,
+      "static_EI_MNm2": 0.3171248959276019,
+      "static_left": 0.13780942241149854,
+      "dynamic_left": 0.8669331261916532,
+      "dynamic_matched_reference_left": 0.9060946375219943,
+      "static_reading_interval_95": [
+        0.09479423925833955,
+        0.18591604203031256
+      ],
+      "dynamic_reading_interval_95": [
+        0.8645953729753835,
+        0.8692952889452121
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 8,
+      "pixel": [
+        850,
+        521
+      ],
+      "peak_deflection_mm": 13.903061224489797,
+      "deflection_reading_bound_mm": 0.4,
+      "plotted_peak_load_kN": 1.2581360946745561,
+      "table_load_kN": 1.26,
+      "plot_minus_table_load_kN": -0.001863905325443893,
+      "load_alignment_bound_kN": 0.03,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.09062752293577982,
+      "static_EI_MNm2": 0.29730358899082576,
+      "static_left": 0.1291958985429034,
+      "dynamic_left": 0.8420761245674739,
+      "dynamic_matched_reference_left": 0.8801147837177171,
+      "static_reading_interval_95": [
+        0.08899645311985985,
+        0.17466294810701033
+      ],
+      "dynamic_reading_interval_95": [
+        0.8398034034482764,
+        0.8443697982861068
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 9,
+      "pixel": [
+        924,
+        453
+      ],
+      "peak_deflection_mm": 15.790816326530612,
+      "deflection_reading_bound_mm": 0.4,
+      "plotted_peak_load_kN": 1.4090236686390532,
+      "table_load_kN": 1.41,
+      "plot_minus_table_load_kN": -0.0009763313609467694,
+      "load_alignment_bound_kN": 0.03,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.08929240710823909,
+      "static_EI_MNm2": 0.29292374151857836,
+      "static_left": 0.12729259716810792,
+      "dynamic_left": 0.8236706447284796,
+      "dynamic_matched_reference_left": 0.8608778828780955,
+      "static_reading_interval_95": [
+        0.0877710137570713,
+        0.1715299761452068
+      ],
+      "dynamic_reading_interval_95": [
+        0.8214177919418963,
+        0.8259316381949473
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 10,
+      "pixel": [
+        1082,
+        350
+      ],
+      "peak_deflection_mm": 19.821428571428573,
+      "deflection_reading_bound_mm": 0.4,
+      "plotted_peak_load_kN": 1.6375739644970415,
+      "table_load_kN": 1.64,
+      "plot_minus_table_load_kN": -0.00242603550295839,
+      "load_alignment_bound_kN": 0.03,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.08273873873873873,
+      "static_EI_MNm2": 0.2714244324324324,
+      "static_left": 0.11794988265576499,
+      "dynamic_left": 0.7934467904808982,
+      "dynamic_matched_reference_left": 0.8292887424569854,
+      "static_reading_interval_95": [
+        0.08142583266501197,
+        0.15903829727210775
+      ],
+      "dynamic_reading_interval_95": [
+        0.7912527055561205,
+        0.7956656277106746
+      ]
+    },
+    {
+      "beam": 3,
+      "step": 11,
+      "pixel": [
+        1532,
+        97
+      ],
+      "peak_deflection_mm": 31.301020408163264,
+      "deflection_reading_bound_mm": 0.4,
+      "plotted_peak_load_kN": 2.19896449704142,
+      "table_load_kN": 2.2,
+      "plot_minus_table_load_kN": -0.0010355029585800146,
+      "load_alignment_bound_kN": 0.03,
+      "source": "p. 23, Fig. 11; p. 19, Table 3, Beam 3",
+      "inferred": true,
+      "reason": "Chronological envelope assignment to Table 3 load step; plot and table do not coincide exactly. Reading bounds include marker width, axis placement and local overlap; not statistical measurement errors.",
+      "static_secant_kN_per_mm": 0.07028524857375713,
+      "static_EI_MNm2": 0.23057075794621032,
+      "static_left": 0.1001965578407402,
+      "dynamic_left": 0.7203587317279853,
+      "dynamic_matched_reference_left": 0.7528991155040681,
+      "static_reading_interval_95": [
+        0.06921906036991114,
+        0.13474109787557959
+      ],
+      "dynamic_reading_interval_95": [
+        0.7183277957257433,
+        0.7224092689040609
+      ]
+    }
+  ],
+  "static_definition": "Peak applied load / peak total deflection, normalised by earliest readable Beam 3 peak at step 1. This reference is already damaged and is not an uncracked stiffness.",
+  "dynamic_definition": "(mode 1 frequency / measured initial mode 1 frequency)^2; mode 2 states are retained in extraction.",
+  "kappa": 0.17992742466580877,
+  "kappa_95_interval": null,
+  "beam_bootstrap_raw_interval_95": [
+    0.17992742466580877,
+    0.17992742466580877
+  ],
+  "bootstrap": {
+    "replicates": 20000,
+    "unit": "beam",
+    "clusters": 1,
+    "status": "DEGENERATE_ONE_CLUSTER_NOT_A_VALID_POPULATION_CONFIDENCE_INTERVAL",
+    "explanation": "Resampling a single available beam repeats identical data. No cross-beam interval can be estimated."
+  },
+  "kappa_reading_interval_95": [
+    0.16407147491352847,
+    0.19816608542531403
+  ],
+  "matched_reference_sensitivity_kappa": 0.13166793577479108,
+  "matched_reference_reading_interval_95": [
+    0.11864816102895702,
+    0.14718369854261265
+  ],
+  "per_beam": {
+    "1": {
+      "kappa": null,
+      "kappa_95_interval": null,
+      "status": "Static records absent"
+    },
+    "2": {
+      "kappa": null,
+      "kappa_95_interval": null,
+      "status": "Static records absent"
+    },
+    "3": {
+      "kappa": 0.17992742466580877,
+      "kappa_95_interval": null,
+      "status": "Conditional paired history"
+    },
+    "4": {
+      "kappa": null,
+      "kappa_95_interval": null,
+      "status": "Static records absent"
+    },
+    "5": {
+      "kappa": null,
+      "kappa_95_interval": null,
+      "status": "Static records absent"
+    }
+  },
+  "unloading_chords": [
+    {
+      "step": 1,
+      "residual_mm": 0.22959183673469388,
+      "peak_mm": 0.4846938775510204,
+      "load_kN": 0.34,
+      "unloading_chord_kN_per_mm": 1.3328000000000004,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.15,
+      "pixel": [
+        314,
+        1088
+      ]
+    },
+    {
+      "step": 2,
+      "residual_mm": 0.7653061224489796,
+      "peak_mm": 1.1479591836734695,
+      "load_kN": 0.45,
+      "unloading_chord_kN_per_mm": 1.1759999999999995,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.15,
+      "pixel": [
+        335,
+        1088
+      ]
+    },
+    {
+      "step": 3,
+      "residual_mm": 1.25,
+      "peak_mm": 1.760204081632653,
+      "load_kN": 0.55,
+      "unloading_chord_kN_per_mm": 1.0780000000000003,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.15,
+      "pixel": [
+        354,
+        1088
+      ]
+    },
+    {
+      "step": 4,
+      "residual_mm": 2.0918367346938775,
+      "peak_mm": 3.188775510204082,
+      "load_kN": 0.67,
+      "unloading_chord_kN_per_mm": 0.6107906976744185,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.4,
+      "pixel": [
+        387,
+        1088
+      ]
+    },
+    {
+      "step": 5,
+      "residual_mm": 4.260204081632653,
+      "peak_mm": 6.1479591836734695,
+      "load_kN": 0.82,
+      "unloading_chord_kN_per_mm": 0.4343783783783784,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.4,
+      "pixel": [
+        472,
+        1088
+      ]
+    },
+    {
+      "step": 6,
+      "residual_mm": 5.714285714285714,
+      "peak_mm": 7.908163265306122,
+      "load_kN": 0.95,
+      "unloading_chord_kN_per_mm": 0.43302325581395357,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.4,
+      "pixel": [
+        529,
+        1088
+      ]
+    },
+    {
+      "step": 7,
+      "residual_mm": 7.6020408163265305,
+      "peak_mm": 11.275510204081632,
+      "load_kN": 1.09,
+      "unloading_chord_kN_per_mm": 0.2967222222222223,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.4,
+      "pixel": [
+        603,
+        1088
+      ]
+    },
+    {
+      "step": 8,
+      "residual_mm": 9.056122448979592,
+      "peak_mm": 13.903061224489797,
+      "load_kN": 1.26,
+      "unloading_chord_kN_per_mm": 0.25995789473684205,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.4,
+      "pixel": [
+        660,
+        1088
+      ]
+    },
+    {
+      "step": 9,
+      "residual_mm": 10.459183673469388,
+      "peak_mm": 15.790816326530612,
+      "load_kN": 1.41,
+      "unloading_chord_kN_per_mm": 0.26445933014354067,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.4,
+      "pixel": [
+        715,
+        1088
+      ]
+    },
+    {
+      "step": 10,
+      "residual_mm": 12.908163265306122,
+      "peak_mm": 19.821428571428573,
+      "load_kN": 1.64,
+      "unloading_chord_kN_per_mm": 0.23722509225092242,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.4,
+      "pixel": [
+        811,
+        1088
+      ]
+    },
+    {
+      "step": 11,
+      "residual_mm": 19.336734693877553,
+      "peak_mm": 31.301020408163264,
+      "load_kN": 2.2,
+      "unloading_chord_kN_per_mm": 0.18388059701492543,
+      "scope": "Peak-to-zero chord, not tangent reloading stiffness",
+      "residual_reading_bound_mm": 0.4,
+      "pixel": [
+        1063,
+        1088
+      ]
+    }
+  ],
+  "unloading_chord_conditional_kappa": 0.21310522163605528,
+  "unloading_uncertainty_status": "First chord recovered deflection is small relative to combined reading bounds; a finite reliable normalisation interval is unavailable. Point slope is descriptive only.",
+  "sign_test_naive": {
+    "positive": 10,
+    "negative": 1,
+    "n": 11,
+    "one_sided_p": 0.005859375,
+    "alternative": "dynamic_left > static_left",
+    "limitation": "Repeated steps share one beam and a shared baseline; the binomial independence assumption fails."
+  },
+  "sign_test_beam_level": {
+    "positive": 1,
+    "n": 1,
+    "one_sided_p": 0.5
+  },
+  "musial_comparison_range": [
+    0.31,
+    0.39
+  ],
+  "comparability": "Conditional baseline mismatch, pre-existing damage and one available beam prevent a defensible direct calibration comparison.",
+  "all_beams_vibration_ratios": [
+    {
+      "beam": 1,
+      "states": [
+        {
+          "step": 0,
+          "load_kN": 0,
+          "mode1_left": 1.0,
+          "mode2_left": 1.0,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 1,
+          "load_kN": 1.25,
+          "mode1_left": 0.9298469387755103,
+          "mode2_left": 0.9773164278795414,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 2,
+          "load_kN": 1.61,
+          "mode1_left": 0.8889795918367347,
+          "mode2_left": 0.9660722288886641,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 3,
+          "load_kN": 1.85,
+          "mode1_left": 0.8490306122448981,
+          "mode2_left": 0.954893087944021,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 4,
+          "load_kN": 2.11,
+          "mode1_left": 0.8229081632653061,
+          "mode2_left": 0.943779005045613,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 5,
+          "load_kN": 2.4,
+          "mode1_left": 0.7844897959183674,
+          "mode2_left": 0.9254001069843427,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 6,
+          "load_kN": 2.6,
+          "mode1_left": 0.7469897959183672,
+          "mode2_left": 0.8999732539143257,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 7,
+          "load_kN": 2.87,
+          "mode1_left": 0.7224999999999999,
+          "mode2_left": 0.8891844612470904,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 8,
+          "load_kN": 3.01,
+          "mode1_left": 0.6865306122448979,
+          "mode2_left": 0.8607324090271652,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 9,
+          "load_kN": 3.26,
+          "mode1_left": 0.6747448979591836,
+          "mode2_left": 0.846679871040495,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 10,
+          "load_kN": 3.54,
+          "mode1_left": 0.6630612244897959,
+          "mode2_left": 0.8327429918026862,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 11,
+          "load_kN": 3.72,
+          "mode1_left": 0.6399999999999999,
+          "mode2_left": 0.812054533100088,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 12,
+          "load_kN": 4.07,
+          "mode1_left": 0.6286224489795917,
+          "mode2_left": 0.7950129393225287,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 13,
+          "load_kN": 4.96,
+          "mode1_left": 0.5412755102040817,
+          "mode2_left": 0.7319030201390796,
+          "source": "p. 19, Table 3"
+        }
+      ]
+    },
+    {
+      "beam": 2,
+      "states": [
+        {
+          "step": 0,
+          "load_kN": 0,
+          "mode1_left": 1.0,
+          "mode2_left": 1.0,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 1,
+          "load_kN": 1.31,
+          "mode1_left": 0.7454014312322323,
+          "mode2_left": 0.8836000000000002,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 2,
+          "load_kN": 1.43,
+          "mode1_left": 0.7250269581413586,
+          "mode2_left": 0.87890625,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 3,
+          "load_kN": 1.67,
+          "mode1_left": 0.7082638956965005,
+          "mode2_left": 0.8649000000000001,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 4,
+          "load_kN": 1.98,
+          "mode1_left": 0.6966464072149788,
+          "mode2_left": 0.83265625,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 5,
+          "load_kN": 2.2,
+          "mode1_left": 0.6704528967748259,
+          "mode2_left": 0.8145062500000001,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 6,
+          "load_kN": 2.46,
+          "mode1_left": 0.6368356043525145,
+          "mode2_left": 0.78765625,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 7,
+          "load_kN": 2.55,
+          "mode1_left": 0.599474561317518,
+          "mode2_left": 0.75255625,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 8,
+          "load_kN": 3.3,
+          "mode1_left": 0.5857553181060681,
+          "mode2_left": 0.7310250000000001,
+          "source": "p. 19, Table 3"
+        }
+      ]
+    },
+    {
+      "beam": 3,
+      "states": [
+        {
+          "step": 0,
+          "load_kN": 0,
+          "mode1_left": 1.0,
+          "mode2_left": 1.0,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 1,
+          "load_kN": 0.34,
+          "mode1_left": 0.9567798884259585,
+          "mode2_left": 0.975052957756342,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 2,
+          "load_kN": 0.45,
+          "mode1_left": 0.9469416001694795,
+          "mode2_left": 0.9668073037937012,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 3,
+          "load_kN": 0.55,
+          "mode1_left": 0.9306574394463668,
+          "mode2_left": 0.9585966632236831,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 4,
+          "load_kN": 0.67,
+          "mode1_left": 0.9209547348351104,
+          "mode2_left": 0.9504210360462878,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 5,
+          "load_kN": 0.82,
+          "mode1_left": 0.9113028740908127,
+          "mode2_left": 0.942280422261515,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 6,
+          "load_kN": 0.95,
+          "mode1_left": 0.8985128168914625,
+          "mode2_left": 0.9341748218693653,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 7,
+          "load_kN": 1.09,
+          "mode1_left": 0.8669331261916532,
+          "mode2_left": 0.9180686612629331,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 8,
+          "load_kN": 1.26,
+          "mode1_left": 0.8420761245674739,
+          "mode2_left": 0.8941720207979554,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 9,
+          "load_kN": 1.41,
+          "mode1_left": 0.8236706447284796,
+          "mode2_left": 0.8784159941177501,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 10,
+          "load_kN": 1.64,
+          "mode1_left": 0.7934467904808982,
+          "mode2_left": 0.8628000210080355,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 11,
+          "load_kN": 2.2,
+          "mode1_left": 0.7203587317279853,
+          "mode2_left": 0.7647100015756026,
+          "source": "p. 19, Table 3"
+        }
+      ]
+    },
+    {
+      "beam": 4,
+      "states": [
+        {
+          "step": 0,
+          "load_kN": 0,
+          "mode1_left": 1.0,
+          "mode2_left": 1.0,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 1,
+          "load_kN": 0.5,
+          "mode1_left": 0.9882006932530375,
+          "mode2_left": 0.9964819728228527,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 2,
+          "load_kN": 1.2,
+          "mode1_left": 0.9648121564370998,
+          "mode2_left": 0.9929701448125374,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 3,
+          "load_kN": 1.5,
+          "mode1_left": 0.9532229263681246,
+          "mode2_left": 0.9894645159690539,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 4,
+          "load_kN": 1.95,
+          "mode1_left": 0.9075662616855156,
+          "mode2_left": 0.9824718557825828,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 5,
+          "load_kN": 2.45,
+          "mode1_left": 0.8851580827001858,
+          "mode2_left": 0.9824718557825828,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 6,
+          "load_kN": 3,
+          "mode1_left": 0.8520710059171599,
+          "mode2_left": 0.9789848244395956,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 7,
+          "load_kN": 3.45,
+          "mode1_left": 0.7983263891320332,
+          "mode2_left": 0.9581928188851419,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 8,
+          "load_kN": 4,
+          "mode1_left": 0.7059976891565423,
+          "mode2_left": 0.9513117437016466,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 9,
+          "load_kN": 4.6,
+          "mode1_left": 0.6667833759322154,
+          "mode2_left": 0.9004940735965087,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 10,
+          "load_kN": 4.9,
+          "mode1_left": 0.6193410594867128,
+          "mode2_left": 0.8739616395556438,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 11,
+          "load_kN": 5.5,
+          "mode1_left": 0.6193410594867128,
+          "mode2_left": 0.8739616395556438,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 12,
+          "load_kN": 6,
+          "mode1_left": 0.6100626728755996,
+          "mode2_left": 0.864114263043047,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 13,
+          "load_kN": 7,
+          "mode1_left": 0.6100626728755996,
+          "mode2_left": 0.8543226790319381,
+          "source": "p. 19, Table 3"
+        }
+      ]
+    },
+    {
+      "beam": 5,
+      "states": [
+        {
+          "step": 0,
+          "load_kN": 0,
+          "mode1_left": 1.0,
+          "mode2_left": 1.0,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 1,
+          "load_kN": 1.5,
+          "mode1_left": 0.9529478458049888,
+          "mode2_left": 0.9727903921936573,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 2,
+          "load_kN": 1.6,
+          "mode1_left": 0.9375157470395565,
+          "mode2_left": 0.9673935072246199,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 3,
+          "load_kN": 1.6,
+          "mode1_left": 0.922209624590577,
+          "mode2_left": 0.9673935072246199,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 4,
+          "load_kN": 1.6,
+          "mode1_left": 0.8919753086419755,
+          "mode2_left": 0.962011634452993,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 5,
+          "load_kN": 3,
+          "mode1_left": 0.8042957923910306,
+          "mode2_left": 0.9142503283918183,
+          "source": "p. 19, Table 3"
+        },
+        {
+          "step": 6,
+          "load_kN": 4.5,
+          "mode1_left": 0.6812799193751575,
+          "mode2_left": 0.8728166635391257,
+          "source": "p. 19, Table 3"
+        }
+      ]
+    }
+  ],
+  "reading_propagation": {
+    "draws": 20000,
+    "seed": 201507037,
+    "distribution": "Uniform bounded reading sensitivity; include plot/table load alignment ±0.03 kN and shared baseline; not a measurement-error model or confidence interval."
+  }
+}

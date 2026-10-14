@@ -1,0 +1,240 @@
+! =====================================================================
+! 03_mesh.inp  -  nodes and elements by direct generation (half model)
+! x along the beam (0 to 3200), y vertical (0 = original soffit), z across the width.
+! The plane z = 0 is the vertical plane of symmetry: only half the width is modelled.
+! Grid lines are placed exactly at the bar, stirrup, plate and jacket positions, so bars and
+! stirrups share nodes with the concrete.
+! =====================================================================
+/PREP7
+
+! ---------- grid
+NXP = LTOT/DX+1                              ! 65 stations along x
+*DIM,XG,ARRAY,NXP
+*DO,I,1,NXP
+  XG(I) = (I-1)*DX
+*ENDDO
+NYP = 21
+*DIM,YG,ARRAY,NYP
+YG(1)  = -75,-60,-36,-18,0                   ! jacket region below the soffit (used only when REPAIR = 1)
+YG(6)  = 15,29,39,60,85,110,135,160,185,210  ! 29 stirrup leg, 39 bottom bars
+YG(16) = 235,250,262,271,285,300             ! 262 top bars, 271 stirrup leg
+NZP = 12
+*DIM,ZG,ARRAY,NZP
+ZG(1)  = 0,19,38,57,76.5,86,100,115          ! 76.5 bars, 86 stirrup legs, 115 face of beam
+ZG(9)  = 130,151,170,190                     ! jacket region (151 jacket bars)
+
+! key grid indices
+J0   = 5      ! y = 0, original soffit
+JB   = 8      ! y = 39, bottom bars
+JT   = 18     ! y = 262, top bars
+JSB  = 7      ! y = 29, lower stirrup leg
+JST  = 19     ! y = 271, upper stirrup leg
+JH   = 21     ! y = 300, top face
+JJB  = 3      ! y = -36, jacket bars
+KB   = 5      ! z = 76.5, bars
+KS   = 6      ! z = 86, stirrup vertical legs
+KF   = 8      ! z = 115, beam side face
+KP   = 4      ! z = 57, half width of the equivalent plate / laminate
+KJB  = 10     ! z = 151, jacket bars
+KJ   = 12     ! z = 190, jacket outer face
+NXY  = NXP*NYP
+
+! node number of grid point (I,J,K) = I + (J-1)*NXP + (K-1)*NXY
+! bearing plate nodes:  support plates  200000 + I + (K-1)*NXP   at y = -PL_T
+!                       load plates     300000 + I + (K-1)*NXP   at y = H + PL_T
+! interface duplicates: 400000 + I + (K-1)*NXP at y = 0;  steel plate soffit 500000 + ... at y = -T_EQ
+
+*DO,K,1,NZP
+  *DO,J,1,NYP
+    *DO,I,1,NXP
+      N,I+(J-1)*NXP+(K-1)*NXY,XG(I),YG(J),ZG(K)
+    *ENDDO
+  *ENDDO
+*ENDDO
+*DO,K,1,KF
+  *DO,I,1,NXP
+    N,200000+I+(K-1)*NXP,XG(I),-PL_T,ZG(K)
+    N,300000+I+(K-1)*NXP,XG(I),H+PL_T,ZG(K)
+  *ENDDO
+*ENDDO
+
+! ---------- concrete of the original beam
+TYPE,1
+MAT,1
+REAL,1
+*DO,K,1,KF-1
+  *DO,J,J0,JH-1
+    *DO,I,1,NXP-1
+      N1 = I+(J-1)*NXP+(K-1)*NXY
+      E,N1,N1+1,N1+1+NXP,N1+NXP,N1+NXY,N1+1+NXY,N1+1+NXP+NXY,N1+NXP+NXY
+    *ENDDO
+  *ENDDO
+*ENDDO
+CM,CONC_E,ELEM
+
+! ---------- longitudinal bars (LINK180)
+TYPE,2
+MAT,2
+*DO,I,1,NXP-1
+  N1 = I+(JB-1)*NXP                ! bottom bar on the symmetry plane (half area)
+  SECNUM,2
+  E,N1,N1+1
+  N1 = I+(JB-1)*NXP+(KB-1)*NXY     ! bottom bar at z = 76.5
+  SECNUM,1
+  E,N1,N1+1
+  N1 = I+(JT-1)*NXP+(KB-1)*NXY     ! top bar at z = 76.5
+  SECNUM,3
+  E,N1,N1+1
+*ENDDO
+
+! ---------- stirrups every 150 mm from x = 50 (LINK180, Fe415)
+MAT,4
+SECNUM,4
+*DO,I,2,NXP-3,3
+  *DO,J,JSB,JST-1                  ! vertical leg
+    N1 = I+(J-1)*NXP+(KS-1)*NXY
+    E,N1,N1+NXP
+  *ENDDO
+  *DO,K,1,KS-1                     ! lower and upper horizontal legs
+    N1 = I+(JSB-1)*NXP+(K-1)*NXY
+    E,N1,N1+NXY
+    N1 = I+(JST-1)*NXP+(K-1)*NXY
+    E,N1,N1+NXY
+  *ENDDO
+*ENDDO
+
+! ---------- bearing plates (SOLID185, elastic steel)
+TYPE,3
+MAT,3
+I_S1 = X_S1/DX+1
+I_S2 = X_S2/DX+1
+I_P1 = X_P1/DX+1
+I_P2 = X_P2/DX+1
+HP   = PL_L/DX/2                   ! plate half length in grid steps
+*DO,K,1,KF-1
+  *DO,IC,1,2
+    *IF,IC,EQ,1,THEN
+      IS = I_S1
+      IL = I_P1
+    *ELSE
+      IS = I_S2
+      IL = I_P2
+    *ENDIF
+    *DO,I,IS-HP,IS+HP-1            ! support plate under the soffit
+      PB = 200000+I+(K-1)*NXP
+      NB = I+(J0-1)*NXP+(K-1)*NXY
+      E,PB,PB+1,NB+1,NB,PB+NXP,PB+1+NXP,NB+1+NXY,NB+NXY
+    *ENDDO
+    *DO,I,IL-HP,IL+HP-1            ! load plate on the top face
+      PT = 300000+I+(K-1)*NXP
+      NT = I+(JH-1)*NXP+(K-1)*NXY
+      E,NT,NT+1,PT+1,PT,NT+NXY,NT+1+NXY,PT+1+NXP,PT+NXP
+    *ENDDO
+  *ENDDO
+*ENDDO
+
+! ---------- repairs: created now, deactivated before solution, activated after damage (04 and 05)
+ESEL,NONE
+*IF,REPAIR,EQ,1,THEN
+  ! concrete jacket, 75 mm on soffit and side, between the support plates (x = 150 to 3050)
+  IJ1 = I_S1+HP
+  IJ2 = I_S2-HP
+  TYPE,1
+  MAT,5
+  REAL,1
+  *DO,I,IJ1,IJ2-1
+    *DO,K,1,KJ-1                   ! slab under the soffit, full jacket width
+      *DO,J,1,J0-1
+        N1 = I+(J-1)*NXP+(K-1)*NXY
+        E,N1,N1+1,N1+1+NXP,N1+NXP,N1+NXY,N1+1+NXY,N1+1+NXP+NXY,N1+NXP+NXY
+      *ENDDO
+    *ENDDO
+    *DO,K,KF,KJ-1                  ! side jacket over the full depth
+      *DO,J,J0,JH-1
+        N1 = I+(J-1)*NXP+(K-1)*NXY
+        E,N1,N1+1,N1+1+NXP,N1+NXP,N1+NXY,N1+1+NXY,N1+1+NXP+NXY,N1+NXP+NXY
+      *ENDDO
+    *ENDDO
+    TYPE,2                         ! jacket bar, 12 mm, at y = -36, z = 151
+    MAT,2
+    SECNUM,1
+    N1 = I+(JJB-1)*NXP+(KJB-1)*NXY
+    E,N1,N1+1
+    TYPE,1
+    MAT,5
+  *ENDDO
+*ELSEIF,REPAIR,GE,2
+  ! bonded steel plate (2) or polymer laminate (3) on the soffit, x = 200 to 3000,
+  ! modelled over z = 0 to 57 with a thickness giving the true cross-sectional area
+  IR1 = 200/DX+1
+  IR2 = 3000/DX+1
+  *DO,K,1,KP
+    *DO,I,IR1,IR2
+      N,400000+I+(K-1)*NXP,XG(I),0,ZG(K)        ! interface duplicates of soffit nodes
+    *ENDDO
+  *ENDDO
+  T_EQ = PLATE_W*PLATE_T/2/ZG(KP)
+  *IF,REPAIR,EQ,2,THEN
+    *DO,K,1,KP
+      *DO,I,IR1,IR2
+        N,500000+I+(K-1)*NXP,XG(I),-T_EQ,ZG(K)
+      *ENDDO
+    *ENDDO
+    TYPE,3
+    MAT,6
+    *DO,K,1,KP-1
+      *DO,I,IR1,IR2-1
+        PB = 500000+I+(K-1)*NXP
+        DB = 400000+I+(K-1)*NXP
+        E,PB,PB+1,DB+1,DB,PB+NXP,PB+1+NXP,DB+1+NXP,DB+NXP
+      *ENDDO
+    *ENDDO
+  *ELSE
+    TYPE,4
+    MAT,7
+    SECNUM,5
+    *DO,K,1,KP-1
+      *DO,I,IR1,IR2-1
+        DB = 400000+I+(K-1)*NXP
+        E,DB,DB+1,DB+1+NXP,DB+NXP
+      *ENDDO
+    *ENDDO
+  *ENDIF
+  ! cohesive bond interface between the duplicates (bottom face) and the concrete soffit (top face)
+  TYPE,5
+  MAT,8
+  *DO,K,1,KP-1
+    *DO,I,IR1,IR2-1
+      DB = 400000+I+(K-1)*NXP
+      NB = I+(J0-1)*NXP+(K-1)*NXY
+      E,DB,DB+NXP,DB+NXP+1,DB+1,NB,NB+NXY,NB+NXY+1,NB+1
+    *ENDDO
+  *ENDDO
+*ENDIF
+*IF,REPAIR,GT,0,THEN
+  CM,REPAIR_E,ELEM
+*ENDIF
+ALLSEL,ALL
+
+! ---------- remove nodes that belong to no element (unused jacket grid)
+ESEL,ALL
+NSLE,S
+NSEL,INVE
+NDELE,ALL
+ALLSEL,ALL
+
+! ---------- node groups used later
+NSEL,S,NODE,,200000+I_S1,200000+I_S1+(KF-1)*NXP,NXP
+CM,SUP1,NODE
+NSEL,S,NODE,,200000+I_S2,200000+I_S2+(KF-1)*NXP,NXP
+CM,SUP2,NODE
+NSEL,S,NODE,,300000+I_P1,300000+I_P1+(KF-1)*NXP,NXP
+NSEL,A,NODE,,300000+I_P2,300000+I_P2+(KF-1)*NXP,NXP
+CM,LOADN,NODE
+ALLSEL,ALL
+N_MID = (X_MID/DX+1)+(J0-1)*NXP        ! soffit, midspan, on the symmetry plane
+N_LOAD = 300000+I_P1                    ! one load-line node, for displacement read-out
+N_ACC = (750+OVH)/DX+1+(J0-1)*NXP       ! accelerometer position (quarter span)
+/TITLE,StrucIQ beam 230 x 300 mm, span 3000 mm, repair option %REPAIR%
+EPLOT
+FINISH

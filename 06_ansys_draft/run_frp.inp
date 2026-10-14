@@ -1,0 +1,17 @@
+! =====================================================================
+! run_frp.inp  -  complete analysis: fibre-reinforced polymer strips
+! Run from the folder holding all .inp files:
+!   Mechanical APDL: File > Read Input From > run_frp.inp
+!   or batch:        MAPDL -b -i run_frp.inp -o run_frp.out -j frp
+! =====================================================================
+FINISH
+/CLEAR,NOSTART
+/FILNAME,frp,1
+/INPUT,01_params,inp
+REPAIR = 3
+TAG = 'frp'
+/INPUT,02_materials,inp
+/INPUT,03_mesh,inp
+/INPUT,04_bc_solve,inp
+/INPUT,06_post,inp
+/INPUT,05_modal,inp

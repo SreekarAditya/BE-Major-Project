@@ -1,0 +1,247 @@
+{
+  "status": "COMPLETED",
+  "rows": [
+    {
+      "beam": "GFRP_PostStr",
+      "direction": "vertical",
+      "mode": 1,
+      "f_ratio_before": 0.988,
+      "f_ratio_after": 0.899,
+      "frequency_change_pct": -9.008097165991902,
+      "frequency_change_rounding_bounds_pct": [
+        -9.104704097116834,
+        -8.911392405063301
+      ],
+      "apparent_frequency_squared_change_pct": -17.204736186464288,
+      "estimated_frequency_before_Hz": 24.88772,
+      "estimated_frequency_after_Hz": 22.64581,
+      "frequency_Hz_note": "Multiplication by the merged Table 5 bare baseline is approximate for each individual post beam.",
+      "source": "p. 16, Table 9"
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "direction": "vertical",
+      "mode": 2,
+      "f_ratio_before": 0.991,
+      "f_ratio_after": 0.959,
+      "frequency_change_pct": -3.229061553985879,
+      "frequency_change_rounding_bounds_pct": [
+        -3.3282904689863724,
+        -3.129732458354384
+      ],
+      "apparent_frequency_squared_change_pct": -6.353854722777463,
+      "estimated_frequency_before_Hz": 88.78369,
+      "estimated_frequency_after_Hz": 85.91681,
+      "frequency_Hz_note": "Multiplication by the merged Table 5 bare baseline is approximate for each individual post beam.",
+      "source": "p. 16, Table 9"
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "direction": "vertical",
+      "mode": 3,
+      "f_ratio_before": 0.955,
+      "f_ratio_after": 0.921,
+      "frequency_change_pct": -3.56020942408376,
+      "frequency_change_rounding_bounds_pct": [
+        -3.663003663003639,
+        -3.457307490832895
+      ],
+      "apparent_frequency_squared_change_pct": -6.993667936734171,
+      "estimated_frequency_before_Hz": 302.2384,
+      "estimated_frequency_after_Hz": 291.47808000000003,
+      "frequency_Hz_note": "Multiplication by the merged Table 5 bare baseline is approximate for each individual post beam.",
+      "source": "p. 16, Table 9"
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "direction": "horizontal",
+      "mode": 1,
+      "f_ratio_before": 0.872,
+      "f_ratio_after": 1.196,
+      "frequency_change_pct": 37.15596330275228,
+      "frequency_change_rounding_bounds_pct": [
+        37.02005730659026,
+        37.29202524383246
+      ],
+      "apparent_frequency_squared_change_pct": 88.11758269505931,
+      "estimated_frequency_before_Hz": 8.284,
+      "estimated_frequency_after_Hz": 11.362,
+      "frequency_Hz_note": "Multiplication by the merged Table 5 bare baseline is approximate for each individual post beam.",
+      "source": "p. 16, Table 9"
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "direction": "horizontal",
+      "mode": 2,
+      "f_ratio_before": 0.993,
+      "f_ratio_after": 1.035,
+      "frequency_change_pct": 4.229607250755274,
+      "frequency_change_rounding_bounds_pct": [
+        4.12682435832914,
+        4.332493702770757
+      ],
+      "apparent_frequency_squared_change_pct": 8.638110276466971,
+      "estimated_frequency_before_Hz": 27.43659,
+      "estimated_frequency_after_Hz": 28.597049999999996,
+      "frequency_Hz_note": "Multiplication by the merged Table 5 bare baseline is approximate for each individual post beam.",
+      "source": "p. 16, Table 9"
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "direction": "horizontal",
+      "mode": 3,
+      "f_ratio_before": 0.917,
+      "f_ratio_after": 1.033,
+      "frequency_change_pct": 12.649945474372949,
+      "frequency_change_rounding_bounds_pct": [
+        12.534059945504094,
+        12.765957446808486
+      ],
+      "apparent_frequency_squared_change_pct": 26.90010215379197,
+      "estimated_frequency_before_Hz": 136.93561000000003,
+      "estimated_frequency_after_Hz": 154.25789,
+      "frequency_Hz_note": "Multiplication by the merged Table 5 bare baseline is approximate for each individual post beam.",
+      "source": "p. 16, Table 9"
+    },
+    {
+      "beam": "CFRP_PostStr",
+      "direction": "vertical",
+      "mode": 1,
+      "f_ratio_before": 0.937,
+      "f_ratio_after": 0.948,
+      "frequency_change_pct": 1.1739594450373314,
+      "frequency_change_rounding_bounds_pct": [
+        1.0666666666666602,
+        1.2813667912439763
+      ],
+      "apparent_frequency_squared_change_pct": 2.3617006978605914,
+      "estimated_frequency_before_Hz": 23.603030000000004,
+      "estimated_frequency_after_Hz": 23.88012,
+      "frequency_Hz_note": "Multiplication by the merged Table 5 bare baseline is approximate for each individual post beam.",
+      "source": "p. 17, Table 10"
+    },
+    {
+      "beam": "CFRP_PostStr",
+      "direction": "vertical",
+      "mode": 2,
+      "f_ratio_before": 0.911,
+      "f_ratio_after": 0.934,
+      "frequency_change_pct": 2.524698133918779,
+      "frequency_change_rounding_bounds_pct": [
+        2.4136039495337602,
+        2.635914332784184
+      ],
+      "apparent_frequency_squared_change_pct": 5.113137274511681,
+      "estimated_frequency_before_Hz": 81.61649,
+      "estimated_frequency_after_Hz": 83.67706000000001,
+      "frequency_Hz_note": "Multiplication by the merged Table 5 bare baseline is approximate for each individual post beam.",
+      "source": "p. 17, Table 10"
+    },
+    {
+      "beam": "CFRP_PostStr",
+      "direction": "vertical",
+      "mode": 3,
+      "f_ratio_before": 0.738,
+      "f_ratio_after": 0.831,
+      "frequency_change_pct": 12.601626016260159,
+      "frequency_change_rounding_bounds_pct": [
+        12.457684495599208,
+        12.745762711864383
+      ],
+      "apparent_frequency_squared_change_pct": 26.791261815057176,
+      "estimated_frequency_before_Hz": 233.56224,
+      "estimated_frequency_after_Hz": 262.99488,
+      "frequency_Hz_note": "Multiplication by the merged Table 5 bare baseline is approximate for each individual post beam.",
+      "source": "p. 17, Table 10"
+    },
+    {
+      "beam": "CFRP_PostStr",
+      "direction": "horizontal",
+      "mode": 1,
+      "f_ratio_before": 0.628,
+      "f_ratio_after": 1.047,
+      "frequency_change_pct": 66.71974522292992,
+      "frequency_change_rounding_bounds_pct": [
+        66.50755767700875,
+        66.93227091633463
+      ],
+      "apparent_frequency_squared_change_pct": 177.95473447198665,
+      "estimated_frequency_before_Hz": 5.966,
+      "estimated_frequency_after_Hz": 9.946499999999999,
+      "frequency_Hz_note": "Multiplication by the merged Table 5 bare baseline is approximate for each individual post beam.",
+      "source": "p. 17, Table 10"
+    },
+    {
+      "beam": "CFRP_PostStr",
+      "direction": "horizontal",
+      "mode": 2,
+      "f_ratio_before": 0.952,
+      "f_ratio_after": 1.105,
+      "frequency_change_pct": 16.07142857142858,
+      "frequency_change_rounding_bounds_pct": [
+        15.958005249343854,
+        16.184971098265887
+      ],
+      "apparent_frequency_squared_change_pct": 34.72576530612248,
+      "estimated_frequency_before_Hz": 26.303759999999997,
+      "estimated_frequency_after_Hz": 30.531149999999997,
+      "frequency_Hz_note": "Multiplication by the merged Table 5 bare baseline is approximate for each individual post beam.",
+      "source": "p. 17, Table 10"
+    },
+    {
+      "beam": "CFRP_PostStr",
+      "direction": "horizontal",
+      "mode": 3,
+      "f_ratio_before": 0.83,
+      "f_ratio_after": 0.732,
+      "frequency_change_pct": -11.807228915662648,
+      "frequency_change_rounding_bounds_pct": [
+        -11.920529801324486,
+        -11.693791440626889
+      ],
+      "apparent_frequency_squared_change_pct": -22.220351284656694,
+      "estimated_frequency_before_Hz": 123.9439,
+      "estimated_frequency_after_Hz": 109.30956,
+      "frequency_Hz_note": "Multiplication by the merged Table 5 bare baseline is approximate for each individual post beam.",
+      "source": "p. 17, Table 10"
+    }
+  ],
+  "static_capacity_gain": {
+    "GFRP_PostStr": {
+      "bare_observed_peak_kN": 43.88,
+      "strengthened_observed_peak_kN": 50.09,
+      "gain_pct": 14.152233363719224,
+      "source": "p. 11, Table 4",
+      "note": "Capacity gain is not static-stiffness gain. Peaks occur at different displacement/history; cannot substitute for an immediate static retrofit check."
+    },
+    "CFRP_PostStr": {
+      "bare_observed_peak_kN": 44.63,
+      "strengthened_observed_peak_kN": 63.22,
+      "gain_pct": 41.653596235715874,
+      "source": "p. 11, Table 4",
+      "note": "Capacity gain is not static-stiffness gain. Peaks occur at different displacement/history; cannot substitute for an immediate static retrofit check."
+    }
+  },
+  "static_stiffness_change_at_same_D1": {
+    "value": null,
+    "status": "NOT_MEASURED",
+    "reason": "Modal tests bracket strengthening at unchanged D1 history, but static loading resumes afterward. Figure 7 does not provide an immediate same-load diagnostic before and after bonding."
+  },
+  "Musial_context": {
+    "frequency_gain_pct": [
+      1,
+      4
+    ],
+    "static_stiffness_gain_pct": [
+      20,
+      30
+    ],
+    "source": "Job B1 task statement and current review evidence context; approximate comparative ranges, not re-extracted in this job."
+  },
+  "implication": "Frequency detects a direction- and mode-dependent change. It cannot by itself confirm recovery of static stiffness or load capacity. A matched static load/deflection check is required.",
+  "limitations": [
+    "Transport and one-week curing under self-weight intervene; paper pp. 16 and 18 proposes these as possible causes of vertical-frequency decrease.",
+    "Additional laminate mass and boundary/mode changes are not resolved.",
+    "No experimental repeatability interval; rounding bounds cover table precision only."
+  ]
+}

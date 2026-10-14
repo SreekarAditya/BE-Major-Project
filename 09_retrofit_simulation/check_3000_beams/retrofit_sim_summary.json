@@ -1,0 +1,115 @@
+{
+ "beams": 3000,
+ "best_counts": {
+  "Polymer laminate": 1435,
+  "Seal cracks": 446,
+  "Monitor": 993,
+  "Steel plate": 123,
+  "Concrete jacket": 3
+ },
+ "share": {
+  "Polymer laminate": 0.478,
+  "Seal cracks": 0.149,
+  "Monitor": 0.331,
+  "Steel plate": 0.041,
+  "Concrete jacket": 0.001
+ },
+ "success_rate": {
+  "polymer": 0.958,
+  "plate": 0.999,
+  "jacket": 1.0
+ },
+ "polymer_gate_fail": 0.0,
+ "propped": {
+  "Polymer laminate": 127,
+  "Steel plate": 16
+ },
+ "failing_before": {
+  "none": 993,
+  "strength;crack": 472,
+  "crack": 446,
+  "strength;shear;crack": 300,
+  "strength": 242,
+  "strength;shear": 183,
+  "strength;defl;defl_part;crack": 88,
+  "strength;shear;defl;defl_part;crack": 53,
+  "defl;defl_part": 46,
+  "strength;shear;defl_part;crack": 29,
+  "defl;defl_part;crack": 27,
+  "strength;defl_part;crack": 26
+ },
+ "tree": {
+  "depth": 3,
+  "class_weight": "balanced",
+  "train_accuracy": 0.906,
+  "test_accuracy": 0.896,
+  "test_balanced_accuracy": 0.921,
+  "test_beams": 900,
+  "labels": [
+   "Monitor",
+   "Polymer laminate",
+   "Seal cracks",
+   "Steel plate or jacket"
+  ],
+  "confusion_test": [
+   [
+    295,
+    3,
+    0,
+    0
+   ],
+   [
+    2,
+    343,
+    3,
+    82
+   ],
+   [
+    0,
+    0,
+    134,
+    0
+   ],
+   [
+    0,
+    4,
+    0,
+    34
+   ]
+  ],
+  "importance": {
+   "Stiffness left (twin, lower bound)": 0.031,
+   "Crack width / code limit": 0.371,
+   "Moment demand / capacity": 0.514,
+   "Deflection / span/250 limit": 0.045,
+   "Live load factor (change of use)": 0.0,
+   "Span / effective depth": 0.039,
+   "Steel ratio (%)": 0.0,
+   "Design utilisation": 0.0,
+   "Dead load fraction": 0.0
+  }
+ },
+ "depth_study": {
+  "3": {
+   "train": 0.906,
+   "test": 0.896,
+   "test_balanced": 0.921,
+   "unweighted_test": 0.95,
+   "unweighted_balanced": 0.745
+  },
+  "4": {
+   "train": 0.91,
+   "test": 0.9,
+   "test_balanced": 0.917,
+   "unweighted_test": 0.954,
+   "unweighted_balanced": 0.843
+  },
+  "5": {
+   "train": 0.91,
+   "test": 0.9,
+   "test_balanced": 0.917,
+   "unweighted_test": 0.954,
+   "unweighted_balanced": 0.843
+  }
+ }
+}

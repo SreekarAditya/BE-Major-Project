@@ -1,0 +1,69 @@
+{
+  "series": [
+    {
+      "series": "Musiał et al. (2021)",
+      "paper_beams": 2,
+      "paired_beams": 2,
+      "kappa": 0.39082951813515654,
+      "kappa_95_interval": [
+        0.39063624383584705,
+        0.3910974431452338
+      ],
+      "interval_kind": "Beam bootstrap recreated from supplied raw ratios, 2 clusters; narrow coverage cannot establish population uncertainty.",
+      "kappa_corrected_sensitivity": 0.3118459201007534,
+      "twin_bias_median_pct": 3.99,
+      "twin_hold_median_pct": 5.53,
+      "twin_vibration_median_pct": 29.5,
+      "n_predictions": 14,
+      "definition": "Published static secant ratios and vibration ratios, raw static reference; 5 kN prediction gaps; source supplied by workspace."
+    },
+    {
+      "series": "Pešić et al. (2015)",
+      "paper_beams": 5,
+      "paired_beams": 1,
+      "kappa": 0.17992742466580877,
+      "kappa_95_interval": null,
+      "interval_kind": "Unavailable: 1 beam cluster; reading sensitivity reported separately.",
+      "kappa_reading_interval_95": [
+        0.16407147491352847,
+        0.19816608542531403
+      ],
+      "twin_bias_median_pct": 12.624089427701184,
+      "twin_hold_median_pct": 17.290021217805535,
+      "twin_vibration_median_pct": 82.52213217368774,
+      "n_predictions": 10,
+      "definition": "Conditional: static normalised to earliest readable damaged state, dynamic to initial state; peak total-deflection secant, variable consecutive load gaps."
+    },
+    {
+      "series": "Ozturkoglu et al. (2024)",
+      "paper_beams": 4,
+      "paired_beams": 4,
+      "kappa": 0.34777180668487423,
+      "kappa_95_interval": [
+        0.30629169318828975,
+        0.48367712956037406
+      ],
+      "interval_kind": "Beam bootstrap, 4 clusters; source Job B1.",
+      "twin_bias_median_pct": 24.364949971427308,
+      "twin_hold_median_pct": 26.49041873669269,
+      "twin_vibration_median_pct": 66.93336253680206,
+      "n_predictions": 5,
+      "definition": "Frequency-squared loss versus large-displacement envelope secant loss; baseline is first-crack secant. Consecutive envelope-secant proxy, not service-deflection validation.",
+      "directly_poolable_with_service_stiffness": false
+    }
+  ],
+  "combined_kappa": null,
+  "combined_twin_accuracy": null,
+  "reason": "Series differ in baseline, static measurement definition, support/mass state and prediction horizon. A combined number would conceal these differences.",
+  "musial_bootstrap": {
+    "draws": 20000,
+    "seed": 201507037,
+    "clusters": 2,
+    "unit": "beam"
+  },
+  "read_only_source_hashes": {
+    "/Users/sreekaraditya/Desktop/StrucIQ_Review2_230x300/00_SHOW_IN_REVIEW/07_uncertainty_and_validation/published_test/real_evidence.json": "fd888d52e33e69d10c3d921ac20384aa06e51838b36590a1daa841f0f73f0ffc",
+    "/Users/sreekaraditya/Desktop/StrucIQ_Review2_230x300/00_SHOW_IN_REVIEW/07_uncertainty_and_validation/published_test/twin_on_test.json": "f692deddf09c40bc631c22a0daf114134ebff48321a1c7b563e277ca8b757bc6",
+    "/Users/sreekaraditya/Desktop/StrucIQ_Review2_230x300/00_SHOW_IN_REVIEW/08_benchmark_ozturkoglu2024/results_summary.json": "e2852b4c362d0ecd31ae0866cb291170737b6394d732324a33bc25e4b18005de"
+  }
+}

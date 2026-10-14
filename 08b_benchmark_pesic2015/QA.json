@@ -1,0 +1,12 @@
+{
+  "status": "PASS_REPRODUCIBLE_AVAILABLE_DATA_ONLY",
+  "full_job_done": false,
+  "unmet_scope": "Four static histories, cracking-normalised comparisons and a valid Pe\u0161i\u0107 beam confidence interval unavailable.",
+  "elapsed_seconds": 9.6217887919629,
+  "under_10_minutes": true,
+  "protected_existing_files": 4484,
+  "protected_changed": [],
+  "outside_new_files": [],
+  "visual_review": "PASS",
+  "numeric_review": "PASS"
+}

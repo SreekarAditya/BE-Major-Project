@@ -1,0 +1,110 @@
+! =====================================================================
+! 02_materials.inp  -  element types, materials, sections
+! Material numbers: 1 concrete, 2 main bars, 3 bearing plates, 4 stirrups,
+!                   5 jacket concrete, 6 steel plate, 7 polymer laminate, 8 bond interface
+! Element types:    1 concrete solid, 2 bar (LINK180), 3 steel solid (SOLID185),
+!                   4 laminate shell (SHELL181), 5 interface (INTER205)
+! =====================================================================
+/PREP7
+
+! ---------- element types
+*IF,CONC,EQ,1,THEN
+  ET,1,SOLID65
+  KEYOPT,1,1,0
+  KEYOPT,1,7,1          ! stress relaxation after cracking (helps convergence)
+  R,1                   ! no smeared rebar: bars are modelled as LINK180
+*ELSE
+  ET,1,SOLID185
+  KEYOPT,1,2,0          ! full integration
+*ENDIF
+ET,2,LINK180
+ET,3,SOLID185
+ET,4,SHELL181
+ET,5,INTER205
+
+! ---------- concrete compression curve (Hognestad parabola to FCM at 0.002, then flat)
+*DIM,EPSC,ARRAY,7
+EPSC(1) = 0,0.0006,0.0010,0.0014,0.0018,0.0020,0.0035
+EPSC(1) = 0.3*FCM/EC
+
+*DO,MM,1,5,4            ! defines material 1 (beam) and material 5 (jacket) identically
+  MP,EX,MM,EC
+  MP,PRXY,MM,NUC
+  MP,DENS,MM,RHOC
+  *IF,CONC,EQ,1,THEN
+    TB,PLAS,MM,,7,MISO
+    *DO,IP,1,7
+      E_ = EPSC(IP)
+      S_ = FCM*(2*E_/0.002-(E_/0.002)**2)
+      *IF,E_,GE,0.002,THEN
+        S_ = FCM
+      *ENDIF
+      EP_ = E_-S_/EC
+      *IF,IP,EQ,1,THEN
+        S_  = EC*E_
+        EP_ = 0
+      *ENDIF
+      TBPT,DEFI,EP_,S_
+    *ENDDO
+    ! cracking: open shear transfer 0.3, closed 0.9, tensile strength FT, crushing off (-1)
+    TB,CONCR,MM,1,9
+    TBDATA,1,0.3,0.9,FT,-1
+  *ELSE
+    ! Menetrey-Willam with linear tension softening.
+    ! CHECK the TBDATA order against the installed version's help before the first run.
+    TB,CONCR,MM,1,,MW
+    TBDATA,1,FCM,FT,1.15*FCM
+    TB,CONCR,MM,1,,HSD6
+    TBDATA,1,0.002,0.0035,0.1*FCM,2*FT/EC*10
+  *ENDIF
+*ENDDO
+
+! ---------- main bars, Fe500 bilinear
+MP,EX,2,ES
+MP,PRXY,2,0.3
+MP,DENS,2,RHOS
+TB,BISO,2,1,2
+TBDATA,1,FY,0.01*ES
+
+! ---------- bearing plates, elastic steel
+MP,EX,3,ES
+MP,PRXY,3,0.3
+MP,DENS,3,RHOS
+
+! ---------- stirrups, Fe415 bilinear
+MP,EX,4,ES
+MP,PRXY,4,0.3
+MP,DENS,4,RHOS
+TB,BISO,4,1,2
+TBDATA,1,FY_ST,0.01*ES
+
+! ---------- bonded steel plate, Fe250 bilinear
+MP,EX,6,ES
+MP,PRXY,6,0.3
+MP,DENS,6,RHOS
+TB,BISO,6,1,2
+TBDATA,1,FY_PL,0.01*ES
+
+! ---------- polymer laminate, linear elastic along the fibres
+MP,EX,7,E_FRP
+MP,PRXY,7,0.3
+MP,DENS,7,1.6E-9
+
+! ---------- bond interface between concrete and plate or laminate (bilinear cohesive zone)
+! data: peak normal stress, complete normal separation, peak shear stress, complete slip, damping, coupling
+TB,CZM,8,1,,BILI
+TBDATA,1,SIG_MAX,DN_C,TAU_MAX,DT_C,0.001,1.0
+
+! ---------- bar cross-sections (LINK180)
+SECTYPE,1,LINK
+SECDATA,A_12            ! full 12 mm bar
+SECTYPE,2,LINK
+SECDATA,A_12/2          ! 12 mm bar cut by the symmetry plane
+SECTYPE,3,LINK
+SECDATA,A_10            ! 10 mm top bar
+SECTYPE,4,LINK
+SECDATA,A_8             ! 8 mm stirrup leg
+
+! ---------- laminate shell thickness: equivalent strip in the half model (see 03_mesh.inp)
+SECTYPE,5,SHELL
+SECDATA,FRP_N*FRP_W*FRP_T/2/57,7

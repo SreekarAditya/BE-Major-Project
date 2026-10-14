@@ -1,0 +1,12 @@
+{
+  "status": "SKIPPED_INCOMPLETE_AND_INCONSISTENT_INPUTS",
+  "reference_sha256": "32ca558dcc41e6ed1819192684b279002e5b87338723647b51ee186675de5c86",
+  "reasons": [
+    "Concrete tensile strength not independently measured; authors best-fit tensile strength is tuned and cannot enter a blind model.",
+    "Table 2 cover and Appendix B bar-centre coordinates conflict.",
+    "Measured steel elastic modulus and ultimate strain absent; appendix lists adopted finite element values rather than a complete measured steel curve.",
+    "Beam 3 initial damage unknown; an undamaged fibre model would not represent its initial state."
+  ],
+  "model_tuned": false,
+  "paper_predictions_are_not_our_blind_model": true
+}

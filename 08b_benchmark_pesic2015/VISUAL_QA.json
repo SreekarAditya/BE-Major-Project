@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "review": "Tables checked on rendered pages; experimental peak and residual assignments checked against original and isolated source path; plots inspected for axes, labels, intervals, font and scientific scope. Minor close step labels remain readable with JSON available.",
+  "reviewed_sha256": {
+    "pages/page-03.png": "7ce88c07f858ab77f5d4318d1b3b296c3c7af9237afa2d17f8e168f6ebe2ebe8",
+    "pages/page-05.png": "b27b5ca75bdee043d2740a211b28b806bc4e60926b1a8142a418e25f8e646ffa",
+    "pages/page-07.png": "0c159425692b747e71217145dc2847ed4ac58be37cb3d0dec4719919c5e0fbf2",
+    "pages/page-12.png": "5f06f7a9c88b5bd000c249ce4888ec8fcd70626fe00351f0ba31b6b714b1bfb4",
+    "fig11_overlay.png": "9a3bf55ed2ad9eb5e30e2f080041318cd72c34996cce77c881be14471fb84eee",
+    "fig11_experimental_path.png": "1dc160fc92da07c5758fecebef4b611b6da6d271291e42f1055237ca3d457e8c",
+    "01_static_vs_vibration.png": "43c528694740d5948f9a9a6a4cab11815d9a2246627e5c940f6268f30afa8f7c",
+    "02_kappa_by_series.png": "5c053fc74128fba7bc80f133e0728f4a9457274c148da151e53880aa462f7be2"
+  }
+}

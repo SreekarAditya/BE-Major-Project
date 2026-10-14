@@ -1,0 +1,13 @@
+{
+  "pdf_sha256": "fafce008a156ef295b2da8611b8b10ab2e6a6542b1e5e989b23e511bfe4ca272",
+  "source": "/Users/sreekaraditya/Downloads/applsci-14-09920.pdf",
+  "reference_hashes": {
+    "reference_snapshot/digitise.py": "3c28461f0e11ac4c686cab8a422e25898bf7c8d2106de9c50eed0253807564c4",
+    "reference_snapshot/real_evidence.py": "ffc81e6c04014030da9076babf79feb102b1cddc55e4e454c7f32b00b70eb6b4",
+    "reference_snapshot/twin_on_test.py": "643719837907117cf50e6ac903f0377b199b1fdec6827888515bd8cbbe15723f",
+    "reference_snapshot/musial_frp.json": "f1c0ff4670b5c90957c78acfd52900acb0570b7e6c5ce961b440ffb767f29dcf",
+    "reference_snapshot/twin_on_test.json": "f692deddf09c40bc631c22a0daf114134ebff48321a1c7b563e277ca8b757bc6",
+    "reference_snapshot/val_frp.py": "abf85fd853e763406b3ee80c37e883ebaca8e84accf68e13000f5615a5e38ed8",
+    "reference_snapshot/real_evidence.json": "fd888d52e33e69d10c3d921ac20384aa06e51838b36590a1daa841f0f73f0ffc"
+  }
+}

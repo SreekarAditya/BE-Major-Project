@@ -1,0 +1,35 @@
+[extract.py]
+Extracted and cross-checked 180 table values; raw source and inferred values retained.
+
+
+[digitise.py]
+Digitised 11 damage endpoints; residual offsets {'GFRP_PostStr': 13.41, 'CFRP_PostStr': 14.75}
+
+
+[frp_check.py]
+GFRP_PreStr self_weight_only 50.57 ratio 0.974
+GFRP_PostStr ignore_initial_strain 50.6 ratio 1.01
+GFRP_PostStr residual_global_curvature_proxy 48.49 ratio 0.968
+CFRP_PreStr self_weight_only 64.05 ratio 0.967
+CFRP_PostStr ignore_initial_strain 64.04 ratio 1.013
+CFRP_PostStr residual_global_curvature_proxy 64.19 ratio 1.015
+
+
+[h1_h2.py]
+Kappa mode 1 0.34777180668487423 CI [0.30629169318828975, 0.48367712956037406] H2 {'vibration_larger': 10, 'total': 11, 'counterexamples': [{'beam': 'CFRP_PreStr', 'stage': 'D1', 'static_left': 0.6277417566301532, 'vibration_left': 0.6146560000000001}]}
+Twin {'n_predictions': 5, 'median_abs_error_pct': {'bias_learning': 24.364949971427308, 'hold_last_check': 26.49041873669269, 'vibration_no_bias': 66.93336253680206}, 'max_abs_error_pct': {'bias_learning': 27.151321774008697, 'hold_last_check': 32.4256864079873, 'vibration_no_bias': 74.34576861232989}}
+
+
+[retrofit_signal.py]
+GFRP_PostStr vertical -9.008%
+GFRP_PostStr horizontal +37.156%
+CFRP_PostStr vertical +1.174%
+CFRP_PostStr horizontal +66.720%
+
+
+[figures.py]
+Wrote 3 figures with Carlito at 220 dpi.
+
+
+[report.py]
+Wrote REPORT.md, HUMAN_NEEDED.md and results_summary.json.

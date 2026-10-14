@@ -1,0 +1,847 @@
+{
+  "status": "COMPLETED_SECANT_PROXY_ONLY",
+  "rows": [
+    {
+      "beam": "GFRP_PreStr",
+      "stage": "D1",
+      "condition": "strengthened",
+      "displacement_mm": 30,
+      "load_kN": 51.98685540950455,
+      "K_secant_kN_mm": 1.7328951803168182,
+      "K0_first_crack_kN_mm": 3.198125836680054,
+      "static_left": 0.5418470907060122,
+      "static_left_reading_bounds": [
+        0.4681297804823146,
+        0.6254011264096545
+      ],
+      "vibration_mode1_left": 0.9006009999999999,
+      "vibration_mode2_left": 0.931225,
+      "vibration_frequency_ratios": [
+        0.949,
+        0.965
+      ],
+      "vibration_mode1_rounding_bounds": [
+        0.89965225,
+        0.9015502499999998
+      ],
+      "source_static": "p. 9, Figure 4",
+      "source_modal": "p. 14, Table 7",
+      "static_definition": "Load/displacement envelope secant divided by first-crack secant; retains plastic displacement.",
+      "H2_mode1_vibration_larger": true,
+      "H2_mode2_vibration_larger": true
+    },
+    {
+      "beam": "GFRP_PreStr",
+      "stage": "D2",
+      "condition": "strengthened",
+      "displacement_mm": 45,
+      "load_kN": 52.69464105156724,
+      "K_secant_kN_mm": 1.1709920233681608,
+      "K0_first_crack_kN_mm": 3.198125836680054,
+      "static_left": 0.3661494522628782,
+      "static_left_reading_bounds": [
+        0.3181573853566008,
+        0.4201297747222828
+      ],
+      "vibration_mode1_left": 0.835396,
+      "vibration_mode2_left": 0.919681,
+      "vibration_frequency_ratios": [
+        0.914,
+        0.959
+      ],
+      "vibration_mode1_rounding_bounds": [
+        0.8344822500000002,
+        0.8363102499999999
+      ],
+      "source_static": "p. 9, Figure 4",
+      "source_modal": "p. 14, Table 7",
+      "static_definition": "Load/displacement envelope secant divided by first-crack secant; retains plastic displacement.",
+      "H2_mode1_vibration_larger": true,
+      "H2_mode2_vibration_larger": true
+    },
+    {
+      "beam": "GFRP_PreStr",
+      "stage": "D3",
+      "condition": "strengthened",
+      "displacement_mm": 60,
+      "load_kN": 48.80182002022245,
+      "K_secant_kN_mm": 0.8133636670037075,
+      "K0_first_crack_kN_mm": 3.198125836680054,
+      "static_left": 0.2543250980543196,
+      "static_left_reading_bounds": [
+        0.22125695907676451,
+        0.2914343759971313
+      ],
+      "vibration_mode1_left": 0.769129,
+      "vibration_mode2_left": 0.9101159999999999,
+      "vibration_frequency_ratios": [
+        0.877,
+        0.954
+      ],
+      "vibration_mode1_rounding_bounds": [
+        0.7682522500000001,
+        0.7700062499999999
+      ],
+      "source_static": "p. 9, Figure 4",
+      "source_modal": "p. 14, Table 7",
+      "static_definition": "Load/displacement envelope secant divided by first-crack secant; retains plastic displacement.",
+      "H2_mode1_vibration_larger": true,
+      "H2_mode2_vibration_larger": true
+    },
+    {
+      "beam": "GFRP_PreStr",
+      "stage": "D4",
+      "condition": "strengthened",
+      "displacement_mm": 75,
+      "load_kN": 45.51061678463094,
+      "K_secant_kN_mm": 0.6068082237950793,
+      "K0_first_crack_kN_mm": 3.198125836680054,
+      "static_left": 0.1897386953432081,
+      "static_left_reading_bounds": [
+        0.1650914348904066,
+        0.21737437923040662
+      ],
+      "vibration_mode1_left": 0.7395999999999999,
+      "vibration_mode2_left": 0.9082089999999999,
+      "vibration_frequency_ratios": [
+        0.86,
+        0.953
+      ],
+      "vibration_mode1_rounding_bounds": [
+        0.7387402500000001,
+        0.7404602499999999
+      ],
+      "source_static": "p. 9, Figure 4",
+      "source_modal": "p. 14, Table 7",
+      "static_definition": "Load/displacement envelope secant divided by first-crack secant; retains plastic displacement.",
+      "H2_mode1_vibration_larger": true,
+      "H2_mode2_vibration_larger": true
+    },
+    {
+      "beam": "CFRP_PreStr",
+      "stage": "D1",
+      "condition": "strengthened",
+      "displacement_mm": 30,
+      "load_kN": 64.01921132457028,
+      "K_secant_kN_mm": 2.133973710819009,
+      "K0_first_crack_kN_mm": 3.399445214979196,
+      "static_left": 0.6277417566301532,
+      "static_left_reading_bounds": [
+        0.5434820263193045,
+        0.7228054694539457
+      ],
+      "vibration_mode1_left": 0.6146560000000001,
+      "vibration_mode2_left": 0.776161,
+      "vibration_frequency_ratios": [
+        0.784,
+        0.881
+      ],
+      "vibration_mode1_rounding_bounds": [
+        0.6138722500000001,
+        0.6154402499999999
+      ],
+      "source_static": "p. 9, Figure 4",
+      "source_modal": "p. 15, Table 8",
+      "static_definition": "Load/displacement envelope secant divided by first-crack secant; retains plastic displacement.",
+      "H2_mode1_vibration_larger": false,
+      "H2_mode2_vibration_larger": true
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "stage": "D1",
+      "condition": "bare",
+      "displacement_mm": 30,
+      "load_kN": 42.56565656565657,
+      "K_secant_kN_mm": 1.4188552188552188,
+      "K0_first_crack_kN_mm": 3.1488294314381267,
+      "static_left": 0.450597674389496,
+      "static_left_reading_bounds": [
+        0.37661069579920803,
+        0.5367176907049719
+      ],
+      "vibration_mode1_left": 0.976144,
+      "vibration_mode2_left": 0.982081,
+      "vibration_frequency_ratios": [
+        0.988,
+        0.991
+      ],
+      "vibration_mode1_rounding_bounds": [
+        0.9751562500000001,
+        0.9771322499999999
+      ],
+      "source_static": "p. 10, Figure 7",
+      "source_modal": "p. 16, Table 9",
+      "static_definition": "Load/displacement envelope secant divided by first-crack secant; retains plastic displacement.",
+      "H2_mode1_vibration_larger": true,
+      "H2_mode2_vibration_larger": true
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "stage": "D2",
+      "condition": "strengthened",
+      "displacement_mm": 45,
+      "load_kN": 49.813131313131315,
+      "K_secant_kN_mm": 1.1069584736251403,
+      "K0_first_crack_kN_mm": 3.1488294314381267,
+      "static_left": 0.35154602614330005,
+      "static_left_reading_bounds": [
+        0.2964716126592073,
+        0.41499189084057414
+      ],
+      "vibration_mode1_left": 0.719104,
+      "vibration_mode2_left": 0.8556250000000001,
+      "vibration_frequency_ratios": [
+        0.848,
+        0.925
+      ],
+      "vibration_mode1_rounding_bounds": [
+        0.71825625,
+        0.7199522499999998
+      ],
+      "source_static": "p. 10, Figure 7",
+      "source_modal": "p. 16, Table 9",
+      "static_definition": "Load/displacement envelope secant divided by first-crack secant; retains plastic displacement.",
+      "H2_mode1_vibration_larger": true,
+      "H2_mode2_vibration_larger": true
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "stage": "D3",
+      "condition": "strengthened",
+      "displacement_mm": 60,
+      "load_kN": 48.823232323232325,
+      "K_secant_kN_mm": 0.8137205387205387,
+      "K0_first_crack_kN_mm": 3.1488294314381267,
+      "static_left": 0.2584200117657367,
+      "static_left_reading_bounds": [
+        0.21844464154512794,
+        0.30432567663275994
+      ],
+      "vibration_mode1_left": 0.698896,
+      "vibration_mode2_left": 0.839056,
+      "vibration_frequency_ratios": [
+        0.836,
+        0.916
+      ],
+      "vibration_mode1_rounding_bounds": [
+        0.69806025,
+        0.6997322499999998
+      ],
+      "source_static": "p. 10, Figure 7",
+      "source_modal": "p. 16, Table 9",
+      "static_definition": "Load/displacement envelope secant divided by first-crack secant; retains plastic displacement.",
+      "H2_mode1_vibration_larger": true,
+      "H2_mode2_vibration_larger": true
+    },
+    {
+      "beam": "GFRP_PostStr",
+      "stage": "D4",
+      "condition": "strengthened",
+      "displacement_mm": 75,
+      "load_kN": 47.7979797979798,
+      "K_secant_kN_mm": 0.6373063973063974,
+      "K0_first_crack_kN_mm": 3.1488294314381267,
+      "static_left": 0.20239470291514905,
+      "static_left_reading_bounds": [
+        0.1712923620929753,
+        0.23805057390711618
+      ],
+      "vibration_mode1_left": 0.6872409999999999,
+      "vibration_mode2_left": 0.839056,
+      "vibration_frequency_ratios": [
+        0.829,
+        0.916
+      ],
+      "vibration_mode1_rounding_bounds": [
+        0.6864122500000001,
+        0.6880702499999999
+      ],
+      "source_static": "p. 10, Figure 7",
+      "source_modal": "p. 16, Table 9",
+      "static_definition": "Load/displacement envelope secant divided by first-crack secant; retains plastic displacement.",
+      "H2_mode1_vibration_larger": true,
+      "H2_mode2_vibration_larger": true
+    },
+    {
+      "beam": "CFRP_PostStr",
+      "stage": "D1",
+      "condition": "bare",
+      "displacement_mm": 30,
+      "load_kN": 44.40404040404041,
+      "K_secant_kN_mm": 1.4801346801346802,
+      "K0_first_crack_kN_mm": 3.1116504854368934,
+      "static_left": 0.4756751078123933,
+      "static_left_reading_bounds": [
+        0.3585108817835685,
+        0.6166436720468536
+      ],
+      "vibration_mode1_left": 0.8779690000000001,
+      "vibration_mode2_left": 0.829921,
+      "vibration_frequency_ratios": [
+        0.937,
+        0.911
+      ],
+      "vibration_mode1_rounding_bounds": [
+        0.8770322500000002,
+        0.87890625
+      ],
+      "source_static": "p. 10, Figure 7",
+      "source_modal": "p. 17, Table 10",
+      "static_definition": "Load/displacement envelope secant divided by first-crack secant; retains plastic displacement.",
+      "H2_mode1_vibration_larger": true,
+      "H2_mode2_vibration_larger": true
+    },
+    {
+      "beam": "CFRP_PostStr",
+      "stage": "D2",
+      "condition": "strengthened",
+      "displacement_mm": 45,
+      "load_kN": 63.21212121212121,
+      "K_secant_kN_mm": 1.4047138047138046,
+      "K0_first_crack_kN_mm": 3.1116504854368934,
+      "static_left": 0.4514368857582585,
+      "static_left_reading_bounds": [
+        0.3838981911151955,
+        0.528745640531991
+      ],
+      "vibration_mode1_left": 0.748225,
+      "vibration_mode2_left": 0.8226490000000001,
+      "vibration_frequency_ratios": [
+        0.865,
+        0.907
+      ],
+      "vibration_mode1_rounding_bounds": [
+        0.7473602500000001,
+        0.7490902499999998
+      ],
+      "source_static": "p. 10, Figure 7",
+      "source_modal": "p. 17, Table 10",
+      "static_definition": "Load/displacement envelope secant divided by first-crack secant; retains plastic displacement.",
+      "H2_mode1_vibration_larger": true,
+      "H2_mode2_vibration_larger": true
+    }
+  ],
+  "H1": {
+    "status": "PARTIAL_SAME_DISPLACEMENT_ONLY",
+    "rows": [
+      {
+        "beam": "GFRP_PostStr",
+        "stage": "D1",
+        "condition": "bare",
+        "displacement_mm": 30,
+        "load_kN": 42.56565656565657,
+        "K_secant_kN_mm": 1.4188552188552188,
+        "K0_first_crack_kN_mm": 3.1488294314381267,
+        "static_left": 0.450597674389496,
+        "static_left_reading_bounds": [
+          0.37661069579920803,
+          0.5367176907049719
+        ],
+        "vibration_mode1_left": 0.976144,
+        "vibration_mode2_left": 0.982081,
+        "vibration_frequency_ratios": [
+          0.988,
+          0.991
+        ],
+        "vibration_mode1_rounding_bounds": [
+          0.9751562500000001,
+          0.9771322499999999
+        ],
+        "source_static": "p. 10, Figure 7",
+        "source_modal": "p. 16, Table 9",
+        "static_definition": "Load/displacement envelope secant divided by first-crack secant; retains plastic displacement.",
+        "H2_mode1_vibration_larger": true,
+        "H2_mode2_vibration_larger": true
+      },
+      {
+        "beam": "CFRP_PostStr",
+        "stage": "D1",
+        "condition": "bare",
+        "displacement_mm": 30,
+        "load_kN": 44.40404040404041,
+        "K_secant_kN_mm": 1.4801346801346802,
+        "K0_first_crack_kN_mm": 3.1116504854368934,
+        "static_left": 0.4756751078123933,
+        "static_left_reading_bounds": [
+          0.3585108817835685,
+          0.6166436720468536
+        ],
+        "vibration_mode1_left": 0.8779690000000001,
+        "vibration_mode2_left": 0.829921,
+        "vibration_frequency_ratios": [
+          0.937,
+          0.911
+        ],
+        "vibration_mode1_rounding_bounds": [
+          0.8770322500000002,
+          0.87890625
+        ],
+        "source_static": "p. 10, Figure 7",
+        "source_modal": "p. 17, Table 10",
+        "static_definition": "Load/displacement envelope secant divided by first-crack secant; retains plastic displacement.",
+        "H2_mode1_vibration_larger": true,
+        "H2_mode2_vibration_larger": true
+      }
+    ],
+    "vibration_mode1_spread_percentage_points": 9.81749999999999,
+    "static_secant_spread_percentage_points": 2.5077433422897313,
+    "displacement_mm": 30,
+    "load_kN": [
+      42.56565656565657,
+      44.40404040404041
+    ],
+    "explanation": "Nominally identical bare beams differ at equal imposed displacement. D1 is not equal load; this is not an independent demonstration of equal-load H1. Individual initial frequencies are merged in Table 5."
+  },
+  "H2": {
+    "fits": {
+      "mode1": {
+        "pooled": 0.34777180668487423,
+        "bootstrap_95_interval": [
+          0.30629169318828975,
+          0.48367712956037406
+        ],
+        "bootstrap_unit": "beam",
+        "bootstrap_draws": 20000,
+        "bootstrap_seed": 20241030,
+        "n_beams": 4,
+        "n_beam_steps": 11,
+        "per_beam": {
+          "GFRP_PreStr": {
+            "kappa": 0.2921903915687178,
+            "n_steps": 4
+          },
+          "CFRP_PreStr": {
+            "kappa": 1.0351523622732837,
+            "n_steps": 1
+          },
+          "GFRP_PostStr": {
+            "kappa": 0.35002510363119516,
+            "n_steps": 4
+          },
+          "CFRP_PostStr": {
+            "kappa": 0.35096388206566626,
+            "n_steps": 2
+          }
+        },
+        "source_reading_extremes": [
+          0.3208402743572129,
+          0.38144067321494907
+        ],
+        "source_reading_note": "All static ratios simultaneously assigned low/high reading bounds; sensitivity check, not a complete stochastic measurement-error model.",
+        "fitting_formula": "sum(static_loss*vibration_loss)/sum(static_loss^2)"
+      },
+      "mode2": {
+        "pooled": 0.18996633084419542,
+        "bootstrap_95_interval": [
+          0.13854849534804406,
+          0.37763912299790187
+        ],
+        "bootstrap_unit": "beam",
+        "bootstrap_draws": 20000,
+        "bootstrap_seed": 20241030,
+        "n_beams": 4,
+        "n_beam_steps": 11,
+        "per_beam": {
+          "GFRP_PreStr": {
+            "kappa": 0.12269245355837063,
+            "n_steps": 4
+          },
+          "CFRP_PreStr": {
+            "kappa": 0.6013003176872862,
+            "n_steps": 1
+          },
+          "GFRP_PostStr": {
+            "kappa": 0.1840172999920358,
+            "n_steps": 4
+          },
+          "CFRP_PostStr": {
+            "kappa": 0.32381475931840586,
+            "n_steps": 2
+          }
+        },
+        "source_reading_extremes": [
+          0.17783764634193855,
+          0.20392635659849476
+        ],
+        "source_reading_note": "All static ratios simultaneously assigned low/high reading bounds; sensitivity check, not a complete stochastic measurement-error model.",
+        "fitting_formula": "sum(static_loss*vibration_loss)/sum(static_loss^2)"
+      }
+    },
+    "counts": {
+      "mode1": {
+        "vibration_larger": 10,
+        "total": 11,
+        "counterexamples": [
+          {
+            "beam": "CFRP_PreStr",
+            "stage": "D1",
+            "static_left": 0.6277417566301532,
+            "vibration_left": 0.6146560000000001
+          }
+        ]
+      },
+      "mode2": {
+        "vibration_larger": 11,
+        "total": 11,
+        "counterexamples": []
+      }
+    },
+    "Musial_reference": {
+      "kappa_raw": 0.39082951813515654,
+      "kappa_compliance_corrected": 0.3118459201007534,
+      "source": "reference_snapshot/real_evidence.json"
+    },
+    "conclusion": "Most steps show vibration ratio larger than the envelope secant ratio, but counterexamples are kept. Different stiffness definitions and yielded loading prevent an unqualified elastic/service-stiffness validation."
+  },
+  "twin": {
+    "gap_1_damage_levels": {
+      "rows": [
+        {
+          "beam": "GFRP_PreStr",
+          "current_stage": "D2",
+          "previous_stage": "D1",
+          "learned_log_bias": 0.5080784770701503,
+          "static_true": 0.3661494522628782,
+          "predicted_static_bias": 0.5026164663235326,
+          "predicted_static_hold": 0.5418470907060122,
+          "predicted_static_vibration": 0.835396,
+          "error_deflection_pct": {
+            "bias_learning": -27.151321774008697,
+            "hold_last_check": -32.4256864079873,
+            "vibration_no_bias": -56.17055237721055
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -45.27439132359985,
+              -3.0405762002793657
+            ],
+            "hold_last_check": [
+              -49.12746844843397,
+              -10.253568083315978
+            ],
+            "vibration_no_bias": [
+              -61.957014713546684,
+              -49.65383928510371
+            ]
+          }
+        },
+        {
+          "beam": "GFRP_PreStr",
+          "current_stage": "D3",
+          "previous_stage": "D2",
+          "learned_log_bias": 0.8248642743566275,
+          "static_true": 0.2543250980543196,
+          "predicted_static_bias": 0.33710499220668433,
+          "predicted_static_hold": 0.3661494522628782,
+          "predicted_static_vibration": 0.769129,
+          "error_deflection_pct": {
+            "bias_learning": -24.556116363180735,
+            "hold_last_check": -30.540631296171917,
+            "vibration_no_bias": -66.93336253680206
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -42.92626017975029,
+              -0.2845743863034378
+            ],
+            "hold_last_check": [
+              -47.336044148972455,
+              -8.399305057626606
+            ],
+            "vibration_no_bias": [
+              -71.26556322409532,
+              -62.06527530545712
+            ]
+          }
+        },
+        {
+          "beam": "GFRP_PreStr",
+          "current_stage": "D4",
+          "previous_stage": "D3",
+          "learned_log_bias": 1.1066453435351815,
+          "static_true": 0.1897386953432081,
+          "predicted_static_bias": 0.2445608506778118,
+          "predicted_static_hold": 0.2543250980543196,
+          "predicted_static_vibration": 0.7395999999999999,
+          "error_deflection_pct": {
+            "bias_learning": -22.41657042926598,
+            "hold_last_check": -25.395213923132697,
+            "vibration_no_bias": -74.34576861232989
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -41.22591776292054,
+              2.403288576098217
+            ],
+            "hold_last_check": [
+              -43.35210651607151,
+              -1.754783154644568
+            ],
+            "vibration_no_bias": [
+              -77.70421371161969,
+              -70.57499178765383
+            ]
+          }
+        },
+        {
+          "beam": "GFRP_PostStr",
+          "current_stage": "D3",
+          "previous_stage": "D2",
+          "learned_log_bias": 0.7156653478369139,
+          "static_true": 0.2584200117657367,
+          "predicted_static_bias": 0.34166700711920367,
+          "predicted_static_hold": 0.35154602614330005,
+          "predicted_static_vibration": 0.698896,
+          "error_deflection_pct": {
+            "bias_learning": -24.364949971427308,
+            "hold_last_check": -26.49041873669269,
+            "vibration_no_bias": -63.024539879218544
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -45.96821581600607,
+              5.868379480532382
+            ],
+            "hold_last_check": [
+              -47.361708417322546,
+              2.649179091079068
+            ],
+            "vibration_no_bias": [
+              -68.78168162963362,
+              -56.404095974128325
+            ]
+          }
+        },
+        {
+          "beam": "GFRP_PostStr",
+          "current_stage": "D4",
+          "previous_stage": "D3",
+          "learned_log_bias": 0.9949157333636801,
+          "static_true": 0.20239470291514905,
+          "predicted_static_bias": 0.2541105218886596,
+          "predicted_static_hold": 0.2584200117657367,
+          "predicted_static_vibration": 0.6872409999999999,
+          "error_deflection_pct": {
+            "bias_learning": -20.351703105064743,
+            "hold_last_check": -21.679942070963065,
+            "vibration_no_bias": -70.54967574473162
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -42.89692052015274,
+              11.089932274894299
+            ],
+            "hold_last_check": [
+              -43.714127579290796,
+              8.97524069407667
+            ],
+            "vibration_no_bias": [
+              -75.10539627414856,
+              -65.3195912649991
+            ]
+          }
+        }
+      ],
+      "pooled": {
+        "n_predictions": 5,
+        "median_abs_error_pct": {
+          "bias_learning": 24.364949971427308,
+          "hold_last_check": 26.49041873669269,
+          "vibration_no_bias": 66.93336253680206
+        },
+        "max_abs_error_pct": {
+          "bias_learning": 27.151321774008697,
+          "hold_last_check": 32.4256864079873,
+          "vibration_no_bias": 74.34576861232989
+        }
+      },
+      "per_beam": {
+        "GFRP_PreStr": {
+          "n_predictions": 3,
+          "median_abs_error_pct": {
+            "bias_learning": 24.556116363180735,
+            "hold_last_check": 30.540631296171917,
+            "vibration_no_bias": 66.93336253680206
+          },
+          "max_abs_error_pct": {
+            "bias_learning": 27.151321774008697,
+            "hold_last_check": 32.4256864079873,
+            "vibration_no_bias": 74.34576861232989
+          }
+        },
+        "GFRP_PostStr": {
+          "n_predictions": 2,
+          "median_abs_error_pct": {
+            "bias_learning": 22.358326538246025,
+            "hold_last_check": 24.085180403827877,
+            "vibration_no_bias": 66.78710781197508
+          },
+          "max_abs_error_pct": {
+            "bias_learning": 24.364949971427308,
+            "hold_last_check": 26.49041873669269,
+            "vibration_no_bias": 70.54967574473162
+          }
+        }
+      },
+      "scope": "Predict next envelope secant, not independently measured service deflection.",
+      "procedure": "Same algebra and error formula as twin_on_test.py. Damage-level intervals replace that test series load gaps because these tests are displacement controlled. No predictions across the retrofit intervention. First-crack secant is the baseline for the vibration-without-bias comparison."
+    },
+    "gap_2_damage_levels": {
+      "rows": [
+        {
+          "beam": "GFRP_PreStr",
+          "current_stage": "D3",
+          "previous_stage": "D1",
+          "learned_log_bias": 0.5080784770701503,
+          "static_true": 0.2543250980543196,
+          "predicted_static_bias": 0.4627468890525599,
+          "predicted_static_hold": 0.5418470907060122,
+          "predicted_static_vibration": 0.769129,
+          "error_deflection_pct": {
+            "bias_learning": -45.04012796822223,
+            "hold_last_check": -53.06330837304289,
+            "vibration_no_bias": -66.93336253680206
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -58.664927825869796,
+              -26.943206867100113
+            ],
+            "hold_last_check": [
+              -64.62159248945207,
+              -37.74496130178555
+            ],
+            "vibration_no_bias": [
+              -71.26556322409532,
+              -62.06527530545712
+            ]
+          }
+        },
+        {
+          "beam": "GFRP_PreStr",
+          "current_stage": "D4",
+          "previous_stage": "D2",
+          "learned_log_bias": 0.8248642743566275,
+          "static_true": 0.1897386953432081,
+          "predicted_static_bias": 0.3241625946181508,
+          "predicted_static_hold": 0.3661494522628782,
+          "predicted_static_vibration": 0.7395999999999999,
+          "error_deflection_pct": {
+            "bias_learning": -41.4680476732018,
+            "hold_last_check": -48.17998656816654,
+            "vibration_no_bias": -74.34576861232989
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -55.715021817376645,
+              -22.6532618542318
+            ],
+            "hold_last_check": [
+              -60.70465726940289,
+              -31.677091516588064
+            ],
+            "vibration_no_bias": [
+              -77.70421371161969,
+              -70.57499178765383
+            ]
+          }
+        },
+        {
+          "beam": "GFRP_PostStr",
+          "current_stage": "D4",
+          "previous_stage": "D2",
+          "learned_log_bias": 0.7156653478369139,
+          "static_true": 0.20239470291514905,
+          "predicted_static_bias": 0.33596926529785354,
+          "predicted_static_hold": 0.35154602614330005,
+          "predicted_static_vibration": 0.6872409999999999,
+          "error_deflection_pct": {
+            "bias_learning": -39.75797079660961,
+            "hold_last_check": -42.42725337118524,
+            "vibration_no_bias": -70.54967574473162
+          },
+          "error_reading_bounds_pct": {
+            "bias_learning": [
+              -56.913122612713295,
+              -15.782026900550472
+            ],
+            "hold_last_check": [
+              -58.723925485382544,
+              -19.705441012744053
+            ],
+            "vibration_no_bias": [
+              -75.10539627414856,
+              -65.3195912649991
+            ]
+          }
+        }
+      ],
+      "pooled": {
+        "n_predictions": 3,
+        "median_abs_error_pct": {
+          "bias_learning": 41.4680476732018,
+          "hold_last_check": 48.17998656816654,
+          "vibration_no_bias": 70.54967574473162
+        },
+        "max_abs_error_pct": {
+          "bias_learning": 45.04012796822223,
+          "hold_last_check": 53.06330837304289,
+          "vibration_no_bias": 74.34576861232989
+        }
+      },
+      "per_beam": {
+        "GFRP_PreStr": {
+          "n_predictions": 2,
+          "median_abs_error_pct": {
+            "bias_learning": 43.254087820712016,
+            "hold_last_check": 50.621647470604714,
+            "vibration_no_bias": 70.63956557456598
+          },
+          "max_abs_error_pct": {
+            "bias_learning": 45.04012796822223,
+            "hold_last_check": 53.06330837304289,
+            "vibration_no_bias": 74.34576861232989
+          }
+        },
+        "GFRP_PostStr": {
+          "n_predictions": 1,
+          "median_abs_error_pct": {
+            "bias_learning": 39.75797079660961,
+            "hold_last_check": 42.42725337118524,
+            "vibration_no_bias": 70.54967574473162
+          },
+          "max_abs_error_pct": {
+            "bias_learning": 39.75797079660961,
+            "hold_last_check": 42.42725337118524,
+            "vibration_no_bias": 70.54967574473162
+          }
+        }
+      },
+      "scope": "Predict next envelope secant, not independently measured service deflection.",
+      "procedure": "Same algebra and error formula as twin_on_test.py. Damage-level intervals replace that test series load gaps because these tests are displacement controlled. No predictions across the retrofit intervention. First-crack secant is the baseline for the vibration-without-bias comparison."
+    }
+  },
+  "reloading_stiffness": {
+    "status": "SKIPPED_UNRELIABLE_BRANCH_ASSOCIATION",
+    "reason": "Color curves contain overlapping unlabeled cyclic loading, unloading and repaired branches; retained attempted pixel reads are not sufficient to establish reloading tangent after each modal test."
+  },
+  "excluded_modal_only_states": [
+    {
+      "beam": "GFRP_PostStr",
+      "state": "D1_strengthened",
+      "reason": "Frequency measured before resumed loading; no matching static stiffness check at that instant."
+    },
+    {
+      "beam": "CFRP_PostStr",
+      "state": "D1_strengthened",
+      "reason": "Frequency measured before resumed loading; no matching static stiffness check at that instant."
+    }
+  ],
+  "limitations": [
+    "Secant to plastic displacement compared with unloaded vibration at residual deformation; not the same physical stiffness measure.",
+    "First-crack secant baseline is a proxy; support/jack compliance not independently resolved.",
+    "Bootstrap has only four beam clusters, with unequal counts and different strengthening histories; interval does not cover missing coupon data or stiffness-definition bias.",
+    "Frequency-squared is an apparent stiffness index; mass, boundary conditions and mode shape changes are not independently corrected.",
+    "Twin calculations use consecutive peak secants and do not validate service-deflection accuracy or an absolute frequency-to-modulus conversion."
+  ]
+}

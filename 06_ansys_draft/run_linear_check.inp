@@ -1,0 +1,99 @@
+! =====================================================================
+! run_linear_check.inp  -  independent linear-elastic check of the StrucIQ beam in ANSYS Mechanical APDL
+! Beam 230 x 300 mm, 3200 mm long, supports at x = 100 and 3100 mm (span 3000), M30 concrete.
+! Plain concrete solid (bars not modelled), so it is compared with the GROSS-section hand values:
+!   Euler-Bernoulli: deflection at 15 kN = 0.507 mm; with shear deformation 0.519 mm
+!   first vertical bending frequency: 50.0 Hz (Euler-Bernoulli), about 49.3 Hz with shear and rotary inertia
+!   first lateral (sideways) bending frequency: about 38 Hz (appears because the beam is narrower than it is deep)
+! Units: N, mm, MPa, tonne, s.   Results written to linear_check_results.txt
+! Run: Mechanical APDL > File > Read Input From > run_linear_check.inp
+! =====================================================================
+/CLEAR,START
+/TITLE,StrucIQ beam 230 x 300 mm - linear elastic check (plain concrete)
+/PREP7
+FCK = 30
+EC  = 5000*SQRT(FCK)          ! IS 456 cl 6.2.3.1, 27386 MPa
+ET,1,SOLID185
+KEYOPT,1,2,2                  ! enhanced strain formulation: accurate in bending
+MP,EX,1,EC
+MP,PRXY,1,0.2
+MP,DENS,1,2.5E-9              ! 2500 kg/m3
+BLOCK,0,3200,0,300,0,230      ! x along the beam, y vertical, z across the width
+ESIZE,25
+MSHAPE,0,3D
+MSHKEY,1
+VMESH,ALL
+! supports: line supports across the soffit (pin at x = 100, roller at x = 3100)
+NSEL,S,LOC,Y,0
+NSEL,R,LOC,X,100
+D,ALL,UX,0
+D,ALL,UY,0
+D,ALL,UZ,0
+NSEL,S,LOC,Y,0
+NSEL,R,LOC,X,3100
+D,ALL,UY,0
+D,ALL,UZ,0
+ALLSEL,ALL
+FINISH
+
+! ---------- static: 15 kN total, 7.5 kN on each load line at the third points (x = 1100 and 2100)
+/SOLU
+ANTYPE,STATIC
+NSEL,S,LOC,Y,300
+NSEL,R,LOC,X,1100
+*GET,N1,NODE,0,COUNT
+F,ALL,FY,-7500/N1
+NSEL,S,LOC,Y,300
+NSEL,R,LOC,X,2100
+*GET,N2,NODE,0,COUNT
+F,ALL,FY,-7500/N2
+ALLSEL,ALL
+SOLVE
+FINISH
+
+/POST1
+SET,LAST
+NSEL,S,LOC,Y,0
+NSEL,R,LOC,X,1600
+*GET,NM,NODE,0,COUNT
+SUMD = 0
+ND = 0
+*DO,I,1,NM
+  ND = NDNEXT(ND)
+  SUMD = SUMD+UY(ND)
+*ENDDO
+DMID = -SUMD/NM                ! average midspan deflection on the soffit, mm
+ALLSEL,ALL
+FINISH
+
+! ---------- modal: first 8 modes
+/SOLU
+ANTYPE,MODAL
+FDELE,ALL,ALL
+MODOPT,LANB,8
+MXPAND,8
+SOLVE
+FINISH
+
+/POST1
+NC = NODE(1600,0,115)          ! midspan, soffit, centre of the width
+*DIM,RES,ARRAY,8,4
+*DO,I,1,8
+  SET,1,I
+  *GET,FR,ACTIVE,0,SET,FREQ
+  RES(I,1) = I
+  RES(I,2) = FR
+  RES(I,3) = ABS(UY(NC))       ! vertical movement at midspan in this mode
+  RES(I,4) = ABS(UZ(NC))       ! sideways movement at midspan in this mode
+*ENDDO
+
+*CFOPEN,linear_check_results,txt
+*VWRITE,DMID
+('Midspan deflection at 15 kN, ANSYS (mm): ',F8.4,'   hand, with shear: 0.519   Euler-Bernoulli: 0.507')
+*VWRITE
+('Mode   Frequency (Hz)   vertical movement   sideways movement   (vertical bending mode: vertical >> sideways)')
+*VWRITE,RES(1,1),RES(1,2),RES(1,3),RES(1,4)
+(F4.0,F14.2,E20.3,E20.3)
+*CFCLOS
+*LIST,linear_check_results,txt
+FINISH

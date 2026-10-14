@@ -1,0 +1,68 @@
+{
+  "status": "REQUESTED_CRACKING_NORMALISATION_UNAVAILABLE",
+  "cracking_normalised_spread": null,
+  "static_spread_same_normalised_load": null,
+  "reason": "No measured cracking load for any beam; only one static beam history published. Same nominal section does not give same geometry or initial damage.",
+  "supplemental_yield_normalised_dynamic": {
+    "load_over_yield": 0.8,
+    "rows": [
+      {
+        "beam": 1,
+        "yield_load_kN_approx": 3.1578947368421053,
+        "target_load_kN": 2.5263157894736845,
+        "dynamic_left": 0.7608055853920515,
+        "interpolation": "Linear in frequency-squared stiffness ratio versus load / approximate yield load. Beam 5 uses last (100-cycle) state at repeated 1.60 kN."
+      },
+      {
+        "beam": 2,
+        "yield_load_kN_approx": 2.6666666666666665,
+        "target_load_kN": 2.1333333333333333,
+        "dynamic_left": 0.6783903241809328,
+        "interpolation": "Linear in frequency-squared stiffness ratio versus load / approximate yield load. Beam 5 uses last (100-cycle) state at repeated 1.60 kN."
+      },
+      {
+        "beam": 3,
+        "yield_load_kN_approx": 2.222222222222222,
+        "target_load_kN": 1.7777777777777777,
+        "dynamic_left": 0.7754648077718482,
+        "interpolation": "Linear in frequency-squared stiffness ratio versus load / approximate yield load. Beam 5 uses last (100-cycle) state at repeated 1.60 kN."
+      },
+      {
+        "beam": 4,
+        "yield_load_kN_approx": 3.6363636363636367,
+        "target_load_kN": 2.9090909090909096,
+        "dynamic_left": 0.8575399442284038,
+        "interpolation": "Linear in frequency-squared stiffness ratio versus load / approximate yield load. Beam 5 uses last (100-cycle) state at repeated 1.60 kN."
+      },
+      {
+        "beam": 5,
+        "yield_load_kN_approx": 3.1578947368421053,
+        "target_load_kN": 2.5263157894736845,
+        "dynamic_left": 0.8339617941300721,
+        "interpolation": "Linear in frequency-squared stiffness ratio versus load / approximate yield load. Beam 5 uses last (100-cycle) state at repeated 1.60 kN."
+      }
+    ],
+    "spread_percentage_points": 17.914962004747103,
+    "interpretation": "Descriptive frequency-squared spread across different spans, overhangs, initial condition and cycle histories. Not an equal cracking-normalised damage test."
+  },
+  "supplemental_equal_load_pair": {
+    "load_kN": 1.6,
+    "beam1_dynamic_left": 0.8901023951247163,
+    "beam5_cycle_states": [
+      {
+        "step": 2,
+        "dynamic_left": 0.9375157470395565
+      },
+      {
+        "step": 3,
+        "dynamic_left": 0.922209624590577
+      },
+      {
+        "step": 4,
+        "dynamic_left": 0.8919753086419755
+      }
+    ],
+    "single_cycle_spread_percentage_points": 4.741335191484019,
+    "limitation": "Beams 1 and 5 share span and section but have different overhangs. Their initial frequencies and histories differ; absolute equal load does not establish equal cracking-normalised load."
+  }
+}

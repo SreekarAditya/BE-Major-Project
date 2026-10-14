@@ -1,0 +1,30 @@
+{
+  "job": "B2",
+  "status": "COMPLETED_AVAILABLE_DATA_ANALYSIS_WITH_UNMET_FULL_SCOPE",
+  "paper_beams": 5,
+  "paired_beams": 1,
+  "paired_steps": 8,
+  "kappa_conditional": 0.2903930127470403,
+  "kappa_95_beam_interval": null,
+  "kappa_reading_interval_95": [
+    0.24435042209622332,
+    0.3717074368568008
+  ],
+  "matched_reference_sensitivity_kappa": 0.1667465167645372,
+  "H1_cracking_normalised_spread": null,
+  "H1_supplemental_yield_normalised_dynamic_spread_pp": 17.914962004747103,
+  "twin_predictions": 7,
+  "twin_median_error_bias_pct": 3.8099509805197274,
+  "twin_max_error_bias_pct": 52.77508335986836,
+  "full_job_done": false,
+  "missing": [
+    "Static peak and residual deflections for Beams 1, 2, 4 and 5 are not published in this PDF.",
+    "Beam 3 first three peak deflections and several unloading branches are obscured in Fig. 11; raw records are needed.",
+    "Measured cracking loads and pre-test static baseline stiffness are absent for all five beams.",
+    "Beam-specific test ages, density, damping and quantitative vibration amplitude are absent.",
+    "Independent concrete tensile tests, measured steel elastic modulus and ultimate strain are absent; Table 2 and Appendix B disagree on bar depth.",
+    "Beam 3 may have pre-existing damage (p. 21); its undamaged static reference cannot be reconstructed from the published measurements."
+  ],
+  "blind_prediction": "SKIPPED_INCOMPLETE_AND_INCONSISTENT_INPUTS",
+  "pooled_common_calibration_valid": false
+}

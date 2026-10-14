@@ -1,0 +1,9 @@
+{
+  "status": "FAIL_INVALID_MARKER_SELECTION_DO_NOT_USE",
+  "invalid_steps": [
+    5,
+    6
+  ],
+  "reason": "Selected marker positions are intermediate loading points in the next loop, not peak envelope turning points. Independent PDF vector-path inspection exposed this. Correct peaks are obscured.",
+  "retained_for_audit": true
+}

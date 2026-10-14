@@ -1,0 +1,110 @@
+! =====================================================================
+! 04_bc_solve.inp  -  supports, symmetry, and the full test load history
+! Load history (total jack load P):
+!   baseline:   0 -> P_DIAG -> 0                      (modal after unloading)
+!   each stage: 0 -> P_DMG(m) -> 0                     (damage)
+!               0 -> P_DIAG -> 0                       (diagnostic; modal after unloading)
+!               0 -> P_SERV -> 0                       (service test the twin predicts)
+!   repair:     after stage I_REP the repair elements are switched on, then diagnostic and service
+!   failure:    displacement-controlled push of D_FAIL mm
+! Force-controlled steps are used below the previous maximum load; the final push is
+! displacement-controlled, which is stable through the peak.
+! =====================================================================
+/SOLU
+ANTYPE,STATIC
+*IF,REPAIR,GT,0,THEN
+  NLGEOM,ON                 ! repair elements are switched on in the deformed position
+*ELSE
+  NLGEOM,OFF
+*ENDIF
+OUTRES,ALL,ALL
+RESCONTROL,DEFINE,ALL,LAST  ! keep restart points at the end of every load step (needed by 05_modal)
+AUTOTS,ON
+NROPT,FULL
+LNSRCH,ON
+NEQIT,60
+CNVTOL,F,,0.05,2,0.5
+CNVTOL,U,,0.05,2,0.5
+
+! ---------- symmetry and supports
+NSEL,S,LOC,Z,0
+D,ALL,UZ,0
+CMSEL,S,SUP1
+D,ALL,UY,0
+D,ALL,UX,0                  ! pin
+CMSEL,S,SUP2
+D,ALL,UY,0                  ! roller
+ALLSEL,ALL
+
+! ---------- repair elements are inactive until the repair is applied
+*IF,REPAIR,GT,0,THEN
+  CMSEL,S,REPAIR_E
+  EKILL,ALL
+  ALLSEL,ALL
+*ENDIF
+
+! ---------- bookkeeping: which load steps end at zero load after a diagnostic cycle (for modal)
+! and which load steps are service tests (for the prediction check)
+*DIM,LS_MOD,ARRAY,10
+*DIM,LS_SRV,ARRAY,10
+*DIM,LS_DMG,ARRAY,10
+N_MOD = 0
+N_SRV = 0
+LS    = 0
+FPN   = 1000/(4*KF)         ! newtons per load node for 1 kN of total jack load (half model, 2 lines of KF nodes)
+
+! ---------- load step helper: apply total jack load PP (kN) in NS substeps and solve
+*CREATE,LOADSTEP,MAC
+  CMSEL,S,LOADN
+  F,ALL,FY,-ARG1*FPN
+  ALLSEL,ALL
+  LS = LS+1
+  TIME,LS
+  NSUBST,ARG2,10*ARG2,2
+  SOLVE
+*END
+
+! ---------- baseline
+*USE,LOADSTEP,P_DIAG,10
+*USE,LOADSTEP,0,10
+N_MOD = N_MOD+1
+LS_MOD(N_MOD) = LS
+
+! ---------- damage stages, diagnostic and service cycles
+*DO,M,1,N_DMG
+  *IF,REPAIR,GT,0,THEN
+    *IF,M,GT,I_REP,EXIT
+  *ENDIF
+  *USE,LOADSTEP,P_DMG(M),40
+  LS_DMG(M) = LS
+  *USE,LOADSTEP,0,20
+  *IF,REPAIR,GT,0,THEN
+    *IF,M,EQ,I_REP,THEN
+      CMSEL,S,REPAIR_E      ! apply the repair to the damaged, unloaded beam
+      EALIVE,ALL
+      ALLSEL,ALL
+    *ENDIF
+  *ENDIF
+  *USE,LOADSTEP,P_DIAG,10
+  *USE,LOADSTEP,0,10
+  N_MOD = N_MOD+1
+  LS_MOD(N_MOD) = LS
+  *USE,LOADSTEP,P_SERV,10
+  N_SRV = N_SRV+1
+  LS_SRV(N_SRV) = LS
+  *USE,LOADSTEP,0,10
+*ENDDO
+
+! ---------- final push to failure in displacement control
+*GET,UY0,NODE,N_LOAD,U,Y
+CMSEL,S,LOADN
+FDELE,ALL,FY
+D,ALL,UY,UY0-D_FAIL
+ALLSEL,ALL
+LS = LS+1
+LS_FAIL = LS
+TIME,LS
+NSUBST,400,4000,100
+SOLVE
+FINISH
+SAVE
