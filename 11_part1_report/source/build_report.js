@@ -283,6 +283,7 @@ const lot = [
   lofLine("Table A-3.", "Condition stages of the design-space dataset", "t11"),
   lofLine("Table A-4.", "Mesh convergence and independent elastic check", "tb1"),
   lofLine("Table A-5.", "Capacities of the supporting published programme", "tb2"),
+  lofLine("Table A-6.", "Planned instrumentation of the Part 2 beam tests", "tb3"),
 ];
 function subRuns(t) {            // "f_{ck}" -> f with subscript ck
   const out = []; const re = /_\{([^}]*)\}/g; let last = 0, m;
@@ -543,10 +544,25 @@ const annex = [
     ["Carbon fibre, strengthened before damage", "Yield load", "48.8", "58.1", "0.84"],
     ["Glass and carbon fibre, strengthened after damage", "Ultimate load", "48.5 to 64.2", "", "0.97 to 1.02"],
   ], [3000, 1500, 1500, 1500, 1526]),
+  H2("Table A-6: Planned Instrumentation of the Part 2 Beam Tests"),
+  P("The Part 2 beams are instrumented so that every reading the twin uses arrives automatically, with no manual entry. The sensors measure the same quantities as the simulated instrument readings of the dataset (load, deflection, acceleration, crack width and temperature), so the twin, which now runs on simulated readings, can switch to real readings without other changes. The instrumentation budget is about Rs. 20,000 to 30,000, so low-cost sensors are used, and the load is read from the load cell of the laboratory loading frame (Table A-6)."),
+  tcaption("**Table A-6.** Planned instrumentation of the Part 2 beam tests"),
+  tableBook(["Quantity", "Sensor", "Location", "Requirement", "Use in the twin"], [
+    ["Load", "Load cell of the servo-hydraulic loading frame, through a steel spreader beam", "Two equal loads at the third points", "0.1 kN", "Stage loads; stiffness from load and deflection"],
+    ["Midspan deflection", "Displacement sensor (linear potentiometer or linear variable differential transformer)", "Soffit at midspan", "0.01 mm", "Deflection stiffness; permanent set after unloading"],
+    ["Support movement", "Two displacement sensors", "Over each support", "0.01 mm", "Removes support and setup movement from the midspan deflection"],
+    ["Acceleration", "Low-noise digital micro-electro-mechanical accelerometer (ADXL355 class)", "Quarter span, away from the nodes of the first two modes", "Sampling at 2,000 Hz or more (first frequency about 52 Hz)", "Natural frequency after each damage stage"],
+    ["Excitation", "Automatic tapper driven by the microcontroller", "Marked point on the top face", "Same tap in every test", "Repeatable free vibration"],
+    ["Crack width", "Camera (5-megapixel ESP32 camera board, upgraded if the pilot test needs it) on a motorised rail, with printed scale markers", "Bottom strip of the front face along the constant-moment zone", "Checked on a printed target with lines 0.1 to 1.0 mm wide", "Crack width against the 0.3 mm limit of IS 456:2000"],
+    ["Temperature", "Digital temperature sensor", "Beam surface", "0.5 °C", "Corrects the frequency for temperature"],
+    ["Logging and transfer", "ESP32 microcontroller with a 4G mobile data module", "Beside the beam", "Common time stamp on all channels", "Sends readings and images to the cloud database"],
+  ], [1650, 2300, 1700, 1600, 1776]),
+  P("The microcontroller logs all sensors, triggers the tapper and the crack scan, and sends readings and images over the mobile network to a cloud database (PostgreSQL on Supabase), so the data reach the team without a computer in the laboratory. Crack widths are measured from the images in Python with OpenCV: each crack is found, its centre line traced and its width measured in millimetres from the scale markers; this crack finder is to be replaced by a segmentation network trained on public images of cracked concrete. The twin runs in the cloud on these readings, and a dashboard shows the stiffness estimate with its bounds and sends alerts to phones. The cloud database and the twin are built and already run on simulated readings; the sensors, the data link, the crack measurement and the dashboard are planned."),
+  P("Each beam is first given a reference test at 15 kN, below its cracking load, which gives the initial stiffness from deflection and the natural frequency from a tap test. It is then taken through the damage stages. Before each 30 kN service check the twin predicts the deflection; the beam is then loaded to 30 kN, which is below the previous maximum load, the deflection is measured, the camera scans the constant-moment zone during the hold, and the twin is updated. The repair decision follows the rule of Table 7; the beam is strengthened after the 65 kN stage and finally loaded to failure in displacement control."),
 ];
 const tail = [
   H1("CHAPTER 6: WORK PROGRESS"),
-  P("Part 1 is complete: the beam model, the 300-beam Monte Carlo simulation, the blind validation and the 10,000-beam retrofit simulation were presented at Review 2 on 14 October 2026. Since then, the model has been extended to the 10,000-beam design-space dataset with strengthening, corrosion, sustained-load and fatigue stages; the dataset has been published on Zenodo and a research article has been submitted (Chapter 7). All code and results are maintained in the project repository (Pesaru et al., 2026b). Part 2 covers specimen casting, sensor installation and live monitoring, damage and failure tests, and validation of the twin on our own beams (Figure 7)."),
+  P("Part 1 is complete: the beam model, the 300-beam Monte Carlo simulation, the blind validation and the 10,000-beam retrofit simulation were presented at Review 2 on 14 October 2026. Since then, the model has been extended to the 10,000-beam design-space dataset with strengthening, corrosion, sustained-load and fatigue stages; the dataset has been published on Zenodo and a research article has been submitted (Chapter 7). All code and results are maintained in the project repository (Pesaru et al., 2026b). Part 2 covers specimen casting, sensor installation and live monitoring (planned instrumentation in the Annexure, Table A-6), damage and failure tests, and validation of the twin on our own beams (Figure 7)."),
   fig("f61_gantt.png", 6.2),
   caption("**Figure 7.** Gantt chart of the project, July 2026 to April 2027."),
   H1("CHAPTER 7: ACHIEVEMENTS"),
