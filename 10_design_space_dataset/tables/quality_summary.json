@@ -1,0 +1,52 @@
+{
+  "main": {
+    "pushes": 7865,
+    "diverged": 95,
+    "Pmax_over_Py_hand_max": 1.7754746603473386,
+    "Pmax_over_Py_hand_max_raw": 138018312.95986795
+  },
+  "retrofit": {
+    "pushes": 3960,
+    "diverged": 110,
+    "gain_valid": {
+      "jacket": 976,
+      "laminate": 990,
+      "plate": 984
+    },
+    "gain_median": {
+      "jacket": 0.436,
+      "laminate": 0.177,
+      "plate": 0.358
+    },
+    "gain_p05_p95": {
+      "jacket": [
+        0.234,
+        0.854
+      ],
+      "laminate": [
+        0.086,
+        0.423
+      ],
+      "plate": [
+        0.178,
+        0.712
+      ]
+    },
+    "install_moment_ratio_median": {
+      "jacket": 0.0087,
+      "laminate": 0.0,
+      "plate": 0.0031
+    },
+    "install_moment_ratio_p95": {
+      "jacket": 0.0213,
+      "laminate": 0.0,
+      "plate": 0.0098
+    }
+  },
+  "stages": {
+    "records": 137,
+    "beams": 130,
+    "of_reached_stage_records": 47510,
+    "max_rise": 0.06224690745361827
+  }
+}

@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "StrucIQ Beam Damage and Retrofit Dataset"
+abstract: "Simulated staged damage, vibration, crack width, corrosion, long-term and retrofit response of simply supported reinforced concrete beams: a 10,000-beam design-space population built with a fibre beam model, strengthening simulated by mechanics, corrosion and sustained-load stages, a fatigue estimate, a measurement layer, benchmarks, and validation against published laboratory tests."
+version: "1.0"
+date-released: 2026-10-29
+type: dataset
+doi: "10.5281/zenodo.23769960"
+url: "https://doi.org/10.5281/zenodo.23769960"
+license: CC-BY-4.0
+authors:
+  - family-names: "Pesaru"
+    given-names: "Sreekar Aditya Reddy"
+  - family-names: "Patlola"
+    given-names: "Sahasra Reddy"
+  - family-names: "Murari"
+    given-names: "Bhagirath Reddy"
+keywords:
+  - reinforced concrete beams
+  - flexural stiffness degradation
+  - natural frequency
+  - breathing crack
+  - crack width
+  - retrofit
+  - carbon fibre laminates
+  - structural health monitoring
+  - simulation dataset
+  - reinforcement corrosion
+  - creep and shrinkage
+  - fatigue
+  - OpenSees

@@ -1,0 +1,26 @@
+{
+ "B-0": {
+  "Pmax_model": 55.9,
+  "test": 57.41,
+  "ratio": 0.973,
+  "defl_at_peak": 11.25
+ },
+ "B-II-1": {
+  "Pmax_model": 79.4,
+  "test": 90.23,
+  "ratio": 0.88,
+  "defl_at_peak": 15.4,
+  "n_strips": 1,
+  "Af_mm2": 84.0,
+  "eps_fd": 0.0053894202230050725
+ },
+ "B-II-2": {
+  "Pmax_model": 105.9,
+  "test": 116.01,
+  "ratio": 0.912,
+  "defl_at_peak": 18.8,
+  "n_strips": 2,
+  "Af_mm2": 168.0,
+  "eps_fd": 0.0053894202230050725
+ }
+}

@@ -1,0 +1,8 @@
+The data files in this dataset (all files other than source code) are licensed under the Creative Commons
+Attribution 4.0 International licence (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt the data for any purpose, provided you give appropriate credit (see CITATION.cff),
+provide a link to the licence, and indicate if changes were made.
+
+Values digitised from published papers (folder 03_validation_published_tests) are cited to their sources;
+cite those papers as well when you use these values.

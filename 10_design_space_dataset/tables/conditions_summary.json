@@ -1,0 +1,46 @@
+{
+  "corrosion": {
+    "runs": 6000,
+    "failed": 55,
+    "capacity_ratio_median": {
+      "5.0": 0.914,
+      "10.0": 0.842,
+      "15.0": 0.778
+    },
+    "capacity_ratio_n": {
+      "5.0": 893,
+      "10.0": 894,
+      "15.0": 895
+    }
+  },
+  "sustained": {
+    "runs": 2000,
+    "failed": 0,
+    "long_term_multiplier_median": {
+      "overload": 1.532,
+      "service": 2.691
+    },
+    "model_over_is456_total_median": 0.897,
+    "model_over_is456_total_p10_p90": [
+      0.74,
+      0.986
+    ]
+  },
+  "fatigue": {
+    "records": 68398,
+    "design_life_median_by_stage": {
+      "1": 40700000000.0,
+      "2": 112000000.0,
+      "3": 2830000.0,
+      "4": 1060000.0,
+      "5": 886000.0
+    },
+    "share_below_2e6_design_by_stage": {
+      "1": 0.003,
+      "2": 0.125,
+      "3": 0.45,
+      "4": 0.61,
+      "5": 0.702
+    }
+  }
+}

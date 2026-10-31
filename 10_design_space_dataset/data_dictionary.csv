@@ -1,0 +1,94 @@
+table,column,unit,description
+beams,beam,,Beam number (0 to 9999)
+beams,span_mm,mm,Clear span between supports
+beams,b_mm,mm,Section width
+beams,h_mm,mm,Overall depth
+beams,cover_mm,mm,Clear cover to stirrups
+beams,d_stir_mm,mm,Stirrup diameter
+beams,n_bot / d_bot_mm,- / mm,Number and diameter of bottom (tension) bars
+beams,n_top / d_top_mm,- / mm,Number and diameter of top bars
+beams,grade_MPa,MPa,Concrete grade (characteristic cube strength of the grade)
+beams,fy_nom_MPa,MPa,Steel grade (nominal yield strength)
+beams,load,,four_point (two loads at the third points) or udl (uniform load lumped at 23 interior nodes)
+beams,fck_MPa,MPa,Sampled characteristic strength of this beam's concrete
+beams,Ec_MPa,MPa,Sampled concrete elastic modulus
+beams,ft_MPa,MPa,Sampled concrete tensile strength
+beams,ets,-,Tension-softening slope as a fraction of Ec
+beams,fy_MPa,MPa,Sampled steel yield strength
+beams,d_mm / As_mm2 / pt_pct,mm / mm2 / %,Effective depth; area of tension steel; tension steel ratio As/(b d)
+beams,span_over_d,-,Span / effective depth
+beams,Py_hand_kN,kN,Hand-calculated first-yield load (cracked elastic section; nominal Ec) used to set the stage loads
+beams,stage_fractions,-,Stage loads as fractions of Py_hand_kN
+beams,run_ok,-,False if the run stopped before the third stage (error gives the message)
+beams,stages_reached,-,Number of damage stages completed (0 to 5)
+beams,Pmax_kN,kN,Peak total load in the final push to span/100 (blank if the last stage was not reached)
+beams,push_complete,-,True if the final push reached span/100 (else Pmax_kN is the peak before the solver stopped)
+beams,f0_hz,Hz,First bending frequency of the undamaged beam
+stages,beam / stage,,Beam number; stage 0 is undamaged; stages 1 to 5 follow the damage loads
+stages,damage_kN / damage_fraction,kN / -,Stage load and its fraction of Py_hand_kN
+stages,reached,-,False if the solver could not reach this stage load (no further stages for this beam)
+stages,residual_mm,mm,Midspan deflection after unloading from the stage load
+stages,delta_d_mm,mm,Midspan deflection increment under the diagnostic load cycle (0.185 Py_hand_kN) after the stage
+stages,static_left,-,Static stiffness left: delta_d at stage 0 / delta_d at this stage
+stages,f1_hz / f2_hz / f3_hz,Hz,First three bending frequencies of the unloaded beam with cracks treated as open
+stages,vib_left_open,-,(f1_hz / f1 at stage 0)^2
+stages,f1_breathing_hz,Hz,Breathing-crack frequency 2 f_open f_closed / (f_open + f_closed) with f_closed = f1 at stage 0
+stages,vib_left_breathing,-,(f1_breathing_hz / f1 at stage 0)^2: vibration stiffness left as a vibration test would see it
+stages,peak_deflection_mm,mm,Midspan deflection at the stage load
+stages,delta_s_mm,mm,Midspan deflection increment under the service load cycle (0.37 Py_hand_kN) after the stage
+stages,recovery,-,1 - residual / peak deflection
+stages,peak_steel_stress_MPa / peak_steel_strain,MPa / -,Tension steel stress and strain at midspan under the stage load
+stages,peak_curvature_per_mm / peak_neutral_axis_mm,1/mm / mm,Midspan curvature and neutral-axis depth from the top under the stage load
+stages,peak_crack_width_mm,mm,IS 456:2000 Annex F crack width at the soffit under the stage load
+stages,service_crack_width_mm,mm,IS 456:2000 Annex F crack width at the soffit under the service load after the stage
+stages,service_steel_stress_MPa,MPa,Tension steel stress at midspan under the service load after the stage
+stages,steel_yielded,-,True if the tension steel strain under the stage load exceeded fy/Es
+stages_measured,*_measured,as source,One simulated instrument reading of the column of the same name (see README: measurement layer)
+stages_measured,temperature_C,C,Concrete temperature assumed at the reading
+envelopes,beam / point / deflection_mm / load_kN,- / - / mm / kN,40-point load-deflection curve of the final push
+splits,split_random / split_extrapolation,,Benchmark split of each beam (train / validation / test)
+retrofit,beam / scheme,,Beam number (0 to 999) and case: none (control) / laminate / plate / jacket
+retrofit,residual_before_mm / delta_d_before_mm / f1_before_hz,mm / mm / Hz,State after stage 4 and unloading; before strengthening
+retrofit,delta_d_after_mm / f1_after_hz,mm / Hz,Diagnostic deflection and frequency after strengthening
+retrofit,delta_s_after_mm / service_steel_stress_after_MPa,mm / MPa,Service-load deflection and steel stress after strengthening
+retrofit,Pmax_kN / push_complete,kN / -,Peak load after strengthening in the push to span/100
+retrofit,install_moment_Nmm,N mm,Largest moment carried by the strengthening just after installation (check of stress-free installation)
+retrofit,n_strips / Af_mm2 / eps_fd / jacket_mm,- / mm2 / - / mm,Size of the strengthening and the laminate debonding strain
+retrofit,capacity_gain,-,Peak load over the deflection range common to this push and the control push / that of the control - 1
+retrofit,service_deflection_reduction,-,1 - delta_s_after / delta_s of the control
+retrofit,stiffness_restored_ratio,-,delta_d_before / delta_d_after
+continuum_comparison,f1_*_hz / Pmax_*_kN,Hz / kN,Undamaged frequency and peak load from the continuum and the fibre model
+continuum_comparison,stageK_deflection_*_mm,mm,Midspan deflection at the stage-K load: continuum (monotonic) and fibre (staged)
+continuum_comparison,Pcr_continuum_kN,kN,Load at the first 5% loss of secant stiffness in the continuum model
+beams,Pmax_raw_kN,kN,Peak load as returned by the solver; differs from Pmax_kN only where push_diverged is true
+beams,push_diverged,-,True if the last step of the final push was spurious (load jump far above the trend of the curve; see code/quality.py); Pmax_kN is then the peak of the valid curve points
+envelopes,valid,-,False for curve points at and after a spurious solver step
+stages,frequency_rise,-,True if f1_hz is more than 0.1% above that of the previous reached stage although static stiffness has fallen (model artefact; see README)
+retrofit,Pmax_raw_kN / push_diverged,kN / -,As in beams: solver peak load and spurious-last-step flag; Pmax_kN is the peak of the valid curve points
+retrofit,common_deflection_mm,mm,Largest deflection reached by both this push and the control push of the same beam
+retrofit,capacity_gain_valid,-,True if common_deflection_mm extends past the deflection at which the control reaches 95% of its peak
+retrofit,install_moment_ratio,-,install_moment_Nmm / hand yield moment (Py_hand_kN x span / 6 for four_point; / 8 for udl)
+retrofit_envelopes,beam / scheme / point / deflection_mm / load_kN / valid,- / - / - / mm / kN / -,40-point load-deflection curve of each retrofit push (valid as in envelopes)
+corrosion_runs,beam / psi_pct,- / %,Beam number (0 to 1999) and steel mass loss (5 / 10 / 15)
+corrosion_runs,area_factor / fy_corroded_MPa / esu_corroded / fc_cover_ratio,- / MPa / - / -,Residual bar area factor; corroded yield strength; strain at maximum stress (rupture); top-cover concrete strength / uncorroded
+corrosion_runs,stages_reached / f0_hz,- / Hz,As in beams
+corrosion_runs,Pmax_kN / capacity_source,kN / -,Peak load of the corroded beam and where it comes from: push (all stages reached) or stageK_attempt (the largest load reached when stage K could not be reached)
+corrosion_runs,push_complete / push_diverged,- / -,True if the curve reached span/100 (for an attempt: the deflection limit was reached before the stage load) / spurious last step as in beams
+corrosion_runs,Pmax_uncorroded_kN / capacity_ratio,kN / -,Peak load of the same beam uncorroded (beams.csv) / Pmax_kN divided by it
+corrosion_stages,(as stages) + psi_pct,,Stage records of the corroded beams; static_left and vib_left_* relative to the corroded beam's own stage 0
+corrosion_stages,static_left_vs_uncorroded / vib_left_breathing_vs_uncorroded,- / -,Diagnostic and vibration stiffness relative to the uncorroded beam's stage 0
+corrosion_stages,reason / peak_in_attempt_kN,- / kN,For an unreached stage: why (target load not reached = deflection passed span/100; nonconvergence) and the largest load reached
+corrosion_envelopes,beam / psi_pct / source / point / deflection_mm / load_kN / valid,,Load-deflection curve of each corroded run: the final push or the final unreached attempt (valid as in envelopes)
+sustained_runs,beam / case,,Beam number (0 to 999); service (service load from 28 days) or overload (third-stage overload at 28 days then service load)
+sustained_runs,shrinkage_deflection_mm / f1_unloaded_28d_hz,mm / Hz,Midspan deflection from shrinkage before loading; first frequency of the unloaded beam at 28 days
+sustained_runs,overload_peak_deflection_mm / overload_residual_mm,mm / mm,Overload case: deflection at the overload and residual after it
+sustained_runs,sustained_load_kN / deflection_0y_mm / deflection_50y_mm / long_term_multiplier,kN / mm / mm / -,Sustained load; deflection just after loading and after 50 years; their ratio
+sustained_runs,residual_50y_mm / delta_d_unloaded_50y_mm / f1_unloaded_50y_hz / vib_left_unloaded_50y,mm / mm / Hz / -,After removing the load at 50 years: residual deflection; diagnostic deflection; first frequency; (f1 / f1 at 28 days)^2
+sustained_runs,is456_short_term_mm / is456_creep_mm / is456_shrinkage_mm / is456_total_mm / model_over_is456_total,mm / mm / mm / mm / -,IS 456:2000 Annex C long-term deflection components for the service case and deflection_50y_mm / is456_total_mm
+sustained_history,beam / case / years,- / - / years,Time under the sustained load (0 = just after loading; 1; 10; 50)
+sustained_history,load_kN / deflection_mm / delta_d_added_mm,kN / mm / mm,Sustained load; midspan deflection; increment under an added short-term diagnostic load (0.185 Py_hand_kN)
+sustained_history,f1_hz / f2_hz / f3_hz,Hz,Bending frequencies of the loaded beam (cracks open)
+sustained_history,steel_stress_MPa / steel_strain / curvature_per_mm / neutral_axis_mm / crack_width_mm,MPa / - / 1/mm / mm / mm,Midspan section under the sustained load; crack width by IS 456:2000 Annex F
+fatigue,population / beam / psi_pct / stage / damage_fraction,,main or corrosion; beam; mass loss (0 for main); stage and its load fraction
+fatigue,stress_range_MPa,MPa,Tension steel stress range for repeated loading from zero to the service load (service_steel_stress_MPa)
+fatigue,fatigue_life_design_cycles / fatigue_life_characteristic_cycles,cycles,EN 1992-1-1 Table 6.3N straight bars (162.5 MPa at 1e6 cycles; slopes 5 and 9) with partial factor 1.15 / 1.0
