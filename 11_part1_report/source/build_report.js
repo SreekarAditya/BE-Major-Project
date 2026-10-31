@@ -61,7 +61,7 @@ const P = (text, o = {}) => new Paragraph({
 const C = (text, o = {}) => P(text, { align: AlignmentType.CENTER, ...o });
 const H1 = (text, key) => new Paragraph({
   heading: HeadingLevel.HEADING_1, children: [new TextRun({ text, bold: true, size: 28, font: FONT })],
-  alignment: AlignmentType.CENTER, pageBreakBefore: !/CHAPTER 1:/.test(text) && false,
+  alignment: AlignmentType.CENTER, pageBreakBefore: !/CHAPTER 1:/.test(text),
   spacing: { before: 320, after: 160, line: 300 }, keepNext: true,
 });
 const H2 = (text) => new Paragraph({
