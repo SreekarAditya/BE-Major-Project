@@ -446,18 +446,18 @@ const refs = [
   "American Concrete Institute. (2019). *Building code requirements for structural concrete and commentary* (ACI 318-19). American Concrete Institute.",
   "American Concrete Institute. (2023). *Design and construction of externally bonded fiber-reinforced polymer (FRP) systems for strengthening concrete structures: Guide* (ACI PRC-440.2-23). American Concrete Institute.",
   "Beck, J. L., & Katafygiotis, L. S. (1998). Updating models and their uncertainties. I: Bayesian statistical framework. *Journal of Engineering Mechanics, 124*(4), 455–461. https://doi.org/10.1061/(ASCE)0733-9399(1998)124:4(455)",
-  "Bureau of Indian Standards. (2000). *IS 456:2000 Plain and reinforced concrete: Code of practice* (4th rev.). Bureau of Indian Standards.",
-  "Bureau of Indian Standards. (2013). *IS 15988:2013 Seismic evaluation and strengthening of existing reinforced concrete buildings: Guidelines*. Bureau of Indian Standards.",
-  "Bureau of Indian Standards. (2016). *IS 1893 (Part 1):2016 Criteria for earthquake resistant design of structures, Part 1: General provisions and buildings* (6th rev.). Bureau of Indian Standards.",
+  "Bureau of Indian Standards. (2000). *Plain and reinforced concrete: Code of practice* (IS 456:2000, 4th rev.). Bureau of Indian Standards.",
+  "Bureau of Indian Standards. (2013). *Seismic evaluation and strengthening of existing reinforced concrete buildings: Guidelines* (IS 15988:2013). Bureau of Indian Standards.",
+  "Bureau of Indian Standards. (2016). *Criteria for earthquake resistant design of structures, Part 1: General provisions and buildings* (IS 1893 (Part 1):2016, 6th rev.). Bureau of Indian Standards.",
   "Coronelli, D., & Gambarova, P. (2004). Structural assessment of corroded reinforced concrete beams: Modeling guidelines. *Journal of Structural Engineering, 130*(8), 1214–1224. https://doi.org/10.1061/(ASCE)0733-9445(2004)130:8(1214)",
-  "Du, Y. G., Clark, L. A., & Chan, A. H. C. (2005a). Residual capacity of corroded reinforcing bars. *Magazine of Concrete Research, 57*(3), 135–147.",
-  "Du, Y. G., Clark, L. A., & Chan, A. H. C. (2005b). Effect of corrosion on ductility of reinforcing bars. *Magazine of Concrete Research, 57*(7), 407–419.",
+  "Du, Y. G., Clark, L. A., & Chan, A. H. C. (2005a). Residual capacity of corroded reinforcing bars. *Magazine of Concrete Research, 57*(3), 135–147. https://doi.org/10.1680/macr.57.3.135.60482",
+  "Du, Y. G., Clark, L. A., & Chan, A. H. C. (2005b). Effect of corrosion on ductility of reinforcing bars. *Magazine of Concrete Research, 57*(7), 407–419. https://doi.org/10.1680/macr.2005.57.7.407",
   "Efron, B. (1979). Bootstrap methods: Another look at the jackknife. *The Annals of Statistics, 7*(1), 1–26. https://doi.org/10.1214/aos/1176344552",
-  "European Committee for Standardization. (2004). *EN 1992-1-1:2004 Eurocode 2: Design of concrete structures, Part 1-1: General rules and rules for buildings*. European Committee for Standardization.",
+  "European Committee for Standardization. (2004). *Eurocode 2: Design of concrete structures, Part 1-1: General rules and rules for buildings* (EN 1992-1-1:2004). European Committee for Standardization.",
   "Fan, W., & Qiao, P. (2011). Vibration-based damage identification methods: A review and comparative study. *Structural Health Monitoring, 10*(1), 83–111. https://doi.org/10.1177/1475921710365419",
   "Kapteyn, M. G., Pretorius, J. V. R., & Willcox, K. E. (2021). A probabilistic graphical model foundation for enabling predictive digital twins at scale. *Nature Computational Science, 1*(5), 337–347. https://doi.org/10.1038/s43588-021-00069-0",
   "Knaack, A. M., & Kurama, Y. C. (2018). Modeling time-dependent deformations: Application for reinforced concrete beams with recycled concrete aggregates. *ACI Structural Journal, 115*(1), 175–190. https://doi.org/10.14359/51701153",
-  "Maeck, J., & De Roeck, G. (2003). Damage assessment using vibration analysis on the Z24-bridge. *Mechanical Systems and Signal Processing, 17*(1), 133–142. https://doi.org/10.1006/mssp.2002.1550",
+  "Maeck, J., & De Roeck, G. (2003). Damage assessment using vibration analysis on the Z24-Bridge. *Mechanical Systems and Signal Processing, 17*(1), 133–142. https://doi.org/10.1006/mssp.2002.1550",
   "McKay, M. D., Beckman, R. J., & Conover, W. J. (1979). A comparison of three methods for selecting values of input variables in the analysis of output from a computer code. *Technometrics, 21*(2), 239–245. https://doi.org/10.1080/00401706.1979.10489755",
   "McKenna, F. (2011). OpenSees: A framework for earthquake engineering simulation. *Computing in Science & Engineering, 13*(4), 58–66. https://doi.org/10.1109/MCSE.2011.66",
   "Musiał, M., Trapko, T., & Grosel, J. (2021). Static and dynamic stiffness of reinforced concrete beams strengthened with externally bonded CFRP strips. *Materials, 14*(4), 910. https://doi.org/10.3390/ma14040910",
@@ -477,7 +477,7 @@ const refs = [
 ];
 const refBlock = [
   H1("REFERENCES"),
-  ...refs.map(r => new Paragraph({ children: runs(r, { size: 24 }), alignment: AlignmentType.JUSTIFIED,
+  ...refs.map(r => new Paragraph({ children: runs(r.replace(/(https?:\/\/)(\S+)/g, (m, p, u) => p + u.replace(/([\/.):;])/g, "$1\u200B")), { size: 24 }), alignment: AlignmentType.JUSTIFIED,
     indent: { left: 480, hanging: 480 }, spacing: { after: 0, line: 360 } })),
 ];
 
@@ -554,7 +554,7 @@ const tail = [
   table(["No.", "Type", "Achievement", "Date", "Proof"], [
     ["1", "Open-source contribution", "StrucIQ Beam Damage and Retrofit Dataset, version 1.0, published on Zenodo as an open dataset with code (CC BY 4.0). 10,000 simulated beams with staged damage, vibration and crack width, plus strengthening, corrosion and sustained-load stages, validated against published tests", "29 October 2026", "Zenodo record, DOI 10.5281/zenodo.23769960"],
     ["2", "Article", "Research article \u201cRelationship between static and dynamic stiffness loss in cracked reinforced concrete beams: a simulation study\u201d submitted to the Journal of Building Pathology and Rehabilitation (Springer, Scopus-indexed)", "29 October 2026", "Springer Nature submission acknowledgement, submission ID 10539f99-9693-4f56-8eb2-f3aa50b569a2"],
-  ], [500, 1500, 3500, 1200, 2326]),
+  ], [500, 1400, 3300, 1200, 2626]),
 ];
 
 const font = { default: { document: { run: { font: FONT, size: 24 } } },
