@@ -7,7 +7,7 @@ import matplotlib.dates as mdates
 from datetime import date
 
 plt.rcParams.update({
-    "font.family": "Liberation Serif", "font.size": 9, "axes.titlesize": 9,
+    "font.family": "Times New Roman", "font.size": 9, "axes.titlesize": 9,
     "axes.spines.top": False, "axes.spines.right": False, "savefig.dpi": 650,
 })
 ACC, GREY, DARK = "#1f5fa8", "#b5b5b5", "#555555"

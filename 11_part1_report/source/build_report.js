@@ -12,8 +12,8 @@ const TITLE = "Digital Twin for Live Condition Monitoring and Retrofit Decision 
 
 // inline **bold** and *italic*
 function plainRuns(t, base) {    // plain text with f_{open} style subscripts
-  const out = []; const re = /_\{([^}]*)\}/g; let last = 0, m;
-  while ((m = re.exec(t))) { if (m.index > last) out.push(new TextRun({ text: t.slice(last, m.index), ...base })); out.push(new TextRun({ text: m[1], subScript: true, ...base })); last = m.index + m[0].length; }
+  const out = []; const re = /([_^])\{([^}]*)\}/g; let last = 0, m;
+  while ((m = re.exec(t))) { if (m.index > last) out.push(new TextRun({ text: t.slice(last, m.index), ...base })); out.push(new TextRun({ text: m[2], ...(m[1] === "_" ? { subScript: true } : { superScript: true }), ...base })); last = m.index + m[0].length; }
   if (last < t.length) out.push(new TextRun({ text: t.slice(last), ...base })); return out;
 }
 function runs(text, base = {}) {
@@ -31,7 +31,7 @@ function runs(text, base = {}) {
   return out;
 }
 
-const SMALL = new Set(["a","an","the","and","or","but","nor","for","of","on","in","at","to","by","as","per","via","vs"]);
+const SMALL = new Set(["et","al","a","an","the","and","or","but","nor","for","of","on","in","at","to","by","as","per","via","vs"]);
 function titleCase(t) {
   let first = true;
   return t.split(" ").map(w => {
@@ -514,13 +514,13 @@ const annex = [
     "**Figure A-1.** Static against vibration stiffness loss, 10,000 beams",
     "**Figure A-2.** Growth of deflection under sustained load (median and 5th to 95th percentile)"),
   H2("Table A-3: Condition Stages of the Design-Space Dataset"),
-  P("Table A-3 summarises the condition stages. Strengthening simulated in the model raised the peak load by a median of 18% with laminates, 36% with a steel plate and 44% with a concrete jacket; on the strengthened beams of Musiał et al. (2021) the same approach predicted 79.4 and 105.9 kN against 90.2 and 116.0 kN tested, 9% to 12% on the safe side. Corrosion of 5%, 10% and 15% reduced the peak load to 0.91, 0.84 and 0.78 of the uncorroded beam, and only 32%, 12% and 4% of corroded beams could still carry the last stage load, against 79% uncorroded. Under sustained service load the deflection grew by a median of 2.7 times in 50 years (Figure A-2), 0.90 of the IS 456:2000 Annex C estimate, while the crack width grew from 0.02 to 0.09 mm. The design fatigue life of the tension steel fell from about 4 × 10¹⁰ cycles at the first stage to 0.9 × 10⁶ at the last."),
+  P("Table A-3 summarises the condition stages. Strengthening simulated in the model raised the peak load by a median of 18% with laminates, 36% with a steel plate and 44% with a concrete jacket; on the strengthened beams of Musiał et al. (2021) the same approach predicted 79.4 and 105.9 kN against 90.2 and 116.0 kN tested, 9% to 12% on the safe side. Corrosion of 5%, 10% and 15% reduced the peak load to 0.91, 0.84 and 0.78 of the uncorroded beam, and only 32%, 12% and 4% of corroded beams could still carry the last stage load, against 79% uncorroded. Under sustained service load the deflection grew by a median of 2.7 times in 50 years (Figure A-2), 0.90 of the IS 456:2000 Annex C estimate, while the crack width grew from 0.02 to 0.09 mm. The design fatigue life of the tension steel fell from about 4 × 10^{10} cycles at the first stage to 0.9 × 10^{6} at the last."),
   tcaption("**Table A-3.** Condition stages of the design-space dataset"),
   tableBook(["Stage", "Runs", "Main result (median)", "Check"], [
     ["Strengthening", "1,000 beams × 3 schemes", "Peak-load gain: laminates 18%, plate 36%, jacket 44%", "Musiał et al. (2021) strengthened beams: 9% to 12% on the safe side"],
     ["Corrosion", "2,000 beams × 3 levels", "Peak load 0.91, 0.84, 0.78 of uncorroded at 5%, 10%, 15% mass loss", "At zero corrosion it reproduces the main model"],
     ["Sustained load", "1,000 beams × 2 cases", "50-year deflection 2.69 times (service) and 1.53 times (after overload) the initial value", "0.90 of the IS 456:2000 Annex C estimate"],
-    ["Fatigue", "All reached stages", "Design life 4 × 10¹⁰ cycles at stage 1 to 0.9 × 10⁶ at stage 5", "Code estimate (EN 1992-1-1)"],
+    ["Fatigue", "All reached stages", "Design life 4 × 10^{10} cycles at stage 1 to 0.9 × 10^{6} at stage 5", "Code estimate (EN 1992-1-1)"],
     ["Continuum check", "40 beams", "First frequency 0.96 of the fibre model; deflection after cracking 1.36 to 1.93 times larger", "Fibre deflections are a lower bound for short or deep beams"],
   ], [1500, 1700, 3200, 2626]),
   P("The continuum model agreed with the fibre model on the undamaged frequency but gave larger deflections after cracking, because it represents shear deformation and diagonal cracking, which the flexure-only fibre model omits. For short or deep beams, the cracked-state deflections of the fibre model should therefore be read as a lower bound."),
