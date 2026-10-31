@@ -545,7 +545,7 @@ const annex = [
     ["Glass and carbon fibre, strengthened after damage", "Ultimate load", "48.5 to 64.2", "", "0.97 to 1.02"],
   ], [3000, 1500, 1500, 1500, 1526]),
   H2("Table A-6: Planned Instrumentation of the Part 2 Beam Tests"),
-  P("The Part 2 beams are instrumented so that every reading the twin uses arrives automatically, with no manual entry. The sensors measure the same quantities as the simulated instrument readings of the dataset (load, deflection, acceleration, crack width and temperature), so the twin, which now runs on simulated readings, can switch to real readings without other changes. The instrumentation budget is about Rs. 20,000 to 30,000, so low-cost sensors are used, and the load is read from the load cell of the laboratory loading frame (Table A-6)."),
+  P("The Part 2 beams are instrumented so that every reading the twin uses arrives automatically, with no manual entry. The sensors measure the same quantities as the simulated instrument readings of the dataset (load, deflection, acceleration, crack width and temperature), so the twin, which now runs on simulated readings, can switch to real readings without other changes. Low-cost sensors are used, and the load is read from the load cell of the laboratory loading frame (Table A-6)."),
   tcaption("**Table A-6.** Planned instrumentation of the Part 2 beam tests"),
   tableBook(["Quantity", "Sensor", "Location", "Requirement", "Use in the twin"], [
     ["Load", "Load cell of the servo-hydraulic loading frame, through a steel spreader beam", "Two equal loads at the third points", "0.1 kN", "Stage loads; stiffness from load and deflection"],
