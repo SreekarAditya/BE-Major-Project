@@ -1,6 +1,6 @@
-# 10. Design-space dataset (after Review 2)
+# 10. Design-space dataset
 
-After Review 2, the fibre beam model of folder `02_model` was applied to 10,000 simply supported reinforced concrete beams covering the range found in buildings. The result is published as an open dataset:
+The fibre beam model of folder `02_model` was applied to 10,000 simply supported reinforced concrete beams covering the range found in buildings. The result is published as an open dataset:
 
 **Pesaru, S. A. R., Patlola, S. R., & Murari, B. R. (2026). *StrucIQ Beam Damage and Retrofit Dataset* (Version 1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23769960** (data CC BY 4.0, code MIT)
 

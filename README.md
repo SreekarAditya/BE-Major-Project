@@ -42,7 +42,7 @@ BE major project, Department of Civil Engineering, Chaitanya Bharathi Institute 
 | `08_benchmark_ozturkoglu2024/` | Second published test series: strengthening capacity, vibration bias, twin step |
 | `08b_benchmark_pesic2015/` | Third published series (static data for one beam only; not used in the deck) |
 | `09_retrofit_simulation/` | 10,000 simulated beams checked to IS 456 before and after polymer laminates, steel plate and concrete jacket; decision tree; workbook `StrucIQ_decision_tree_beams.xlsx` |
-| `10_design_space_dataset/` | After Review 2: 10,000-beam design-space population with strengthening, corrosion, sustained-load and fatigue stages; generation, processing and verification code, data dictionary, summary results and a quick-start notebook. The full tables (about 80 MB) are on Zenodo |
+| `10_design_space_dataset/` | 10,000-beam design-space population with strengthening, corrosion, sustained-load and fatigue stages; generation, processing and verification code, data dictionary, summary results and a quick-start notebook. The full tables (about 80 MB) are on Zenodo |
 | `11_part1_report/` | Part 1 report (Word and PDF) and the scripts that build it and its figures |
 | `supporting/` | Earlier hand calculations, scripts and figures from the 230 × 300 mm study |
 
