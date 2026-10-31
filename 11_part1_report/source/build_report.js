@@ -463,7 +463,7 @@ const refs = [
   "Musiał, M., Trapko, T., & Grosel, J. (2021). Static and dynamic stiffness of reinforced concrete beams strengthened with externally bonded CFRP strips. *Materials, 14*(4), 910. https://doi.org/10.3390/ma14040910",
   "Ozturkoglu, O., Yucel, U., Karademir, C., & Durmazgezer, E. (2024). An experimental study on the effect of GFRP and CFRP strengthening on the static and dynamic behavior of R/C beams under progressive damage. *Applied Sciences, 14*(21), 9920. https://doi.org/10.3390/app14219920",
   "Park, Y.-J., & Ang, A. H.-S. (1985). Mechanistic seismic damage model for reinforced concrete. *Journal of Structural Engineering, 111*(4), 722–739. https://doi.org/10.1061/(ASCE)0733-9445(1985)111:4(722)",
-  "Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., & Duchesnay, É. (2011). Scikit-learn: Machine learning in Python. *Journal of Machine Learning Research, 12*, 2825–2830.",
+  "Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., & Duchesnay, É. (2011). Scikit-learn: Machine learning in Python. *Journal of Machine Learning Research, 12*, 2825–2830. https://dl.acm.org/doi/10.5555/1953048.2078195",
   "Peeters, B., & De Roeck, G. (2001). One-year monitoring of the Z24-Bridge: Environmental effects versus damage events. *Earthquake Engineering & Structural Dynamics, 30*(2), 149–171. https://doi.org/10.1002/1096-9845(200102)30:2<149::AID-EQE1>3.0.CO;2-Z",
   "Pesaru, S. A. R., Patlola, S. R., & Murari, B. R. (2026a). *StrucIQ Beam Damage and Retrofit Dataset* (Version 1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23769960",
   "Pesaru, S. A. R., Patlola, S. R., & Murari, B. R. (2026b). *StrucIQ: Digital twin for live condition monitoring and retrofit decision support of reinforced concrete members* [Computer software]. GitHub. https://github.com/SreekarAditya/BE-Major-Project",
@@ -477,7 +477,7 @@ const refs = [
 ];
 const refBlock = [
   H1("REFERENCES"),
-  ...refs.map(r => new Paragraph({ children: runs(r, { size: 24 }), alignment: AlignmentType.LEFT,
+  ...refs.map(r => new Paragraph({ children: runs(r, { size: 24 }), alignment: AlignmentType.JUSTIFIED,
     indent: { left: 480, hanging: 480 }, spacing: { after: 0, line: 360 } })),
 ];
 
